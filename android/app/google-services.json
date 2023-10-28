@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "176062135688",
+    "project_id": "panic-attack-app",
+    "storage_bucket": "panic-attack-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176062135688:android:2198a27ac0bd838c2bce3d",
+        "android_client_info": {
+          "package_name": "com.example.panicattack_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtXvnMO4q6ukIc0Q85L6FLa_UwQlYN9E0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyAITKGjM6sVF1bEhJzoVrnLanP6G85DXrA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>176062135688</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.panicattackApp.RunnerTests</string>
+	<key>PROJECT_ID</key>
+	<string>panic-attack-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>panic-attack-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:176062135688:ios:04dc55ff55fee98a2bce3d</string>
+</dict>
+</plist>
