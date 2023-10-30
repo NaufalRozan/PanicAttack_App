@@ -224,27 +224,33 @@ class _HomePageState extends State<HomePage> {
                     height: _calculateCardHeight(context),
                     color: cardRed,
                     child: Center(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Expanded(
-                            child: const FittedBox(
-                              child: Padding(
-                                padding: EdgeInsets.all(2.0),
-                                child: CircleAvatar(
-                                  backgroundColor: Colors.white,
-                                  backgroundImage: AssetImage(
-                                      'lib/assets/images/Ellipse 3.png'),
+                      child: Padding(
+                        padding: const EdgeInsets.all(18.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Expanded(
+                              child: FittedBox(
+                                child: Padding(
+                                  padding: EdgeInsets.all(2.0),
+                                  child: CircleAvatar(
+                                    backgroundColor:
+                                        whiteColor.withOpacity(0.6),
+                                    backgroundImage: AssetImage(
+                                        'lib/assets/images/Ellipse 3.png'),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          Text(
-                            "Anxiety Level Low",
-                            style: whiteTextStyle.copyWith(
-                                fontSize: 30, fontWeight: bold),
-                          ),
-                        ],
+                            Text(
+                              "Anxiety Level Low",
+                              style: whiteTextStyle.copyWith(
+                                  fontSize:
+                                      MediaQuery.of(context).size.width * 0.07,
+                                  fontWeight: bold),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),
@@ -254,40 +260,106 @@ class _HomePageState extends State<HomePage> {
                 //card2
                 Row(
                   children: [
-                    Expanded(
+                    GestureDetector(
+                      onTap: () {},
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(12.0),
                         child: Container(
                           height: _calculateCardHeight(context),
                           color: primaryButtonColor,
-                          child: Center(
-                            child: Text(
-                              "Kartu 2",
-                              style:
-                                  TextStyle(fontSize: 18, color: Colors.white),
+                          child: FittedBox(
+                            child: Center(
+                              child: Padding(
+                                padding: const EdgeInsets.all(18.0),
+                                child: Column(
+                                  children: [
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: whiteColor.withOpacity(0.2),
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                      child: Center(
+                                        child: Image.asset(
+                                          'lib/assets/images/Checklist-bro (1).png', // Ganti dengan path gambar Anda
+                                          width:
+                                              100, // Sesuaikan ukuran gambar sesuai kebutuhan
+                                          height: 100,
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 10.0,
+                                    ),
+                                    Text(
+                                      "Test Tingkat\nGejala Kamu",
+                                      style: whiteTextStyle.copyWith(
+                                        fontSize:
+                                            MediaQuery.of(context).size.width *
+                                                0.038,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                      textAlign: TextAlign
+                                          .center, // Menyelaraskan teks ke tengah
+                                    ),
+                                  ],
+                                ),
+                              ),
                             ),
                           ),
                         ),
                       ),
                     ),
+
                     SizedBox(width: 20.0),
                     //card3
-                    Expanded(
+                    GestureDetector(
+                      onTap: () {},
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(12.0),
                         child: Container(
                           height: _calculateCardHeight(context),
                           color: primaryButtonColor,
-                          child: Center(
-                            child: Text(
-                              "Kartu 3",
-                              style:
-                                  TextStyle(fontSize: 18, color: Colors.white),
+                          child: FittedBox(
+                            child: Center(
+                              child: Padding(
+                                padding: const EdgeInsets.all(18.0),
+                                child: Column(
+                                  children: [
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: whiteColor.withOpacity(0.2),
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                      child: Center(
+                                        child: Image.asset(
+                                          'lib/assets/images/Checklist-pana.png', // Ganti dengan path gambar Anda
+                                          width:
+                                              100, // Sesuaikan ukuran gambar sesuai kebutuhan
+                                          height: 100,
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 10.0,
+                                    ),
+                                    Text(
+                                      "Lakukan\nKebiasaan ini",
+                                      style: whiteTextStyle.copyWith(
+                                        fontSize:
+                                            MediaQuery.of(context).size.width *
+                                                0.038,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                  ],
+                                ),
+                              ),
                             ),
                           ),
                         ),
                       ),
-                    ),
+                    )
                   ],
                 )
               ],
