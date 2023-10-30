@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:panicattack_app/constans.dart';
+import 'package:panicattack_app/pages/edit_profile_page.dart';
 import 'package:panicattack_app/pages/profile_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -114,7 +115,16 @@ class _HomePageState extends State<HomePage> {
                       style: secondaryTextStyle.copyWith(
                           fontSize: 18, fontWeight: bold),
                     ),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return EditProfilePage();
+                          },
+                        ),
+                      );
+                    },
                   ),
                 ],
               ),
