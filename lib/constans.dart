@@ -9,6 +9,7 @@ Color secondaryTextColor = Color(0xff117755);
 Color primaryButtonColor = Color(0xff117755);
 Color tncButtonColor = Color(0xff771133);
 Color cardRed = Color(0xffFF7373);
+Color cardYellow = Color(0xffffd700);
 
 TextStyle whiteTextStyle = GoogleFonts.dmSans(
   color: whiteColor,
