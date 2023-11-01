@@ -18,14 +18,14 @@ class _HomePageState extends State<HomePage> {
   final user = FirebaseAuth.instance.currentUser!;
   String _registeredUserName = ''; // Menyimpan nama pengguna dari Firestore
   String _registeredEmail = ''; // Menyimpan email dari Firestore
-  // String _registeredPhone = ''; // Menyimpan phone dari Firestore
+  String _anxietyLevel = ''; // Menyimpan level kecemasan dari Firestore
 
   void initState() {
     super.initState();
-    _getUserNameFromFirestore();
+    _getUserNameAndAnxietyLevelFromFirestore();
   }
 
-  Future<void> _getUserNameFromFirestore() async {
+  Future<void> _getUserNameAndAnxietyLevelFromFirestore() async {
     final currentUser = FirebaseAuth.instance.currentUser;
     final userDoc = await FirebaseFirestore.instance
         .collection('users')
@@ -35,13 +35,38 @@ class _HomePageState extends State<HomePage> {
       setState(() {
         _registeredUserName = userDoc.docs[0].data()['username'];
         _registeredEmail = userDoc.docs[0].data()['email'];
-        // _registeredPhone = userDoc.docs[0].data()['phone'];
+        _anxietyLevel =
+            userDoc.docs[0].data()['anxietyLevel']; // Ambil level kecemasan
       });
     }
   }
 
+
+
   @override
   Widget build(BuildContext context) {
+    Color cardColor;
+    Color textColors;
+    String cardText;
+    String imageCard;
+
+    if (_anxietyLevel == 'Anxiety Level Low') {
+      cardColor = primaryButtonColor; // Atur warna sesuai level low
+      cardText = 'Anxiety Level Low';
+      textColors = Color(0xffffffff);
+      imageCard = 'lib/assets/images/Ellipse 3.png';
+    } else if (_anxietyLevel == 'Anxiety Level Mid') {
+      cardColor = cardYellow; // Atur warna sesuai level mid
+      cardText = 'Anxiety Level Mid';
+      textColors = Color(0xff06442F);
+      imageCard = 'lib/assets/images/Worried-amico.png';
+    } else {
+      cardColor = cardRed; // Atur warna sesuai level high
+      cardText = 'Anxiety Level High';
+      textColors = Color(0xffffffff);
+      imageCard = 'lib/assets/images/Student stress-amico.png';
+    }
+
     return Scaffold(
       key: _scaffoldKey,
       // Drawer
@@ -223,7 +248,7 @@ class _HomePageState extends State<HomePage> {
                   child: Container(
                     width: double.infinity,
                     height: _calculateCardHeight(context),
-                    color: cardRed,
+                    color: cardColor,
                     child: Center(
                       child: Padding(
                         padding: const EdgeInsets.all(18.0),
@@ -238,17 +263,18 @@ class _HomePageState extends State<HomePage> {
                                     backgroundColor:
                                         whiteColor.withOpacity(0.6),
                                     backgroundImage: AssetImage(
-                                        'lib/assets/images/Ellipse 3.png'),
+                                        imageCard),
                                   ),
                                 ),
                               ),
                             ),
                             Text(
-                              "Anxiety Level Low",
+                              cardText,
                               style: whiteTextStyle.copyWith(
                                   fontSize:
                                       MediaQuery.of(context).size.width * 0.07,
-                                  fontWeight: bold),
+                                  fontWeight: bold,
+                                  color: textColors),
                             ),
                           ],
                         ),

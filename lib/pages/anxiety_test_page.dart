@@ -101,29 +101,25 @@ class _AnxietyTestPageState extends State<AnxietyTestPage> {
   }
 
   void saveScoreToFirestore(int score, String anxietyLevel) async {
-    try {
-      final currentUser = FirebaseAuth.instance.currentUser;
-      if (currentUser != null) {
-        final userDoc =
-            FirebaseFirestore.instance.collection('users').doc(currentUser.uid);
+  final currentUser = FirebaseAuth.instance.currentUser;
+  if (currentUser != null) {
+    final userDoc = FirebaseFirestore.instance.collection('users').doc(currentUser.uid);
 
-        await userDoc.set(
-          {
-            'anxietyScore': score,
-            'anxietyLevel': anxietyLevel,
-          },
-          SetOptions(merge: true),
-        );
+    await userDoc.set(
+      {
+        'anxietyScore': score,
+        'anxietyLevel': anxietyLevel,
+      },
+      SetOptions(merge: true), // Menggabungkan data ke dokumen yang sudah ada
+    );
 
-        print('Skor dan level kecemasan disimpan di Firestore.');
-      } else {
-        print(
-            'Tidak ada pengguna saat ini. Gagal menyimpan skor ke Firestore.');
-      }
-    } catch (e) {
-      print('Terjadi kesalahan: $e');
-    }
+    print('Skor dan level kecemasan disimpan di Firestore.');
+  } else {
+    print('Tidak ada pengguna saat ini. Gagal menyimpan skor ke Firestore.');
   }
+}
+
+
   String determineAnxietyLevel(int score) {
     if (score >= 0 && score <= 6) {
       return 'Anxiety Level Low';
@@ -133,8 +129,7 @@ class _AnxietyTestPageState extends State<AnxietyTestPage> {
       return 'Anxiety Level High';
     }
   }
-
-
+  
   void moveToResultPage(String anxietyLevel) {
     switch (anxietyLevel) {
       case 'Anxiety Level Low':
@@ -156,7 +151,7 @@ class _AnxietyTestPageState extends State<AnxietyTestPage> {
         );
         break;
       default:
-        // Handle error or default case
+      // Handle error or default case
     }
   }
 }

@@ -31,36 +31,42 @@ class _RegisterPageState extends State<RegisterPage> {
   }
 
   // auth
-  Future signUp() async {
-    try {
-      await FirebaseAuth.instance.createUserWithEmailAndPassword(
-          email: _emailContoller.text.trim(),
-          password: _passwordController.text.trim());
-    } on FirebaseAuthException {
-      showDialog(
-        context: context,
-        builder: (context) {
-          return AlertDialog(
-            content: Text('Please fill it in correctly'),
-          );
-        },
-      );
-    }
-
-    addUserDetails(
-      _userNameController.text.trim(),
-      _phoneController.text.trim(),
-      _emailContoller.text.trim(),
+  void signUp() async {
+  try {
+    await FirebaseAuth.instance.createUserWithEmailAndPassword(
+      email: _emailContoller.text.trim(),
+      password: _passwordController.text.trim(),
+    );
+  } on FirebaseAuthException {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          content: Text('Please fill it in correctly'),
+        );
+      },
     );
   }
 
-  Future addUserDetails(String userName, String phone, String email) async {
-    await FirebaseFirestore.instance.collection('users').add({
-      'username': userName,
-      'phone': phone,
-      'email': email,
-    });
-  }
+  addUserDetails(
+    _userNameController.text.trim(),
+    _phoneController.text.trim(),
+    _emailContoller.text.trim(),
+  );
+}
+
+Future addUserDetails(String userName, String phone, String email) async {
+  final currentUser = FirebaseAuth.instance.currentUser;
+  final userDoc = FirebaseFirestore.instance.collection('users').doc(currentUser!.uid);
+
+  await userDoc.set({
+    'username': userName,
+    'phone': phone,
+    'email': email,
+    'anxietyScore': 0, // Inisialisasi skor kecemasan ke 0
+    'anxietyLevel': 'Unknown', // Inisialisasi tingkat kecemasan
+  });
+}
 
   @override
   Widget build(BuildContext context) {
