@@ -36,7 +36,7 @@ class _LowAnxietyResultPageState extends State<LowAnxietyResultPage> {
                   ),
                 ),
                 child: CircleAvatar(
-                  backgroundColor: primaryButtonColor.withOpacity(0.5),
+                  backgroundColor: primaryButtonColor.withOpacity(0.6),
                   radius: MediaQuery.of(context).size.height * 0.12,
                   backgroundImage:
                       AssetImage('lib/assets/images/Ellipse 3.png'),

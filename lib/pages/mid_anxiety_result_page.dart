@@ -37,7 +37,7 @@ class _MidAnxietyResultPageState extends State<MidAnxietyResultPage> {
                   ),
                 ),
                 child: CircleAvatar(
-                  backgroundColor: cardYellow.withOpacity(0.5),
+                  backgroundColor: cardYellow.withOpacity(0.6),
                   radius: MediaQuery.of(context).size.height * 0.12,
                   backgroundImage:
                       AssetImage('lib/assets/images/Worried-amico.png'),

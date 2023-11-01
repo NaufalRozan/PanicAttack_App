@@ -37,7 +37,7 @@ class _HighAnxietyResultPageState extends State<HighAnxietyResultPage> {
                   ),
                 ),
                 child: CircleAvatar(
-                  backgroundColor: cardRed.withOpacity(0.5),
+                  backgroundColor: cardRed.withOpacity(0.6),
                   radius: MediaQuery.of(context).size.height * 0.12,
                   backgroundImage:
                       AssetImage('lib/assets/images/Student stress-amico.png'),
