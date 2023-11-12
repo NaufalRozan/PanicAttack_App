@@ -89,7 +89,7 @@ class _HomePageState extends State<HomePage> {
                         backgroundColor: Color.fromARGB(221, 219, 216, 216),
                         radius: 30,
                         backgroundImage:
-                            AssetImage('lib/assets/images/Oh no-amico (1).png'),
+                            AssetImage('lib/assets/images/Oh no-amico (2).png'),
                       ),
                     ),
                     SizedBox(height: 20.0),
