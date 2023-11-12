@@ -26,7 +26,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
         context: context,
         builder: (context) {
           return AlertDialog(
-            content: Text('Password reset link sent'),
+            content: Text('Tautan pengaturan ulang kata sandi telah dikirim'),
           );
         },
       );
@@ -63,13 +63,13 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
 
               //Header
               Text(
-                "Verify Email",
+                "Verifikasi Email",
                 style: textStyle.copyWith(
                     fontSize: 35, fontWeight: FontWeight.bold),
               ),
 
               Text(
-                "Please enter your valid email to validate password reset",
+                "Silakan masukkan email Anda yang valid untuk memvalidasi reset kata sandi",
                 style: secondaryTextStyle.copyWith(fontSize: 20),
               ),
 
@@ -79,7 +79,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                 decoration: InputDecoration(
                   labelText: "Email", // Label untuk input
                   labelStyle: textStyle.copyWith(fontSize: 20),
-                  hintText: "Enter your email",
+                  hintText: "Masukkan email Anda",
                   hintStyle: greyTextStyle.copyWith(fontSize: 15),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
@@ -99,7 +99,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                   ),
                   child: Center(
                     child: Text(
-                      'Verify',
+                      'Verifikasi',
                       style: whiteTextStyle.copyWith(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -116,7 +116,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                     .center, // Pusatkan teks "Don't have an account?" dan "Register"
                 children: [
                   Text(
-                    "Remember your password? ",
+                    "Ingat kata sandi Anda? ",
                     style: textStyle.copyWith(fontSize: 20),
                   ),
                   GestureDetector(
@@ -124,7 +124,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                       Navigator.of(context).pop();
                     },
                     child: Text(
-                      "Login here",
+                      "Masuk disini",
                       style: tncTextStyle.copyWith(fontSize: 20),
                     ),
                   ),

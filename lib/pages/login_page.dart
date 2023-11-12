@@ -26,7 +26,7 @@ class _LoginPageState extends State<LoginPage> {
         context: context,
         builder: (context) {
           return AlertDialog(
-            content: Text('Please enter your email and password correctly'),
+            content: Text('Silakan masukkan email dan kata sandi Anda dengan benar'),
           );
         },
       );
@@ -60,7 +60,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               //Header
               Text(
-                "Hello Again!",
+                "Halo!",
                 style: textStyle.copyWith(
                   fontSize: 35,
                   fontWeight: FontWeight.bold,
@@ -68,7 +68,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
 
               Text(
-                "Welcome back, you've been missed",
+                "Selamat Datang di iCalm",
                 style: secondaryTextStyle.copyWith(fontSize: 20),
               ),
               SizedBox(height: 20.0),
@@ -79,7 +79,7 @@ class _LoginPageState extends State<LoginPage> {
                 decoration: InputDecoration(
                   labelText: "Email", // Label untuk input
                   labelStyle: textStyle.copyWith(fontSize: 20),
-                  hintText: "Enter your email",
+                  hintText: "Masukkan Email Anda",
                   hintStyle: greyTextStyle.copyWith(fontSize: 15),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
@@ -93,9 +93,9 @@ class _LoginPageState extends State<LoginPage> {
                 controller: _passwordController,
                 obscureText: true, // Untuk menyembunyikan teks password
                 decoration: InputDecoration(
-                  labelText: "Password",
+                  labelText: "Kata Sandi",
                   labelStyle: textStyle.copyWith(fontSize: 20),
-                  hintText: "Enter your password",
+                  hintText: "Masukkan Kata Sandi Anda",
                   hintStyle: greyTextStyle.copyWith(fontSize: 15),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
@@ -108,7 +108,7 @@ class _LoginPageState extends State<LoginPage> {
               Row(
                 children: [
                   Text(
-                    "Forgot Your Password? ",
+                    "Lupa kata sandi Anda? ",
                     style: textStyle.copyWith(fontSize: 20),
                   ),
                   GestureDetector(
@@ -123,7 +123,7 @@ class _LoginPageState extends State<LoginPage> {
                       );
                     },
                     child: Text(
-                      "Reset here",
+                      "Reset di sini",
                       style: tncTextStyle.copyWith(fontSize: 20),
                     ),
                   ),
@@ -142,7 +142,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   child: Center(
                     child: Text(
-                      'Login',
+                      'Masuk',
                       style: whiteTextStyle.copyWith(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -160,13 +160,13 @@ class _LoginPageState extends State<LoginPage> {
                     .center, // Pusatkan teks "Don't have an account?" dan "Register"
                 children: [
                   Text(
-                    "Don't have an account? ",
+                    "Belum punya akun? ",
                     style: textStyle.copyWith(fontSize: 20),
                   ),
                   GestureDetector(
                     onTap: widget.showRegisterPage,
                     child: Text(
-                      "Register",
+                      "Daftar",
                       style: tncTextStyle.copyWith(fontSize: 20),
                     ),
                   ),

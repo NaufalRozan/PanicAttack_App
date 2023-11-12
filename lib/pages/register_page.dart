@@ -42,7 +42,7 @@ class _RegisterPageState extends State<RegisterPage> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          content: Text('Please fill it in correctly'),
+          content: Text('Silakan isi dengan benar'),
         );
       },
     );
@@ -95,7 +95,7 @@ Future addUserDetails(String userName, String phone, String email) async {
               ),
 
               Text(
-                "Create new account",
+                "Buat akun baru",
                 style: secondaryTextStyle.copyWith(fontSize: 20),
               ),
               SizedBox(height: 20.0),
@@ -104,9 +104,9 @@ Future addUserDetails(String userName, String phone, String email) async {
               TextFormField(
                 controller: _userNameController,
                 decoration: InputDecoration(
-                  labelText: "Username", // Label untuk input
+                  labelText: "Nama Pengguna", // Label untuk input
                   labelStyle: textStyle.copyWith(fontSize: 20),
-                  hintText: "Enter your username",
+                  hintText: "Masukkan nama pengguna Anda",
                   hintStyle: greyTextStyle.copyWith(fontSize: 15),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
@@ -118,9 +118,9 @@ Future addUserDetails(String userName, String phone, String email) async {
               TextFormField(
                 controller: _phoneController,
                 decoration: InputDecoration(
-                  labelText: "Phone Number", // Label untuk input
+                  labelText: "Nomor Telepon", // Label untuk input
                   labelStyle: textStyle.copyWith(fontSize: 20),
-                  hintText: "Enter your phone number",
+                  hintText: "Masukkan nomor telepon Anda",
                   hintStyle: greyTextStyle.copyWith(fontSize: 15),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
@@ -135,7 +135,7 @@ Future addUserDetails(String userName, String phone, String email) async {
                 decoration: InputDecoration(
                   labelText: "Email", // Label untuk input
                   labelStyle: textStyle.copyWith(fontSize: 20),
-                  hintText: "Enter your email",
+                  hintText: "Masukkan email Anda",
                   hintStyle: greyTextStyle.copyWith(fontSize: 15),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
@@ -149,9 +149,9 @@ Future addUserDetails(String userName, String phone, String email) async {
                 controller: _passwordController,
                 obscureText: true, // Untuk menyembunyikan teks password
                 decoration: InputDecoration(
-                  labelText: "Password",
+                  labelText: "Kata Sandi",
                   labelStyle: textStyle.copyWith(fontSize: 20),
-                  hintText: "Enter your password",
+                  hintText: "Masukkan kata sandi Anda",
                   hintStyle: greyTextStyle.copyWith(fontSize: 15),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
@@ -171,7 +171,7 @@ Future addUserDetails(String userName, String phone, String email) async {
                   ),
                   child: Center(
                     child: Text(
-                      'Create account',
+                      'Buat Akun',
                       style: whiteTextStyle.copyWith(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -189,13 +189,13 @@ Future addUserDetails(String userName, String phone, String email) async {
                     .center, // Pusatkan teks "Don't have an account?" dan "Register"
                 children: [
                   Text(
-                    "Already have account? ",
+                    "Sudah punya akun? ",
                     style: textStyle.copyWith(fontSize: 20),
                   ),
                   GestureDetector(
                     onTap: widget.showLoginPage,
                     child: Text(
-                      "Login",
+                      "Masuk",
                       style: tncTextStyle.copyWith(fontSize: 20),
                     ),
                   ),
