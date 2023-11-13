@@ -56,10 +56,12 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
                 child: Padding(
                   padding: const EdgeInsets.only(
-                      top: 70,
+                      top: 50,
                       right: 30,
-                      left: 30), // Atur padding sesuai keinginan Anda
+                      left: 30,
+                      bottom: 20), // Atur padding sesuai keinginan Anda
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start, // Rata kiri
                     children: [
                       Text(
@@ -76,38 +78,35 @@ class _ProfilePageState extends State<ProfilePage> {
                             vertical: 15), // Atur margin sesuai keinginan Anda
                       ),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Icon(
                             Icons.mail_outline,
                             color: whiteColor,
                             size: 24.0,
                           ),
-                          SizedBox(width: 10,),
                           Text(
                             "Email",
                             style: whiteTextStyle.copyWith(fontSize: 19),
                           ),
-                          SizedBox(width: 18,),
                           Text(
                             "$_registeredEmail",
                             style: whiteTextStyle.copyWith(fontSize: 19),
                           ),
                         ],
                       ),
-                      SizedBox(height: 15),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Icon(
                             Icons.phone_outlined,
                             color: whiteColor,
                             size: 24.0,
                           ),
-                          SizedBox(width: 10,),
                           Text(
                             "Phone",
                             style: whiteTextStyle.copyWith(fontSize: 19),
                           ),
-                          SizedBox(width: 10,),
                           Text(
                             "$_registeredPhone",
                             style: whiteTextStyle.copyWith(fontSize: 19),
