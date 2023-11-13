@@ -158,101 +158,123 @@ class _ProfilePageState extends State<ProfilePage> {
                 right: 0,
                 child: Container(
                   width: double.infinity,
-                  height: MediaQuery.of(context).size.height * 0.36,
+                  height: MediaQuery.of(context).size.height * 0.3,
                   decoration: BoxDecoration(
                     color: primaryButtonColor,
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Padding(
                     padding: const EdgeInsets.only(
-                        top: 50,
-                        right: 30,
-                        left: 30,
-                        bottom: 20), // Atur padding sesuai keinginan Anda
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.start, // Rata kiri
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              "$_registeredUserName",
-                              style: whiteTextStyle.copyWith(
-                                  fontSize: 30, fontWeight: bold),
-                            ),
-                            IconButton(
-                              onPressed: () => editField('username'),
-                              icon: Icon(Icons.edit),
-                              color: whiteColor,
-                            ),
-                          ],
-                        ),
-                        Container(
-                          height: 2, // Tinggi garis
-                          width: double.infinity,
-                          color:
-                              Colors.white, // Warna garis sesuai keinginan Anda
-                          margin: EdgeInsets.symmetric(
-                              vertical: 15), // Atur margin sesuai keinginan Anda
-                        ),
-                        Row(
-                          children: [
-                            Icon(
-                              Icons.mail_outline,
-                              color: whiteColor,
-                              size: 24.0,
-                            ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Text(
-                              "Email",
-                              style: whiteTextStyle.copyWith(fontSize: 19),
-                            ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Text(
-                              "$_registeredEmail",
-                              style: whiteTextStyle.copyWith(fontSize: 19),
-                            ),
-                          ],
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Row(
-                              children: [
-                                Icon(
-                                  Icons.phone_outlined,
-                                  color: whiteColor,
-                                  size: 24.0,
+                      top: 20,
+                      right: 30,
+                      left: 30,
+                    ), // Atur padding sesuai keinginan Anda
+                    child: Center(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment:
+                            CrossAxisAlignment.start, // Rata kiri
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "$_registeredUserName",
+                                style: whiteTextStyle.copyWith(
+                                    fontSize:
+                                        MediaQuery.of(context).size.width *
+                                            0.064,
+                                    fontWeight: bold),
+                              ),
+                              IconButton(
+                                onPressed: () => editField('username'),
+                                icon: Icon(Icons.edit),
+                                color: whiteColor,
+                              ),
+                            ],
+                          ),
+                          Container(
+                            height: 2, // Tinggi garis
+                            width: double.infinity,
+                            color: Colors
+                                .white, // Warna garis sesuai keinginan Anda
+                            margin: EdgeInsets.symmetric(
+                                vertical:
+                                    15), // Atur margin sesuai keinginan Anda
+                          ),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.mail_outline,
+                                color: whiteColor,
+                                size: MediaQuery.of(context).size.width * 0.047,
+                              ),
+                              SizedBox(
+                                width: 10,
+                              ),
+                              Text(
+                                "Email",
+                                style: whiteTextStyle.copyWith(
+                                  fontSize:
+                                      MediaQuery.of(context).size.width * 0.047,
                                 ),
-                                SizedBox(
-                                  width: 10,
+                              ),
+                              SizedBox(
+                                width: 10,
+                              ),
+                              Text(
+                                "$_registeredEmail",
+                                style: whiteTextStyle.copyWith(
+                                  fontSize:
+                                      MediaQuery.of(context).size.width * 0.047,
                                 ),
-                                Text(
-                                  "Phone",
-                                  style: whiteTextStyle.copyWith(fontSize: 19),
-                                ),
-                                SizedBox(
-                                  width: 10,
-                                ),
-                                Text(
-                                  "$_registeredPhone",
-                                  style: whiteTextStyle.copyWith(fontSize: 19),
-                                ),
-                              ],
-                            ),
-                            IconButton(
-                              onPressed: () => editField('phone'),
-                              icon: Icon(Icons.edit),
-                              color: whiteColor,
-                            ),
-                          ],
-                        ),
-                      ],
+                              ),
+                            ],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.phone_outlined,
+                                    color: whiteColor,
+                                    size: MediaQuery.of(context).size.width *
+                                        0.047,
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Text(
+                                    "Phone",
+                                    style: whiteTextStyle.copyWith(
+                                      fontSize:
+                                          MediaQuery.of(context).size.width *
+                                              0.047,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Text(
+                                    "$_registeredPhone",
+                                    style: whiteTextStyle.copyWith(
+                                      fontSize:
+                                          MediaQuery.of(context).size.width *
+                                              0.047,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              IconButton(
+                                onPressed: () => editField('phone'),
+                                icon: Icon(Icons.edit),
+                                color: whiteColor,
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),

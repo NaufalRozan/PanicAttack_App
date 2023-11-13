@@ -129,28 +129,6 @@ class _HomePageState extends State<HomePage> {
                         );
                       },
                     ),
-                    // ListTile(
-                    //   leading: Icon(
-                    //     Icons.edit,
-                    //     color: primaryButtonColor,
-                    //     size: 28,
-                    //   ),
-                    //   title: Text(
-                    //     'Edit Profile',
-                    //     style: secondaryTextStyle.copyWith(
-                    //         fontSize: 18, fontWeight: bold),
-                    //   ),
-                    //   onTap: () {
-                    //     Navigator.push(
-                    //       context,
-                    //       MaterialPageRoute(
-                    //         builder: (context) {
-                    //           return EditProfilePage();
-                    //         },
-                    //       ),
-                    //     );
-                    //   },
-                    // ),
                   ],
                 ),
               ),
