@@ -146,9 +146,18 @@ class _ProfilePageState extends State<ProfilePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Scaffold(
-        body: Padding(
+    return Scaffold(
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage(
+              'lib/assets/images/Frame 1.png',
+            ), // Replace with your image path
+            alignment: Alignment.topCenter,
+            fit: BoxFit.contain
+          ),
+        ),
+        child: Padding(
           padding: const EdgeInsets.only(left: 20, right: 20),
           child: Stack(
             children: [
