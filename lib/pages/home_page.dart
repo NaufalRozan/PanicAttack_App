@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:panicattack_app/constans.dart';
 import 'package:panicattack_app/pages/anxiety_test_page.dart';
+import 'package:panicattack_app/pages/goals_page.dart';
 // import 'package:panicattack_app/pages/edit_profile_page.dart';
 import 'package:panicattack_app/pages/profile_page.dart';
 
@@ -266,10 +267,8 @@ class _HomePageState extends State<HomePage> {
                                               0.064,
                                       fontWeight: bold,
                                       color: textColors),
-                                      textAlign: TextAlign
-                                              .center,
+                                  textAlign: TextAlign.center,
                                 ),
-                                
                               ],
                             ),
                           ),
@@ -347,7 +346,16 @@ class _HomePageState extends State<HomePage> {
                         // SizedBox(width: 20.0),
                         //card3
                         GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return GoalsPage();
+                                },
+                              ),
+                            );
+                          },
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(12.0),
                             child: Container(
