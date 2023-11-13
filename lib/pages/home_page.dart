@@ -58,11 +58,16 @@ class _HomePageState extends State<HomePage> {
       cardText = 'Tingkat Kecemasan Sedang';
       textColors = Color(0xff06442F);
       imageCard = 'lib/assets/images/Worried-amico.png';
-    } else {
+    } else if (_anxietyLevel == 'Anxiety Level High') {
       cardColor = cardRed; // Atur warna sesuai level high
       cardText = 'Tingkat Kecemasan Tinggi';
       textColors = Color(0xffffffff);
       imageCard = 'lib/assets/images/Student stress-amico.png';
+    } else {
+      cardColor = greyColor; // Atur warna sesuai level high
+      cardText = 'Lakukan test\nterlebih dahulu';
+      textColors = Color(0xffffffff);
+      imageCard = 'lib/assets/images/Customer Survey-amico.png';
     }
 
     return Container(
@@ -261,7 +266,10 @@ class _HomePageState extends State<HomePage> {
                                               0.064,
                                       fontWeight: bold,
                                       color: textColors),
+                                      textAlign: TextAlign
+                                              .center,
                                 ),
+                                
                               ],
                             ),
                           ),
