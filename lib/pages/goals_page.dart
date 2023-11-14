@@ -38,21 +38,28 @@ class _GoalsPageState extends State<GoalsPage> {
                 // Widget lainnya dapat ditambahkan di sini
               ],
             ),
-            Container(
-              width: MediaQuery.of(context).size.width * 0.3,
-              height: MediaQuery.of(context).size.height * 0.1,
-              decoration: BoxDecoration(
-                color: primaryButtonColor,
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: Center(
-                child: Text(
-                  'Goals',
-                  style: whiteTextStyle.copyWith(
-                    fontSize: MediaQuery.of(context).size.width * 0.07, // Sesuaikan ukuran font sesuai kebutuhan
-                    fontWeight: FontWeight.bold,
+            Padding(
+              padding: const EdgeInsets.only(top: 30),
+              child: Container(
+                width: MediaQuery.of(context).size.width * 0.3,
+                height: MediaQuery.of(context).size.height * 0.07,
+                decoration: BoxDecoration(
+                  color: primaryButtonColor,
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(12),
+                    bottomRight: Radius.circular(12),
                   ),
-                  textAlign: TextAlign.center,
+                ),
+                child: Center(
+                  child: Text(
+                    'Goals',
+                    style: whiteTextStyle.copyWith(
+                      fontSize: MediaQuery.of(context).size.width *
+                          0.07, // Sesuaikan ukuran font sesuai kebutuhan
+                      fontWeight: FontWeight.bold,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
                 ),
               ),
             ),
