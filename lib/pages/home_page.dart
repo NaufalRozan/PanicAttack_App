@@ -351,7 +351,7 @@ class _HomePageState extends State<HomePage> {
                               context,
                               MaterialPageRoute(
                                 builder: (context) {
-                                  return GoalsPage();
+                                  return GoalsPage(anxietyLevel: _anxietyLevel);
                                 },
                               ),
                             );
