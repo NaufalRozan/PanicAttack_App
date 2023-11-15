@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:panicattack_app/constans.dart';
 import 'package:panicattack_app/core.dart';
+import 'package:panicattack_app/pages/goals_day1_page.dart';
 
 class GoalsPage extends StatefulWidget {
   const GoalsPage({Key? key}) : super(key: key);
@@ -84,7 +85,7 @@ class _GoalsPageState extends State<GoalsPage> {
                         context,
                         MaterialPageRoute(
                           builder: (context) {
-                            return HomePage();
+                            return GoalsDay1Page();
                           },
                         ),
                       );
