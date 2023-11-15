@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:panicattack_app/constans.dart';
+import 'package:panicattack_app/core.dart';
 
 class GoalsPage extends StatefulWidget {
   const GoalsPage({Key? key}) : super(key: key);
@@ -77,78 +78,99 @@ class _GoalsPageState extends State<GoalsPage> {
                       top: 50,
                     ),
                   ),
-                  Container(
-                    padding: EdgeInsets.only(left: 30, right: 30),
-                    height: MediaQuery.of(context).size.height * 0.15,
-                    width: MediaQuery.of(context).size.width * 0.9,
-                    decoration: BoxDecoration(
-                      color: primaryButtonColor,
-                      borderRadius: BorderRadius.circular(12),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return HomePage();
+                          },
+                        ),
+                      );
+                    },
+                    child: Container(
+                      padding: EdgeInsets.only(left: 30, right: 30),
+                      height: MediaQuery.of(context).size.height * 0.15,
+                      width: MediaQuery.of(context).size.width * 0.9,
+                      decoration: BoxDecoration(
+                        color: primaryButtonColor,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Text(
+                        'Day 1',
+                        style: whiteTextStyle.copyWith(
+                            fontWeight: bold,
+                            fontSize: MediaQuery.of(context).size.width * 0.1),
+                      ),
+                      alignment: Alignment.centerLeft,
                     ),
-                    child: Text(
-                      'Day 1',
-                      style: whiteTextStyle.copyWith(
-                          fontWeight: bold,
-                          fontSize: MediaQuery.of(context).size.width * 0.1),
-                    ),
-                    alignment: Alignment.centerLeft,
                   ),
                   SizedBox(
                     height: 20,
                   ),
-                  Container(
-                    padding: EdgeInsets.only(left: 30, right: 30),
-                    height: MediaQuery.of(context).size.height * 0.15,
-                    width: MediaQuery.of(context).size.width * 0.9,
-                    decoration: BoxDecoration(
-                      color: primaryButtonColor,
-                      borderRadius: BorderRadius.circular(12),
+                  GestureDetector(
+                    onTap: () {},
+                    child: Container(
+                      padding: EdgeInsets.only(left: 30, right: 30),
+                      height: MediaQuery.of(context).size.height * 0.15,
+                      width: MediaQuery.of(context).size.width * 0.9,
+                      decoration: BoxDecoration(
+                        color: primaryButtonColor,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Text(
+                        'Day 2',
+                        style: whiteTextStyle.copyWith(
+                            fontWeight: bold,
+                            fontSize: MediaQuery.of(context).size.width * 0.1),
+                      ),
+                      alignment: Alignment.centerLeft,
                     ),
-                    child: Text(
-                      'Day 2',
-                      style: whiteTextStyle.copyWith(
-                          fontWeight: bold,
-                          fontSize: MediaQuery.of(context).size.width * 0.1),
-                    ),
-                    alignment: Alignment.centerLeft,
                   ),
                   SizedBox(
                     height: 20,
                   ),
-                  Container(
-                    padding: EdgeInsets.only(left: 30, right: 30),
-                    height: MediaQuery.of(context).size.height * 0.15,
-                    width: MediaQuery.of(context).size.width * 0.9,
-                    decoration: BoxDecoration(
-                      color: primaryButtonColor,
-                      borderRadius: BorderRadius.circular(12),
+                  GestureDetector(
+                    onTap: () {},
+                    child: Container(
+                      padding: EdgeInsets.only(left: 30, right: 30),
+                      height: MediaQuery.of(context).size.height * 0.15,
+                      width: MediaQuery.of(context).size.width * 0.9,
+                      decoration: BoxDecoration(
+                        color: primaryButtonColor,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Text(
+                        'Day 3',
+                        style: whiteTextStyle.copyWith(
+                            fontWeight: bold,
+                            fontSize: MediaQuery.of(context).size.width * 0.1),
+                      ),
+                      alignment: Alignment.centerLeft,
                     ),
-                    child: Text(
-                      'Day 3',
-                      style: whiteTextStyle.copyWith(
-                          fontWeight: bold,
-                          fontSize: MediaQuery.of(context).size.width * 0.1),
-                    ),
-                    alignment: Alignment.centerLeft,
                   ),
                   SizedBox(
                     height: 20,
                   ),
-                  Container(
-                    padding: EdgeInsets.only(left: 30, right: 30),
-                    height: MediaQuery.of(context).size.height * 0.15,
-                    width: MediaQuery.of(context).size.width * 0.9,
-                    decoration: BoxDecoration(
-                      color: primaryButtonColor,
-                      borderRadius: BorderRadius.circular(12),
+                  GestureDetector(
+                    onTap: () {},
+                    child: Container(
+                      padding: EdgeInsets.only(left: 30, right: 30),
+                      height: MediaQuery.of(context).size.height * 0.15,
+                      width: MediaQuery.of(context).size.width * 0.9,
+                      decoration: BoxDecoration(
+                        color: primaryButtonColor,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Text(
+                        'Day 4',
+                        style: whiteTextStyle.copyWith(
+                            fontWeight: bold,
+                            fontSize: MediaQuery.of(context).size.width * 0.1),
+                      ),
+                      alignment: Alignment.centerLeft,
                     ),
-                    child: Text(
-                      'Day 4',
-                      style: whiteTextStyle.copyWith(
-                          fontWeight: bold,
-                          fontSize: MediaQuery.of(context).size.width * 0.1),
-                    ),
-                    alignment: Alignment.centerLeft,
                   ),
                   SizedBox(
                     height: 20,
