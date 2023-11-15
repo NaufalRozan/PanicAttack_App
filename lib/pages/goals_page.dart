@@ -73,44 +73,82 @@ class _GoalsPageState extends State<GoalsPage> {
               Column(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(top: 50,),
+                    padding: EdgeInsets.only(
+                      top: 50,
+                    ),
                   ),
                   Container(
+                    padding: EdgeInsets.only(left: 30, right: 30),
                     height: MediaQuery.of(context).size.height * 0.15,
                     width: MediaQuery.of(context).size.width * 0.9,
                     decoration: BoxDecoration(
-                        color: primaryButtonColor,
-                        borderRadius: BorderRadius.circular(12)),
+                      color: primaryButtonColor,
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Text(
+                      'Day 1',
+                      style: whiteTextStyle.copyWith(
+                          fontWeight: bold,
+                          fontSize: MediaQuery.of(context).size.width * 0.1),
+                    ),
+                    alignment: Alignment.centerLeft,
                   ),
                   SizedBox(
                     height: 20,
                   ),
                   Container(
+                    padding: EdgeInsets.only(left: 30, right: 30),
                     height: MediaQuery.of(context).size.height * 0.15,
                     width: MediaQuery.of(context).size.width * 0.9,
                     decoration: BoxDecoration(
-                        color: primaryButtonColor,
-                        borderRadius: BorderRadius.circular(12)),
+                      color: primaryButtonColor,
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Text(
+                      'Day 2',
+                      style: whiteTextStyle.copyWith(
+                          fontWeight: bold,
+                          fontSize: MediaQuery.of(context).size.width * 0.1),
+                    ),
+                    alignment: Alignment.centerLeft,
                   ),
                   SizedBox(
                     height: 20,
                   ),
                   Container(
+                    padding: EdgeInsets.only(left: 30, right: 30),
                     height: MediaQuery.of(context).size.height * 0.15,
                     width: MediaQuery.of(context).size.width * 0.9,
                     decoration: BoxDecoration(
-                        color: primaryButtonColor,
-                        borderRadius: BorderRadius.circular(12)),
+                      color: primaryButtonColor,
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Text(
+                      'Day 3',
+                      style: whiteTextStyle.copyWith(
+                          fontWeight: bold,
+                          fontSize: MediaQuery.of(context).size.width * 0.1),
+                    ),
+                    alignment: Alignment.centerLeft,
                   ),
                   SizedBox(
                     height: 20,
                   ),
                   Container(
+                    padding: EdgeInsets.only(left: 30, right: 30),
                     height: MediaQuery.of(context).size.height * 0.15,
                     width: MediaQuery.of(context).size.width * 0.9,
                     decoration: BoxDecoration(
-                        color: primaryButtonColor,
-                        borderRadius: BorderRadius.circular(12)),
+                      color: primaryButtonColor,
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Text(
+                      'Day 4',
+                      style: whiteTextStyle.copyWith(
+                          fontWeight: bold,
+                          fontSize: MediaQuery.of(context).size.width * 0.1),
+                    ),
+                    alignment: Alignment.centerLeft,
                   ),
                   SizedBox(
                     height: 20,
