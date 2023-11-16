@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:panicattack_app/constans.dart';
+import 'package:panicattack_app/utils/goal_util.dart';
 
 class GoalsDayPage extends StatefulWidget {
   final int day;
@@ -17,7 +18,7 @@ class _GoalsDayPageState extends State<GoalsDayPage> {
   @override
   void initState() {
     super.initState();
-    _dayContent = getDayContent(widget.day);
+    _dayContent = getDayContent(widget.day, widget.anxietyLevel);
   }
 
   @override
@@ -102,7 +103,7 @@ class _GoalsDayPageState extends State<GoalsDayPage> {
                                   ),
                                 ),
                                 Image.asset(
-                                  'lib/assets/images/Breathing exercise-amico.png',
+                                  content.imagePath,
                                   width:
                                       MediaQuery.of(context).size.height * 0.13,
                                   fit: BoxFit.contain,
@@ -130,7 +131,8 @@ class _GoalsDayPageState extends State<GoalsDayPage> {
                                           fontSize: MediaQuery.of(context)
                                                   .size
                                                   .height *
-                                              0.03),
+                                              0.03,
+                                          fontWeight: bold),
                                     ),
                                   ],
                                 ),
@@ -147,45 +149,5 @@ class _GoalsDayPageState extends State<GoalsDayPage> {
         ),
       ),
     );
-  }
-}
-
-class DayContent {
-  final String title;
-  final String description;
-  final String duration;
-
-  DayContent({
-    required this.title,
-    required this.description,
-    required this.duration,
-  });
-}
-
-List<DayContent> getDayContent(int day) {
-  switch (day) {
-    case 1:
-      return [
-        DayContent(
-          title: 'Tarik Nafas Panjang',
-          description: 'Deskripsi latihan 1',
-          duration: '00:30',
-        ),
-        DayContent(
-          title: 'Relaksasi',
-          description: 'Deskripsi latihan 2',
-          duration: '01:00',
-        ),
-      ];
-    case 2:
-      return [
-        // Konten untuk Day 2
-      ];
-    case 3:
-      return [
-        // Konten untuk Day 3
-      ];
-    default:
-      return [];
   }
 }
