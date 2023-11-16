@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_countdown_timer/current_remaining_time.dart';
+import 'package:flutter_countdown_timer/flutter_countdown_timer.dart';
 import 'package:panicattack_app/constans.dart';
 import 'package:panicattack_app/utils/goal_util.dart';
+import 'package:panicattack_app/utils/navigation_util.dart';
 
 class ContentDetailPage extends StatelessWidget {
   final DayContent content;
+  final List<DayContent> contentList;
 
-  ContentDetailPage({required this.content});
+  ContentDetailPage({required this.content, required this.contentList});
 
   @override
   Widget build(BuildContext context) {
@@ -38,12 +42,33 @@ class ContentDetailPage extends StatelessWidget {
                 )
               ],
             ),
-            Text(
-              content.duration,
-              style: textStyle.copyWith(
-                  fontSize: MediaQuery.of(context).size.width * 0.09,
-                  fontWeight: bold),
+            CountdownTimer(
+              endTime: DateTime.now().millisecondsSinceEpoch +
+                  content.durasi.inMilliseconds,
+              widgetBuilder: (_, CurrentRemainingTime? time) {
+                if (time == null) {
+                  return Text(
+                    'Waktu Habis',
+                    style: textStyle.copyWith(
+                      fontSize: MediaQuery.of(context).size.width * 0.09,
+                      fontWeight: bold,
+                    ),
+                  );
+                }
+                return Text(
+                  '${time.min ?? 0}:${time.sec ?? 0}',
+                  style: textStyle.copyWith(
+                    fontSize: MediaQuery.of(context).size.width * 0.09,
+                    fontWeight: bold,
+                  ),
+                );
+              },
+              onEnd: () {
+                // Panggil fungsi untuk pindah ke konten selanjutnya
+                moveToNextContent(context);
+              },
             ),
+
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -81,5 +106,29 @@ class ContentDetailPage extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  void moveToNextContent(BuildContext context) {
+    // Logika untuk pindah ke konten selanjutnya di hari yang sama
+    // Ganti kode berikut sesuai dengan logika navigasi atau pengelolaan konten selanjutnya
+    int currentIndex = contentList.indexOf(content);
+
+    if (currentIndex < contentList.length - 1) {
+      // Belum mencapai konten terakhir
+      DayContent nextContent = contentList[currentIndex + 1];
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => ContentDetailPage(
+            content: nextContent,
+            contentList: contentList,
+          ),
+        ),
+      );
+    } else {
+      // Sudah mencapai konten terakhir di hari yang sama
+      print('Sudah mencapai konten terakhir di hari yang sama');
+      // Bisa tambahkan logika lain jika diperlukan
+    }
   }
 }

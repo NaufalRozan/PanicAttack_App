@@ -88,7 +88,8 @@ class _GoalsDayPageState extends State<GoalsDayPage> {
                               context,
                               MaterialPageRoute(
                                 builder: (context) =>
-                                    ContentDetailPage(content: content),
+                                    ContentDetailPage(content: content, contentList: _dayContent),
+
                               ),
                             );
                           },
