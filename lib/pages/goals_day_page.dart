@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:panicattack_app/constans.dart';
+import 'package:panicattack_app/pages/content_detail_page.dart';
 import 'package:panicattack_app/utils/goal_util.dart';
 
 class GoalsDayPage extends StatefulWidget {
@@ -81,7 +82,16 @@ class _GoalsDayPageState extends State<GoalsDayPage> {
                     Column(
                       children: [
                         GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            // Navigasi ke halaman detail konten dengan membawa data konten
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) =>
+                                    ContentDetailPage(content: content),
+                              ),
+                            );
+                          },
                           child: Container(
                             margin: EdgeInsets.only(
                                 bottom: 20), // Jarak antar DayContent
