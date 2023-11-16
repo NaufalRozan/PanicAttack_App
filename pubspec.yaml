@@ -38,6 +38,8 @@ dependencies:
   firebase_auth: ^4.10.1
   google_fonts: ^6.1.0
   cloud_firestore: ^4.11.0
+  flutter_countdown_timer: ^4.1.0
+
 
 dev_dependencies:
   flutter_test:
