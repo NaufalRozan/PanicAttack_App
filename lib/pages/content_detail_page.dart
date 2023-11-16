@@ -16,7 +16,7 @@ class ContentDetailPage extends StatelessWidget {
           children: [
             // Menambahkan gambar ke dalam Column
             Image.asset(
-              content.imagePath,
+              content.gifPath,
               width: double.infinity,
               fit: BoxFit.cover,
             ),
