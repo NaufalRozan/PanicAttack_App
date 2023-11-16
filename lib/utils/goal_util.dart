@@ -3,10 +3,17 @@ List<DayContent> getDayContent(int day, String anxietyLevel) {
     case 1:
       return getDay1Content(anxietyLevel);
     case 2:
+      return getDay2Content(anxietyLevel);
     case 3:
-      return [
-        // Konten untuk Day 3 dengan gambar yang sesuai
-      ];
+      return getDay3Content(anxietyLevel);
+    case 4:
+      return getDay4Content(anxietyLevel);
+    case 5:
+      return getDay5Content(anxietyLevel);
+    case 6:
+      return getDay6Content(anxietyLevel);
+    case 7:
+      return getDay7Content(anxietyLevel);
     default:
       return [];
   }
@@ -31,45 +38,1107 @@ List<DayContent> getDay1Content(String anxietyLevel) {
     case 'Anxiety Level Low':
       return [
         DayContent(
-          title: 'Latihan 1 - Level Low',
+          title: 'Perbaiki Kualitas\nPenapasan',
           description: 'Deskripsi latihan 1 untuk level low',
           duration: '00:30',
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
         ),
         DayContent(
-          title: 'Latihan 2 - Level Low',
+          title: 'Peregangan Tangan',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Kaki',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Leher',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Jalan Kecil-Kecil',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meminum Segelas\nAir Mineral',
           description: 'Deskripsi latihan 2 untuk level low',
           duration: '01:00',
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
         ),
       ];
-    case 'Anxiety Level Medium':
+    case 'Anxiety Level Mid':
       return [
         DayContent(
-          title: 'Latihan 1 - Level Medium',
-          description: 'Deskripsi latihan 1 untuk level medium',
-          duration: '00:45',
+          title: 'Perbaiki Kualitas\nPenapasan',
+          description: 'Deskripsi latihan 1 untuk level low',
+          duration: '00:30',
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
         ),
         DayContent(
-          title: 'Latihan 2 - Level Medium',
-          description: 'Deskripsi latihan 2 untuk level medium',
-          duration: '01:15',
+          title: 'Peregangan Tangan',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Kaki',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Leher',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Jalan Kecil-Kecil',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meminum Segelas\nAir Mineral',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Mendengarkan Musik\nRelaksasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meditasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
         ),
       ];
     case 'Anxiety Level High':
       return [
         DayContent(
-          title: 'Latihan 1 - Level High',
-          description: 'Deskripsi latihan 1 untuk level high',
+          title: 'Perbaiki Kualitas\nPenapasan',
+          description: 'Deskripsi latihan 1 untuk level low',
+          duration: '00:30',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Tangan',
+          description: 'Deskripsi latihan 2 untuk level low',
           duration: '01:00',
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
         ),
         DayContent(
-          title: 'Latihan 2 - Level High',
-          description: 'Deskripsi latihan 2 untuk level high',
-          duration: '01:30',
+          title: 'Peregangan Kaki',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Leher',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Jalan Kecil-Kecil',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meminum Segelas\nAir Mineral',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Mendengarkan Musik\nRelaksasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meditasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Tersenyum',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Berbicara Di Depan\nCermin',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+      ];
+    default:
+      return [];
+  }
+}
+List<DayContent> getDay2Content(String anxietyLevel) {
+  switch (anxietyLevel) {
+    case 'Anxiety Level Low':
+      return [
+        DayContent(
+          title: 'Perbaiki Kualitas\nPenapasan',
+          description: 'Deskripsi latihan 1 untuk level low',
+          duration: '00:30',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Tangan',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Kaki',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Leher',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Jalan Kecil-Kecil',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meminum Segelas\nAir Mineral',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+      ];
+    case 'Anxiety Level Mid':
+      return [
+        DayContent(
+          title: 'Perbaiki Kualitas\nPenapasan',
+          description: 'Deskripsi latihan 1 untuk level low',
+          duration: '00:30',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Tangan',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Kaki',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Leher',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Jalan Kecil-Kecil',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meminum Segelas\nAir Mineral',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Mendengarkan Musik\nRelaksasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meditasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+      ];
+    case 'Anxiety Level High':
+      return [
+        DayContent(
+          title: 'Perbaiki Kualitas\nPenapasan',
+          description: 'Deskripsi latihan 1 untuk level low',
+          duration: '00:30',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Tangan',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Kaki',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Leher',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Jalan Kecil-Kecil',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meminum Segelas\nAir Mineral',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Mendengarkan Musik\nRelaksasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meditasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Tersenyum',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Berbicara Di Depan\nCermin',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+      ];
+    default:
+      return [];
+  }
+}
+List<DayContent> getDay3Content(String anxietyLevel) {
+  switch (anxietyLevel) {
+    case 'Anxiety Level Low':
+      return [
+        DayContent(
+          title: 'Perbaiki Kualitas\nPenapasan',
+          description: 'Deskripsi latihan 1 untuk level low',
+          duration: '00:30',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Tangan',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Kaki',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Leher',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Jalan Kecil-Kecil',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meminum Segelas\nAir Mineral',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+      ];
+    case 'Anxiety Level Mid':
+      return [
+        DayContent(
+          title: 'Perbaiki Kualitas\nPenapasan',
+          description: 'Deskripsi latihan 1 untuk level low',
+          duration: '00:30',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Tangan',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Kaki',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Leher',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Jalan Kecil-Kecil',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meminum Segelas\nAir Mineral',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Mendengarkan Musik\nRelaksasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meditasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+      ];
+    case 'Anxiety Level High':
+      return [
+        DayContent(
+          title: 'Perbaiki Kualitas\nPenapasan',
+          description: 'Deskripsi latihan 1 untuk level low',
+          duration: '00:30',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Tangan',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Kaki',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Leher',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Jalan Kecil-Kecil',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meminum Segelas\nAir Mineral',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Mendengarkan Musik\nRelaksasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meditasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Tersenyum',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Berbicara Di Depan\nCermin',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+      ];
+    default:
+      return [];
+  }
+}
+List<DayContent> getDay4Content(String anxietyLevel) {
+  switch (anxietyLevel) {
+    case 'Anxiety Level Low':
+      return [
+        DayContent(
+          title: 'Perbaiki Kualitas\nPenapasan',
+          description: 'Deskripsi latihan 1 untuk level low',
+          duration: '00:30',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Tangan',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Kaki',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Leher',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Jalan Kecil-Kecil',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meminum Segelas\nAir Mineral',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+      ];
+    case 'Anxiety Level Mid':
+      return [
+        DayContent(
+          title: 'Perbaiki Kualitas\nPenapasan',
+          description: 'Deskripsi latihan 1 untuk level low',
+          duration: '00:30',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Tangan',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Kaki',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Leher',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Jalan Kecil-Kecil',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meminum Segelas\nAir Mineral',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Mendengarkan Musik\nRelaksasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meditasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+      ];
+    case 'Anxiety Level High':
+      return [
+        DayContent(
+          title: 'Perbaiki Kualitas\nPenapasan',
+          description: 'Deskripsi latihan 1 untuk level low',
+          duration: '00:30',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Tangan',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Kaki',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Leher',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Jalan Kecil-Kecil',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meminum Segelas\nAir Mineral',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Mendengarkan Musik\nRelaksasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meditasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Tersenyum',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Berbicara Di Depan\nCermin',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+      ];
+    default:
+      return [];
+  }
+}
+List<DayContent> getDay5Content(String anxietyLevel) {
+  switch (anxietyLevel) {
+    case 'Anxiety Level Low':
+      return [
+        DayContent(
+          title: 'Perbaiki Kualitas\nPenapasan',
+          description: 'Deskripsi latihan 1 untuk level low',
+          duration: '00:30',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Tangan',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Kaki',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Leher',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Jalan Kecil-Kecil',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meminum Segelas\nAir Mineral',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+      ];
+    case 'Anxiety Level Mid':
+      return [
+        DayContent(
+          title: 'Perbaiki Kualitas\nPenapasan',
+          description: 'Deskripsi latihan 1 untuk level low',
+          duration: '00:30',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Tangan',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Kaki',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Leher',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Jalan Kecil-Kecil',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meminum Segelas\nAir Mineral',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Mendengarkan Musik\nRelaksasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meditasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+      ];
+    case 'Anxiety Level High':
+      return [
+        DayContent(
+          title: 'Perbaiki Kualitas\nPenapasan',
+          description: 'Deskripsi latihan 1 untuk level low',
+          duration: '00:30',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Tangan',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Kaki',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Leher',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Jalan Kecil-Kecil',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meminum Segelas\nAir Mineral',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Mendengarkan Musik\nRelaksasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meditasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Tersenyum',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Berbicara Di Depan\nCermin',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+      ];
+    default:
+      return [];
+  }
+}
+List<DayContent> getDay6Content(String anxietyLevel) {
+  switch (anxietyLevel) {
+    case 'Anxiety Level Low':
+      return [
+        DayContent(
+          title: 'Perbaiki Kualitas\nPenapasan',
+          description: 'Deskripsi latihan 1 untuk level low',
+          duration: '00:30',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Tangan',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Kaki',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Leher',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Jalan Kecil-Kecil',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meminum Segelas\nAir Mineral',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+      ];
+    case 'Anxiety Level Mid':
+      return [
+        DayContent(
+          title: 'Perbaiki Kualitas\nPenapasan',
+          description: 'Deskripsi latihan 1 untuk level low',
+          duration: '00:30',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Tangan',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Kaki',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Leher',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Jalan Kecil-Kecil',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meminum Segelas\nAir Mineral',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Mendengarkan Musik\nRelaksasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meditasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+      ];
+    case 'Anxiety Level High':
+      return [
+        DayContent(
+          title: 'Perbaiki Kualitas\nPenapasan',
+          description: 'Deskripsi latihan 1 untuk level low',
+          duration: '00:30',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Tangan',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Kaki',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Leher',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Jalan Kecil-Kecil',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meminum Segelas\nAir Mineral',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Mendengarkan Musik\nRelaksasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meditasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Tersenyum',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Berbicara Di Depan\nCermin',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+      ];
+    default:
+      return [];
+  }
+}
+List<DayContent> getDay7Content(String anxietyLevel) {
+  switch (anxietyLevel) {
+    case 'Anxiety Level Low':
+      return [
+        DayContent(
+          title: 'Perbaiki Kualitas\nPenapasan',
+          description: 'Deskripsi latihan 1 untuk level low',
+          duration: '00:30',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Tangan',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Kaki',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Leher',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Jalan Kecil-Kecil',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meminum Segelas\nAir Mineral',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+      ];
+    case 'Anxiety Level Mid':
+      return [
+        DayContent(
+          title: 'Perbaiki Kualitas\nPenapasan',
+          description: 'Deskripsi latihan 1 untuk level low',
+          duration: '00:30',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Tangan',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Kaki',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Leher',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Jalan Kecil-Kecil',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meminum Segelas\nAir Mineral',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Mendengarkan Musik\nRelaksasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meditasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+      ];
+    case 'Anxiety Level High':
+      return [
+        DayContent(
+          title: 'Perbaiki Kualitas\nPenapasan',
+          description: 'Deskripsi latihan 1 untuk level low',
+          duration: '00:30',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Tangan',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Kaki',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Peregangan Leher',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Jalan Kecil-Kecil',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meminum Segelas\nAir Mineral',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Mendengarkan Musik\nRelaksasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Meditasi',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Tersenyum',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
+          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
+        ),
+        DayContent(
+          title: 'Berbicara Di Depan\nCermin',
+          description: 'Deskripsi latihan 2 untuk level low',
+          duration: '01:00',
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
         ),
       ];
