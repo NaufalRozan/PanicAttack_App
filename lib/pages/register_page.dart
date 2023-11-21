@@ -32,41 +32,42 @@ class _RegisterPageState extends State<RegisterPage> {
 
   // auth
   void signUp() async {
-  try {
-    await FirebaseAuth.instance.createUserWithEmailAndPassword(
-      email: _emailContoller.text.trim(),
-      password: _passwordController.text.trim(),
-    );
-  } on FirebaseAuthException {
-    showDialog(
-      context: context,
-      builder: (context) {
-        return AlertDialog(
-          content: Text('Silakan isi dengan benar'),
-        );
-      },
+    try {
+      await FirebaseAuth.instance.createUserWithEmailAndPassword(
+        email: _emailContoller.text.trim(),
+        password: _passwordController.text.trim(),
+      );
+    } on FirebaseAuthException {
+      showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            content: Text('Silakan isi dengan benar'),
+          );
+        },
+      );
+    }
+
+    addUserDetails(
+      _userNameController.text.trim(),
+      _phoneController.text.trim(),
+      _emailContoller.text.trim(),
     );
   }
 
-  addUserDetails(
-    _userNameController.text.trim(),
-    _phoneController.text.trim(),
-    _emailContoller.text.trim(),
-  );
-}
+  Future addUserDetails(String userName, String phone, String email) async {
+    final currentUser = FirebaseAuth.instance.currentUser;
+    final userDoc =
+        FirebaseFirestore.instance.collection('users').doc(currentUser!.uid);
 
-Future addUserDetails(String userName, String phone, String email) async {
-  final currentUser = FirebaseAuth.instance.currentUser;
-  final userDoc = FirebaseFirestore.instance.collection('users').doc(currentUser!.uid);
-
-  await userDoc.set({
-    'username': userName,
-    'phone': phone,
-    'email': email,
-    'anxietyScore': 0, // Inisialisasi skor kecemasan ke 0
-    'anxietyLevel': 'Unknown', // Inisialisasi tingkat kecemasan
-  });
-}
+    await userDoc.set({
+      'username': userName,
+      'phone': phone,
+      'email': email,
+      'anxietyScore': 0, // Inisialisasi skor kecemasan ke 0
+      'anxietyLevel': 'Unknown', // Inisialisasi tingkat kecemasan
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -84,7 +85,7 @@ Future addUserDetails(String userName, String phone, String email) async {
               //Icon
               Image.asset(
                 'lib/assets/images/Mobile login-amico (1).png',
-                height: _calculateIconHeight(context),
+                height: MediaQuery.of(context).size.height * 0.35,
               ),
 
               //Header
@@ -214,14 +215,5 @@ Future addUserDetails(String userName, String phone, String email) async {
         ),
       ),
     );
-  }
-
-  double _calculateIconHeight(BuildContext context) {
-    double screenHeight = MediaQuery.of(context).size.height;
-    double availableHeight = screenHeight -
-        MediaQuery.of(context).padding.top -
-        MediaQuery.of(context).padding.bottom -
-        180;
-    return availableHeight / 2;
   }
 }

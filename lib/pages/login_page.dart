@@ -26,7 +26,8 @@ class _LoginPageState extends State<LoginPage> {
         context: context,
         builder: (context) {
           return AlertDialog(
-            content: Text('Silakan masukkan email dan kata sandi Anda dengan benar'),
+            content:
+                Text('Silakan masukkan email dan kata sandi Anda dengan benar'),
           );
         },
       );
@@ -56,7 +57,7 @@ class _LoginPageState extends State<LoginPage> {
               //Icon
               Image.asset(
                 'lib/assets/images/Sport family-pana.png',
-                height: _calculateIconHeight(context),
+                height: MediaQuery.of(context).size.height * 0.35,
               ),
               //Header
               Text(
@@ -185,13 +186,5 @@ class _LoginPageState extends State<LoginPage> {
         ),
       ),
     );
-  }
-  double _calculateIconHeight(BuildContext context) {
-    double screenHeight = MediaQuery.of(context).size.height;
-    double availableHeight = screenHeight -
-        MediaQuery.of(context).padding.top -
-        MediaQuery.of(context).padding.bottom -
-        180;
-    return availableHeight / 2;
   }
 }

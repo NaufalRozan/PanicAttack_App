@@ -58,7 +58,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
             children: [
               Image.asset(
                 'lib/assets/images/Emails-amico.png',
-                height: _calculateIconHeight(context),
+                height: MediaQuery.of(context).size.height * 0.35,
               ),
 
               //Header
@@ -135,13 +135,5 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
         ),
       ),
     );
-  }
-  double _calculateIconHeight(BuildContext context) {
-    double screenHeight = MediaQuery.of(context).size.height;
-    double availableHeight = screenHeight -
-        MediaQuery.of(context).padding.top -
-        MediaQuery.of(context).padding.bottom -
-        180;
-    return availableHeight / 2;
   }
 }
