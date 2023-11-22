@@ -1,3 +1,5 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:panicattack_app/constans.dart';
 import 'package:panicattack_app/pages/content_detail_page.dart';
@@ -14,12 +16,39 @@ class GoalsDayPage extends StatefulWidget {
 }
 
 class _GoalsDayPageState extends State<GoalsDayPage> {
-  late List<DayContent> _dayContent;
+  late List<DayContent> _dayContent = [];
 
   @override
   void initState() {
     super.initState();
-    _dayContent = getDayContent(widget.day, widget.anxietyLevel);
+    _loadDayContent();
+  }
+
+  Future<void> _loadDayContent() async {
+    List<DayContent> dayContent =
+        getDayContent(widget.day, widget.anxietyLevel);
+    await _getCompletedStatus(dayContent);
+
+    setState(() {
+      _dayContent = dayContent;
+    });
+  }
+
+  Future<void> _getCompletedStatus(List<DayContent> dayContent) async {
+    final currentUser = FirebaseAuth.instance.currentUser;
+    final userDoc =
+        FirebaseFirestore.instance.collection('users').doc(currentUser!.uid);
+
+    for (DayContent content in dayContent) {
+      DocumentSnapshot doc =
+          await userDoc.collection('completedContents').doc(content.id).get();
+      if (doc.exists) {
+        // Update status completed berdasarkan data Firestore
+        setState(() {
+          content.completed = doc['completed'] ?? false;
+        });
+      }
+    }
   }
 
   @override
@@ -83,23 +112,22 @@ class _GoalsDayPageState extends State<GoalsDayPage> {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            // Navigasi ke halaman detail konten dengan membawa data konten
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) =>
-                                    ContentDetailPage(content: content, contentList: _dayContent),
-
+                                builder: (context) => ContentDetailPage(
+                                    content: content, contentList: _dayContent),
                               ),
                             );
                           },
                           child: Container(
-                            margin: EdgeInsets.only(
-                                bottom: 20), // Jarak antar DayContent
+                            margin: EdgeInsets.only(bottom: 20),
                             height: MediaQuery.of(context).size.height * 0.18,
                             width: MediaQuery.of(context).size.width * 0.9,
                             decoration: BoxDecoration(
-                              color: whiteColor,
+                              color: content.completed
+                                  ? primaryButtonColor
+                                  : whiteColor,
                               borderRadius: BorderRadius.circular(12),
                               border: Border.all(
                                 width: 1,
@@ -109,9 +137,7 @@ class _GoalsDayPageState extends State<GoalsDayPage> {
                             child: Row(
                               children: [
                                 Padding(
-                                  padding: EdgeInsets.only(
-                                    left: 15,
-                                  ),
+                                  padding: EdgeInsets.only(left: 15),
                                 ),
                                 Image.asset(
                                   content.imagePath,
@@ -127,11 +153,14 @@ class _GoalsDayPageState extends State<GoalsDayPage> {
                                     Text(
                                       content.title,
                                       style: textStyle.copyWith(
-                                          fontSize: MediaQuery.of(context)
-                                                  .size
-                                                  .height *
-                                              0.03,
-                                          fontWeight: bold),
+                                        fontSize:
+                                            MediaQuery.of(context).size.height *
+                                                0.03,
+                                        fontWeight: bold,
+                                        color: content.completed
+                                  ? whiteColor
+                                  : textColor,
+                                      ),
                                     ),
                                     SizedBox(
                                       height: 10,
@@ -139,14 +168,14 @@ class _GoalsDayPageState extends State<GoalsDayPage> {
                                     Text(
                                       content.duration,
                                       style: greyTextStyle.copyWith(
-                                          fontSize: MediaQuery.of(context)
-                                                  .size
-                                                  .height *
-                                              0.03,
-                                          fontWeight: bold),
+                                        fontSize:
+                                            MediaQuery.of(context).size.height *
+                                                0.03,
+                                        fontWeight: bold,
+                                      ),
                                     ),
                                   ],
-                                ),
+                                ),                               
                               ],
                             ),
                           ),
