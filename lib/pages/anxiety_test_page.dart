@@ -14,20 +14,23 @@ class AnxietyTestPage extends StatefulWidget {
 class _AnxietyTestPageState extends State<AnxietyTestPage> {
   int currentQuestion = 0;
   List<int?> selectedValues =
-      List.filled(10, null); // List untuk menyimpan jawaban setiap pertanyaan
+      List.filled(13, null); // List untuk menyimpan jawaban setiap pertanyaan
   int totalScore = 0; // Skor total dari tes
 
   List<String> questions = [
-    'Apakah Anda pernah mengalami serangan panik?',
-    'Apakah serangan panik yang Anda alami terjadi secara tiba-tiba tanpa alasan yang jelas?',
-    'Apakah Anda merasa takut atau cemas saat menghadapi situasi yang sebelumnya pernah memicu serangan panik?',
-    'Apakah Anda merasa sulit untuk mengendalikan perasaan takut atau cemas saat mengalami serangan panik?',
-    'Apakah Anda merasa kesulitan untuk berkomunikasi atau bersosialisasi dengan orang baru karena takut mengalami serangan panik?',
-    'Apakah Anda merasa khawatir atau cemas secara berlebihan tanpa alasan yang jelas?',
-    'Apakah Anda merasa kesulitan untuk berkonsentrasi atau sulit tidur karena kecemasan yang Anda alami?',
-    'Apakah Anda merasa takut atau cemas saat berhadapan dengan objek atau situasi tertentu?',
-    'Apakah Anda pernah mengalami peristiwa traumatis yang menyebabkan Anda mengalami kecemasan berlebihan?',
-    'Apakah Anda merasa kesulitan untuk mengendalikan perasaan takut atau cemas yang Anda alami?',
+    'Apakah anda merasakan perasaan Ansietas seperti cemas, perasaan buruk, takut akan pikiran sendiri, dan mudah teringgung?',
+    'Apakah anda merasakan ketegangan seperti merasa tegang, lesu, tak bisa istirahat tenang, mudah terkejut, mudah menangis, gemetar, dan gelisah?',
+    'Apakah Anda merasakan ketakutan seperti pada gelap, pada orang asing, ditinggal sendiri, pada kerumunan orang banyak dan lainnya?',
+    'Apakah Anda merasakan gangguan tidur seperti susah tidur, terbangun malam hari, tidak nyenyak, bangun dengan lesu, banyak mimpi-mimpi, mimpi buruk, dan mimpi menakutkan?',
+    'Apakah Anda merasakan gangguan kecerdasan seperti susah berkonsentrasi, dan daya ingat buruk?',
+    'Apakah Anda merasakan perasaan depresi seperti hilangnya minat, berkurangnya kesenangan pada hobi, sedih, bangun dini hari, dan perasaan berubah-ubah sepanjang hari?',
+    'Apakah Anda merasakan gejala somatik (otot) seperti sakit atau nyeri otot, kaku, kedutan otot, gigi gemerutuk, dan suara tidak stabil?',
+    'Apakah Anda merasakan gejala somatik (sensorik) seperti tinitus, penglihatan kabur, muka merah atau pucat, merasa lemah, dan perasaan di tusuk-tusuk?',
+    'Apakah Anda merasakan gejala kadiovaskuler seperti seperti berdebar, nyeri di dada, denyut nadi mengeras, dan perasaan lesu atau lemas seperti akan pingsan?',
+    'Apakah Anda merasakan gejala respirator seperti merasa tertekan atau sempit di dada, merasa tercekik, sering menarik napas, dan napas pendek atau sesak?',
+    'Apakah Anda merasakan gejala pencernaan seperti sulit menelan, perut melilit, gangguan pencernaan, nyer sebelum dan sesudah makan, mual, dan lainnya?',
+    'Apakah Anda merasakan gejala urogenital seperti sering buang air kecil, tidak dapat menahan air seni, tidak menstruasi pada perempuan, ereksi hilang, dan lainnya?',
+    'Apakah Anda merasakan gejala otonom seperti mulut kering, muka merah, mudah berkeringat, pusing, dan sakit kepala?',
   ];
 
   @override
@@ -89,8 +92,7 @@ class _AnxietyTestPageState extends State<AnxietyTestPage> {
                 borderRadius: BorderRadius.circular(12),
               ),
               child: RadioListTile(
-                title: Text('Kadang-kadang',
-                    style: textStyle.copyWith(fontSize: 20)),
+                title: Text('Jarang', style: textStyle.copyWith(fontSize: 20)),
                 value: 1,
                 groupValue: selectedValues[currentQuestion],
                 onChanged: (value) {
@@ -110,8 +112,51 @@ class _AnxietyTestPageState extends State<AnxietyTestPage> {
                 borderRadius: BorderRadius.circular(12),
               ),
               child: RadioListTile(
-                title: Text('Sering', style: textStyle.copyWith(fontSize: 20)),
+                title: Text('Kadang-kadang',
+                    style: textStyle.copyWith(fontSize: 20)),
                 value: 2,
+                groupValue: selectedValues[currentQuestion],
+                onChanged: (value) {
+                  setState(() {
+                    selectedValues[currentQuestion] = value;
+                  });
+                },
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: whiteColor,
+                border: Border.all(color: Colors.white),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: RadioListTile(
+                title:
+                    Text('Sering', style: textStyle.copyWith(fontSize: 20)),
+                value: 3,
+                groupValue: selectedValues[currentQuestion],
+                onChanged: (value) {
+                  setState(() {
+                    selectedValues[currentQuestion] = value;
+                  });
+                },
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: whiteColor,
+                border: Border.all(color: Colors.white),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: RadioListTile(
+                title: Text('Selalu',
+                    style: textStyle.copyWith(fontSize: 20)),
+                value: 4,
                 groupValue: selectedValues[currentQuestion],
                 onChanged: (value) {
                   setState(() {
@@ -141,14 +186,16 @@ class _AnxietyTestPageState extends State<AnxietyTestPage> {
                     primary:
                         Colors.white, // Sesuaikan dengan warna yang diinginkan
                   ),
-                  child: Text('Kembali',
-                  style: textStyle,),
+                  child: Text(
+                    'Kembali',
+                    style: textStyle,
+                  ),
                 ),
 
 // Tombol Lanjut atau Hitung Skor
                 ElevatedButton(
                   onPressed: () {
-                    if (currentQuestion < 9) {
+                    if (currentQuestion < 12) {
                       setState(() {
                         currentQuestion++;
                       });
@@ -167,8 +214,10 @@ class _AnxietyTestPageState extends State<AnxietyTestPage> {
                     primary:
                         Colors.white, // Sesuaikan dengan warna yang diinginkan
                   ),
-                  child: Text(currentQuestion < 9 ? 'Lanjut' : 'Hitung Skor',
-                  style: textStyle,),
+                  child: Text(
+                    currentQuestion < 12 ? 'Lanjut' : 'Hitung Skor',
+                    style: textStyle,
+                  ),
                 ),
               ],
             ),
@@ -199,9 +248,9 @@ class _AnxietyTestPageState extends State<AnxietyTestPage> {
   }
 
   String determineAnxietyLevel(int score) {
-    if (score >= 0 && score <= 6) {
+    if (score >= 0 && score <= 16) {
       return 'Anxiety Level Low';
-    } else if (score >= 7 && score <= 13) {
+    } else if (score >= 17 && score <= 34) {
       return 'Anxiety Level Mid';
     } else {
       return 'Anxiety Level High';

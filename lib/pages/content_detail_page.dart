@@ -44,16 +44,20 @@ class _ContentDetailPageState extends State<ContentDetailPage> {
                   fontWeight: bold),
               textAlign: TextAlign.center,
             ),
-            Wrap(
-              runSpacing: 10,
-              spacing: 10,
-              children: [
-                Text(
-                  widget.content.description,
-                  style: textStyle.copyWith(
-                      fontSize: MediaQuery.of(context).size.width * 0.05),
-                )
-              ],
+            Padding(
+              padding: const EdgeInsets.only(right: 10, left: 10),
+              child: Wrap(
+                runSpacing: 10,
+                spacing: 10,
+                children: [
+                  Text(
+                    widget.content.description,
+                    style: textStyle.copyWith(
+                        fontSize: MediaQuery.of(context).size.width * 0.05),
+                        textAlign: TextAlign.center,
+                  )
+                ],
+              ),
             ),
             timerStarted
                 ? CountdownTimer(
@@ -112,6 +116,7 @@ class _ContentDetailPageState extends State<ContentDetailPage> {
                 ),
                 Row(
                   children: [
+                    
                     Text(
                       'Selanjutnya',
                       style: secondaryTextStyle.copyWith(

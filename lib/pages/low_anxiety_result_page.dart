@@ -20,7 +20,7 @@ class _LowAnxietyResultPageState extends State<LowAnxietyResultPage> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "Cognitive Behavior\nTest Result",
+                "Hasil Tes\nGejala Kecemasan",
                 style: textStyle.copyWith(
                     fontSize: MediaQuery.of(context).size.width * 0.07,
                     fontWeight: bold),
@@ -43,16 +43,16 @@ class _LowAnxietyResultPageState extends State<LowAnxietyResultPage> {
                 ),
               ),
               Text(
-                "Anxiety Level Low",
+                "Tingkat Kecemasan Rendah",
                 style: textStyle.copyWith(
                     fontSize: MediaQuery.of(context).size.width * 0.07,
                     fontWeight: bold),
                 textAlign: TextAlign.center,
               ),
               Text(
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "Gejala panik pada tingkat rendah biasanya terasa lebih terkendali, namun tetap dapat mengganggu. Pada tingkat ini, fokus utamanya adalah meredakan gejala dan menciptakan perasaan tenang.",
                 style: textStyle.copyWith(
-                  fontSize: MediaQuery.of(context).size.width * 0.04,
+                  fontSize: MediaQuery.of(context).size.width * 0.045,
                 ),
                 textAlign: TextAlign.center,
               ),
@@ -73,7 +73,7 @@ class _LowAnxietyResultPageState extends State<LowAnxietyResultPage> {
                   ),
                   child: Center(
                     child: Text(
-                      'Go to Goals Page',
+                      'Kembali ke halaman utama',
                       style: whiteTextStyle.copyWith(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,

@@ -48,7 +48,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         DayContent(
           id: '1',
           title: 'Perbaiki Kualitas\nPenapasan',
-          description: 'Deskripsi latihan 1 untuk level low',
+          description: 'Pastikan perut mengembang dan mengempis saat Anda bernapas. Lakukan dengan ritme napas yang teratur.',
           duration: '00:30',
           durasi: Duration(seconds: 30), // 30 detik
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -58,9 +58,9 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         DayContent(
           id: '2',
           title: 'Peregangan Tangan',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan dapat membantu meredakan ketegangan fisik yang terkait dengan stres',
           duration: '01:00',
-          durasi: Duration(seconds: 30),
+          durasi: Duration(seconds: 60),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
           gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
@@ -68,9 +68,9 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         DayContent(
           id: '3',
           title: 'Peregangan Kaki',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan kaki yang dilakukan dengan pernapasan yang teratur dapat membantu menciptakan perasaan ketenangan dan kedamaian.',
           duration: '01:00',
-          durasi: Duration(seconds: 30),
+          durasi: Duration(seconds: 60),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
           gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
@@ -78,9 +78,9 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         DayContent(
           id: '4',
           title: 'Peregangan Leher',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
-          durasi: Duration(seconds: 30),
+          durasi: Duration(seconds: 60),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
           gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
@@ -88,8 +88,8 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         DayContent(
           id: '5',
           title: 'Jalan Kecil-Kecil',
-          description: 'Deskripsi latihan 2 untuk level low',
-          duration: '01:00',
+          description: 'Berjalan-jalan kecil dapat melepaskan endorfin, hormon peningkat suasana hati yang meredakan stres dan merangsang sistem saraf parasimpatik untuk mengurangi stres.',
+          duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
           gifPath: 'lib/assets/gifs/Breathing exercise.gif',
@@ -98,8 +98,9 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         DayContent(
           id: '6',
           title: 'Meminum Segelas\nAir Mineral',
-          description: 'Deskripsi latihan 2 untuk level low',
-          duration: '01:00',
+          description:
+              'Minum air mineral dapat membantu mengalihkan perhatian dari pikiran yang cemas. Air putih membantu menjaga keseimbangan elektrolit dalam tubuh. ',
+          duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
           gifPath: 'lib/assets/gifs/Breathing exercise.gif',
@@ -111,9 +112,9 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         DayContent(
           id: '7',
           title: 'Perbaiki Kualitas\nPenapasan',
-          description: 'Deskripsi latihan 1 untuk level low',
-          duration: '00:30',
-          durasi: Duration(seconds: 30),
+          description: 'Pastikan perut mengembang dan mengempis saat Anda bernapas. Lakukan dengan ritme napas yang teratur.',
+          duration: '01:00',
+          durasi: Duration(seconds: 60),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
           gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
@@ -121,9 +122,9 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         DayContent(
           id: '8',
           title: 'Peregangan Tangan',
-          description: 'Deskripsi latihan 2 untuk level low',
-          duration: '01:00',
-          durasi: Duration(seconds: 30),
+          description: 'Peregangan dapat membantu meredakan ketegangan fisik yang terkait dengan stres',
+          duration: '01:30',
+          durasi: Duration(seconds: 90),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
           gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
@@ -131,9 +132,9 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         DayContent(
           id: '9',
           title: 'Peregangan Kaki',
-          description: 'Deskripsi latihan 2 untuk level low',
-          duration: '01:00',
-          durasi: Duration(seconds: 30),
+          description: 'Peregangan kaki yang dilakukan dengan pernapasan yang teratur dapat membantu menciptakan perasaan ketenangan dan kedamaian.',
+          duration: '01:30',
+          durasi: Duration(seconds: 90),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
           gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
@@ -141,9 +142,9 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         DayContent(
           id: '10',
           title: 'Peregangan Leher',
-          description: 'Deskripsi latihan 2 untuk level low',
-          duration: '01:00',
-          durasi: Duration(seconds: 30),
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
+          duration: '01:30',
+          durasi: Duration(seconds: 90),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
           gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
@@ -151,8 +152,8 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         DayContent(
           id: '11',
           title: 'Jalan Kecil-Kecil',
-          description: 'Deskripsi latihan 2 untuk level low',
-          duration: '01:00',
+          description: 'Berjalan-jalan kecil dapat melepaskan endorfin, hormon peningkat suasana hati yang meredakan stres dan merangsang sistem saraf parasimpatik untuk mengurangi stres.',
+          duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
           gifPath: 'lib/assets/gifs/Breathing exercise.gif',
@@ -160,9 +161,9 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         ),
         DayContent(
           id: '12',
-          title: 'Meminum Segelas\nAir Mineral',
-          description: 'Deskripsi latihan 2 untuk level low',
-          duration: '01:00',
+          title: 'Peregangan Leher',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
+          duration: '03:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
           gifPath: 'lib/assets/gifs/Breathing exercise.gif',
@@ -171,9 +172,9 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         DayContent(
           id: '13',
           title: 'Mendengarkan Musik\nRelaksasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
-          durasi: Duration(seconds: 30),
+          durasi: Duration(seconds: 60),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
           gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
@@ -181,9 +182,9 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         DayContent(
           id: '14',
           title: 'Meditasi',
-          description: 'Deskripsi latihan 2 untuk level low',
-          duration: '01:00',
-          durasi: Duration(seconds: 30),
+          description: 'Meditasi merangsang respons relaksasi, mengembangkan kesadaran diri, dan meningkatkan kemampuan konsentrasi serta fokus.',
+          duration: '03:00',
+          durasi: Duration(seconds: 180),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
           gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
@@ -194,9 +195,9 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         DayContent(
           id: '15',
           title: 'Perbaiki Kualitas\nPenapasan',
-          description: 'Deskripsi latihan 1 untuk level low',
-          duration: '00:30',
-          durasi: Duration(seconds: 30),
+          description: 'Pastikan perut mengembang dan mengempis saat Anda bernapas. Lakukan dengan ritme napas yang teratur.',
+          duration: '01:30',
+          durasi: Duration(seconds: 90),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
           gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
@@ -204,9 +205,9 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         DayContent(
           id: '16',
           title: 'Peregangan Tangan',
-          description: 'Deskripsi latihan 2 untuk level low',
-          duration: '01:00',
-          durasi: Duration(seconds: 30),
+          description: 'Peregangan dapat membantu meredakan ketegangan fisik yang terkait dengan stres',
+          duration: '02:00',
+          durasi: Duration(seconds: 120),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
           gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
@@ -214,9 +215,9 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         DayContent(
           id: '17',
           title: 'Peregangan Kaki',
-          description: 'Deskripsi latihan 2 untuk level low',
-          duration: '01:00',
-          durasi: Duration(seconds: 30),
+          description: 'Peregangan kaki yang dilakukan dengan pernapasan yang teratur dapat membantu menciptakan perasaan ketenangan dan kedamaian.',
+          duration: '02:00',
+          durasi: Duration(seconds: 120),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
           gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
@@ -224,9 +225,9 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         DayContent(
           id: '18',
           title: 'Peregangan Leher',
-          description: 'Deskripsi latihan 2 untuk level low',
-          duration: '01:00',
-          durasi: Duration(seconds: 30),
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
+          duration: '02:00',
+          durasi: Duration(seconds: 120),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
           gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
@@ -234,8 +235,8 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         DayContent(
           id: '19',
           title: 'Jalan Kecil-Kecil',
-          description: 'Deskripsi latihan 2 untuk level low',
-          duration: '01:00',
+          description: 'Berjalan-jalan kecil dapat melepaskan endorfin, hormon peningkat suasana hati yang meredakan stres dan merangsang sistem saraf parasimpatik untuk mengurangi stres.',
+          duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
           gifPath: 'lib/assets/gifs/Breathing exercise.gif',
@@ -243,9 +244,9 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         ),
         DayContent(
           id: '20',
-          title: 'Meminum Segelas\nAir Mineral',
-          description: 'Deskripsi latihan 2 untuk level low',
-          duration: '01:00',
+          title: 'Peregangan Leher',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
+          duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
           gifPath: 'lib/assets/gifs/Breathing exercise.gif',
@@ -254,9 +255,9 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         DayContent(
           id: '21',
           title: 'Mendengarkan Musik\nRelaksasi',
-          description: 'Deskripsi latihan 2 untuk level low',
-          duration: '01:00',
-          durasi: Duration(seconds: 30),
+          description: 'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
+          duration: '02:00',
+          durasi: Duration(seconds: 120),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
           gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
@@ -264,9 +265,9 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         DayContent(
           id: '22',
           title: 'Meditasi',
-          description: 'Deskripsi latihan 2 untuk level low',
-          duration: '01:00',
-          durasi: Duration(seconds: 30),
+          description: 'Meditasi merangsang respons relaksasi, mengembangkan kesadaran diri, dan meningkatkan kemampuan konsentrasi serta fokus.',
+          duration: '05:00',
+          durasi: Duration(seconds: 300),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
           gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
@@ -284,9 +285,9 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         DayContent(
           id: '25',
           title: 'Berbicara Di Depan\nCermin',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Gunakan cermin sebagai cara untuk berinteraksi dengan diri sendiri. Ini dapat meningkatkan rasa percaya diri saat Anda harus berbicara di depan orang lain.',
           duration: '01:00',
-          durasi: Duration(seconds: 30),
+          durasi: Duration(seconds: 60),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
           gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
@@ -304,7 +305,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         DayContent(
           id: '26',
           title: 'Perbaiki Kualitas\nPenapasan',
-          description: 'Deskripsi latihan 1 untuk level low',
+          description: 'Pastikan perut mengembang dan mengempis saat Anda bernapas. Lakukan dengan ritme napas yang teratur.',
           duration: '00:30',
           durasi: Duration(seconds: 30), // 30 detik
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -314,7 +315,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         DayContent(
           id: '27',
           title: 'Peregangan Tangan',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan dapat membantu meredakan ketegangan fisik yang terkait dengan stres',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -324,7 +325,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         DayContent(
           id: '28',
           title: 'Peregangan Kaki',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan kaki yang dilakukan dengan pernapasan yang teratur dapat membantu menciptakan perasaan ketenangan dan kedamaian.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -334,7 +335,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         DayContent(
           id: '29',
           title: 'Peregangan Leher',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -344,7 +345,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         DayContent(
           id: '30',
           title: 'Jalan Kecil-Kecil',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Berjalan-jalan kecil dapat melepaskan endorfin, hormon peningkat suasana hati yang meredakan stres dan merangsang sistem saraf parasimpatik untuk mengurangi stres.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -353,8 +354,8 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         ),
         DayContent(
           id: '31',
-          title: 'Meminum Segelas\nAir Mineral',
-          description: 'Deskripsi latihan 2 untuk level low',
+          title: 'Peregangan Leher',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -367,7 +368,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         DayContent(
           id: '32',
           title: 'Perbaiki Kualitas\nPenapasan',
-          description: 'Deskripsi latihan 1 untuk level low',
+          description: 'Pastikan perut mengembang dan mengempis saat Anda bernapas. Lakukan dengan ritme napas yang teratur.',
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -377,7 +378,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         DayContent(
           id: '33',
           title: 'Peregangan Tangan',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan dapat membantu meredakan ketegangan fisik yang terkait dengan stres',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -387,7 +388,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         DayContent(
           id: '34',
           title: 'Peregangan Kaki',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan kaki yang dilakukan dengan pernapasan yang teratur dapat membantu menciptakan perasaan ketenangan dan kedamaian.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -397,7 +398,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         DayContent(
           id: '35',
           title: 'Peregangan Leher',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -407,7 +408,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         DayContent(
           id: '36',
           title: 'Jalan Kecil-Kecil',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Berjalan-jalan kecil dapat melepaskan endorfin, hormon peningkat suasana hati yang meredakan stres dan merangsang sistem saraf parasimpatik untuk mengurangi stres.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -416,8 +417,8 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         ),
         DayContent(
           id: '37',
-          title: 'Meminum Segelas\nAir Mineral',
-          description: 'Deskripsi latihan 2 untuk level low',
+          title: 'Peregangan Leher',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -427,7 +428,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         DayContent(
           id: '38',
           title: 'Mendengarkan Musik\nRelaksasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -437,7 +438,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         DayContent(
           id: '39',
           title: 'Meditasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Meditasi merangsang respons relaksasi, mengembangkan kesadaran diri, dan meningkatkan kemampuan konsentrasi serta fokus.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -450,7 +451,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         DayContent(
           id: '40',
           title: 'Perbaiki Kualitas\nPenapasan',
-          description: 'Deskripsi latihan 1 untuk level low',
+          description: 'Pastikan perut mengembang dan mengempis saat Anda bernapas. Lakukan dengan ritme napas yang teratur.',
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -460,7 +461,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         DayContent(
           id: '41',
           title: 'Peregangan Tangan',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan dapat membantu meredakan ketegangan fisik yang terkait dengan stres',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -470,7 +471,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         DayContent(
           id: '42',
           title: 'Peregangan Kaki',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan kaki yang dilakukan dengan pernapasan yang teratur dapat membantu menciptakan perasaan ketenangan dan kedamaian.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -480,7 +481,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         DayContent(
           id: '43',
           title: 'Peregangan Leher',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -490,7 +491,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         DayContent(
           id: '44',
           title: 'Jalan Kecil-Kecil',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Berjalan-jalan kecil dapat melepaskan endorfin, hormon peningkat suasana hati yang meredakan stres dan merangsang sistem saraf parasimpatik untuk mengurangi stres.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -499,8 +500,8 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         ),
         DayContent(
           id: '45',
-          title: 'Meminum Segelas\nAir Mineral',
-          description: 'Deskripsi latihan 2 untuk level low',
+          title: 'Peregangan Leher',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -510,7 +511,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         DayContent(
           id: '46',
           title: 'Mendengarkan Musik\nRelaksasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -520,7 +521,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         DayContent(
           id: '47',
           title: 'Meditasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Meditasi merangsang respons relaksasi, mengembangkan kesadaran diri, dan meningkatkan kemampuan konsentrasi serta fokus.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -540,7 +541,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         DayContent(
           id: '49',
           title: 'Berbicara Di Depan\nCermin',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Gunakan cermin sebagai cara untuk berinteraksi dengan diri sendiri. Ini dapat meningkatkan rasa percaya diri saat Anda harus berbicara di depan orang lain.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -560,7 +561,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         DayContent(
           id: '49',
           title: 'Perbaiki Kualitas\nPenapasan',
-          description: 'Deskripsi latihan 1 untuk level low',
+          description: 'Pastikan perut mengembang dan mengempis saat Anda bernapas. Lakukan dengan ritme napas yang teratur.',
           duration: '00:30',
           durasi: Duration(seconds: 30), // 30 detik
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -570,7 +571,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         DayContent(
           id: '50',
           title: 'Peregangan Tangan',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan dapat membantu meredakan ketegangan fisik yang terkait dengan stres',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -580,7 +581,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         DayContent(
           id: '51',
           title: 'Peregangan Kaki',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan kaki yang dilakukan dengan pernapasan yang teratur dapat membantu menciptakan perasaan ketenangan dan kedamaian.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -590,7 +591,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         DayContent(
           id: '52',
           title: 'Peregangan Leher',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -600,7 +601,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         DayContent(
           id: '53',
           title: 'Jalan Kecil-Kecil',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Berjalan-jalan kecil dapat melepaskan endorfin, hormon peningkat suasana hati yang meredakan stres dan merangsang sistem saraf parasimpatik untuk mengurangi stres.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -609,8 +610,8 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         ),
         DayContent(
           id: '54',
-          title: 'Meminum Segelas\nAir Mineral',
-          description: 'Deskripsi latihan 2 untuk level low',
+          title: 'Peregangan Leher',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -623,7 +624,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         DayContent(
           id: '55',
           title: 'Perbaiki Kualitas\nPenapasan',
-          description: 'Deskripsi latihan 1 untuk level low',
+          description: 'Pastikan perut mengembang dan mengempis saat Anda bernapas. Lakukan dengan ritme napas yang teratur.',
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -633,7 +634,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         DayContent(
           id: '56',
           title: 'Peregangan Tangan',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan dapat membantu meredakan ketegangan fisik yang terkait dengan stres',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -643,7 +644,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         DayContent(
           id: '57',
           title: 'Peregangan Kaki',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan kaki yang dilakukan dengan pernapasan yang teratur dapat membantu menciptakan perasaan ketenangan dan kedamaian.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -653,7 +654,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         DayContent(
           id: '58',
           title: 'Peregangan Leher',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -663,7 +664,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         DayContent(
           id: '59',
           title: 'Jalan Kecil-Kecil',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Berjalan-jalan kecil dapat melepaskan endorfin, hormon peningkat suasana hati yang meredakan stres dan merangsang sistem saraf parasimpatik untuk mengurangi stres.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -672,8 +673,8 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         ),
         DayContent(
           id: '60',
-          title: 'Meminum Segelas\nAir Mineral',
-          description: 'Deskripsi latihan 2 untuk level low',
+          title: 'Peregangan Leher',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -683,7 +684,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         DayContent(
           id: '61',
           title: 'Mendengarkan Musik\nRelaksasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -693,7 +694,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         DayContent(
           id: '62',
           title: 'Meditasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Meditasi merangsang respons relaksasi, mengembangkan kesadaran diri, dan meningkatkan kemampuan konsentrasi serta fokus.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -706,7 +707,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         DayContent(
           id: '63',
           title: 'Perbaiki Kualitas\nPenapasan',
-          description: 'Deskripsi latihan 1 untuk level low',
+          description: 'Pastikan perut mengembang dan mengempis saat Anda bernapas. Lakukan dengan ritme napas yang teratur.',
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -716,7 +717,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         DayContent(
           id: '64',
           title: 'Peregangan Tangan',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan dapat membantu meredakan ketegangan fisik yang terkait dengan stres',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -726,7 +727,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         DayContent(
           id: '65',
           title: 'Peregangan Kaki',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan kaki yang dilakukan dengan pernapasan yang teratur dapat membantu menciptakan perasaan ketenangan dan kedamaian.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -736,7 +737,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         DayContent(
           id: '66',
           title: 'Peregangan Leher',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -746,7 +747,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         DayContent(
           id: '67',
           title: 'Jalan Kecil-Kecil',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Berjalan-jalan kecil dapat melepaskan endorfin, hormon peningkat suasana hati yang meredakan stres dan merangsang sistem saraf parasimpatik untuk mengurangi stres.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -755,8 +756,8 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         ),
         DayContent(
           id: '68',
-          title: 'Meminum Segelas\nAir Mineral',
-          description: 'Deskripsi latihan 2 untuk level low',
+          title: 'Peregangan Leher',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -766,7 +767,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         DayContent(
           id: '69',
           title: 'Mendengarkan Musik\nRelaksasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -776,7 +777,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         DayContent(
           id: '70',
           title: 'Meditasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Meditasi merangsang respons relaksasi, mengembangkan kesadaran diri, dan meningkatkan kemampuan konsentrasi serta fokus.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -796,7 +797,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         DayContent(
           id: '72',
           title: 'Berbicara Di Depan\nCermin',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Gunakan cermin sebagai cara untuk berinteraksi dengan diri sendiri. Ini dapat meningkatkan rasa percaya diri saat Anda harus berbicara di depan orang lain.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -816,7 +817,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         DayContent(
           id: '73',
           title: 'Perbaiki Kualitas\nPenapasan',
-          description: 'Deskripsi latihan 1 untuk level low',
+          description: 'Pastikan perut mengembang dan mengempis saat Anda bernapas. Lakukan dengan ritme napas yang teratur.',
           duration: '00:30',
           durasi: Duration(seconds: 30), // 30 detik
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -826,7 +827,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         DayContent(
           id: '74',
           title: 'Peregangan Tangan',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan dapat membantu meredakan ketegangan fisik yang terkait dengan stres',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -836,7 +837,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         DayContent(
           id: '75',
           title: 'Peregangan Kaki',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan kaki yang dilakukan dengan pernapasan yang teratur dapat membantu menciptakan perasaan ketenangan dan kedamaian.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -846,7 +847,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         DayContent(
           id: '76',
           title: 'Peregangan Leher',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -856,7 +857,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         DayContent(
           id: '77',
           title: 'Jalan Kecil-Kecil',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Berjalan-jalan kecil dapat melepaskan endorfin, hormon peningkat suasana hati yang meredakan stres dan merangsang sistem saraf parasimpatik untuk mengurangi stres.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -865,8 +866,8 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         ),
         DayContent(
           id: '78',
-          title: 'Meminum Segelas\nAir Mineral',
-          description: 'Deskripsi latihan 2 untuk level low',
+          title: 'Peregangan Leher',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -879,7 +880,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         DayContent(
           id: '79',
           title: 'Perbaiki Kualitas\nPenapasan',
-          description: 'Deskripsi latihan 1 untuk level low',
+          description: 'Pastikan perut mengembang dan mengempis saat Anda bernapas. Lakukan dengan ritme napas yang teratur.',
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -889,7 +890,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         DayContent(
           id: '80',
           title: 'Peregangan Tangan',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan dapat membantu meredakan ketegangan fisik yang terkait dengan stres',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -899,7 +900,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         DayContent(
           id: '81',
           title: 'Peregangan Kaki',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan kaki yang dilakukan dengan pernapasan yang teratur dapat membantu menciptakan perasaan ketenangan dan kedamaian.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -909,7 +910,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         DayContent(
           id: '82',
           title: 'Peregangan Leher',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -919,7 +920,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         DayContent(
           id: '83',
           title: 'Jalan Kecil-Kecil',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Berjalan-jalan kecil dapat melepaskan endorfin, hormon peningkat suasana hati yang meredakan stres dan merangsang sistem saraf parasimpatik untuk mengurangi stres.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -928,8 +929,8 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         ),
         DayContent(
           id: '84',
-          title: 'Meminum Segelas\nAir Mineral',
-          description: 'Deskripsi latihan 2 untuk level low',
+          title: 'Peregangan Leher',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -939,7 +940,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         DayContent(
           id: '85',
           title: 'Mendengarkan Musik\nRelaksasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -949,7 +950,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         DayContent(
           id: '86',
           title: 'Meditasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Meditasi merangsang respons relaksasi, mengembangkan kesadaran diri, dan meningkatkan kemampuan konsentrasi serta fokus.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -962,7 +963,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         DayContent(
           id: '87',
           title: 'Perbaiki Kualitas\nPenapasan',
-          description: 'Deskripsi latihan 1 untuk level low',
+          description: 'Pastikan perut mengembang dan mengempis saat Anda bernapas. Lakukan dengan ritme napas yang teratur.',
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -972,7 +973,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         DayContent(
           id: '88',
           title: 'Peregangan Tangan',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan dapat membantu meredakan ketegangan fisik yang terkait dengan stres',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -982,7 +983,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         DayContent(
           id: '89',
           title: 'Peregangan Kaki',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan kaki yang dilakukan dengan pernapasan yang teratur dapat membantu menciptakan perasaan ketenangan dan kedamaian.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -992,7 +993,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         DayContent(
           id: '90',
           title: 'Peregangan Leher',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1002,7 +1003,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         DayContent(
           id: '91',
           title: 'Jalan Kecil-Kecil',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Berjalan-jalan kecil dapat melepaskan endorfin, hormon peningkat suasana hati yang meredakan stres dan merangsang sistem saraf parasimpatik untuk mengurangi stres.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1011,8 +1012,8 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         ),
         DayContent(
           id: '92',
-          title: 'Meminum Segelas\nAir Mineral',
-          description: 'Deskripsi latihan 2 untuk level low',
+          title: 'Peregangan Leher',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1022,7 +1023,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         DayContent(
           id: '93',
           title: 'Mendengarkan Musik\nRelaksasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1032,7 +1033,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         DayContent(
           id: '94',
           title: 'Meditasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Meditasi merangsang respons relaksasi, mengembangkan kesadaran diri, dan meningkatkan kemampuan konsentrasi serta fokus.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1052,7 +1053,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         DayContent(
           id: '96',
           title: 'Berbicara Di Depan\nCermin',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Gunakan cermin sebagai cara untuk berinteraksi dengan diri sendiri. Ini dapat meningkatkan rasa percaya diri saat Anda harus berbicara di depan orang lain.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1072,7 +1073,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         DayContent(
           id: '97',
           title: 'Perbaiki Kualitas\nPenapasan',
-          description: 'Deskripsi latihan 1 untuk level low',
+          description: 'Pastikan perut mengembang dan mengempis saat Anda bernapas. Lakukan dengan ritme napas yang teratur.',
           duration: '00:30',
           durasi: Duration(seconds: 30), // 30 detik
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1082,7 +1083,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         DayContent(
           id: '98',
           title: 'Peregangan Tangan',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan dapat membantu meredakan ketegangan fisik yang terkait dengan stres',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1092,7 +1093,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         DayContent(
           id: '99',
           title: 'Peregangan Kaki',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan kaki yang dilakukan dengan pernapasan yang teratur dapat membantu menciptakan perasaan ketenangan dan kedamaian.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1102,7 +1103,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         DayContent(
           id: '100',
           title: 'Peregangan Leher',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1112,7 +1113,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         DayContent(
           id: '101',
           title: 'Jalan Kecil-Kecil',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Berjalan-jalan kecil dapat melepaskan endorfin, hormon peningkat suasana hati yang meredakan stres dan merangsang sistem saraf parasimpatik untuk mengurangi stres.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1121,8 +1122,8 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         ),
         DayContent(
           id: '102',
-          title: 'Meminum Segelas\nAir Mineral',
-          description: 'Deskripsi latihan 2 untuk level low',
+          title: 'Peregangan Leher',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1135,7 +1136,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         DayContent(
           id: '103',
           title: 'Perbaiki Kualitas\nPenapasan',
-          description: 'Deskripsi latihan 1 untuk level low',
+          description: 'Pastikan perut mengembang dan mengempis saat Anda bernapas. Lakukan dengan ritme napas yang teratur.',
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1145,7 +1146,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         DayContent(
           id: '104',
           title: 'Peregangan Tangan',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan dapat membantu meredakan ketegangan fisik yang terkait dengan stres',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1155,7 +1156,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         DayContent(
           id: '105',
           title: 'Peregangan Kaki',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan kaki yang dilakukan dengan pernapasan yang teratur dapat membantu menciptakan perasaan ketenangan dan kedamaian.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1165,7 +1166,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         DayContent(
           id: '106',
           title: 'Peregangan Leher',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1175,7 +1176,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         DayContent(
           id: '107',
           title: 'Jalan Kecil-Kecil',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Berjalan-jalan kecil dapat melepaskan endorfin, hormon peningkat suasana hati yang meredakan stres dan merangsang sistem saraf parasimpatik untuk mengurangi stres.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1184,8 +1185,8 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         ),
         DayContent(
           id: '108',
-          title: 'Meminum Segelas\nAir Mineral',
-          description: 'Deskripsi latihan 2 untuk level low',
+          title: 'Peregangan Leher',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1195,7 +1196,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         DayContent(
           id: '109',
           title: 'Mendengarkan Musik\nRelaksasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1205,7 +1206,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         DayContent(
           id: '110',
           title: 'Meditasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Meditasi merangsang respons relaksasi, mengembangkan kesadaran diri, dan meningkatkan kemampuan konsentrasi serta fokus.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1218,7 +1219,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         DayContent(
           id: '111',
           title: 'Perbaiki Kualitas\nPenapasan',
-          description: 'Deskripsi latihan 1 untuk level low',
+          description: 'Pastikan perut mengembang dan mengempis saat Anda bernapas. Lakukan dengan ritme napas yang teratur.',
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1228,7 +1229,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         DayContent(
           id: '112',
           title: 'Peregangan Tangan',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan dapat membantu meredakan ketegangan fisik yang terkait dengan stres',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1238,7 +1239,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         DayContent(
           id: '113',
           title: 'Peregangan Kaki',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan kaki yang dilakukan dengan pernapasan yang teratur dapat membantu menciptakan perasaan ketenangan dan kedamaian.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1248,7 +1249,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         DayContent(
           id: '114',
           title: 'Peregangan Leher',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1258,7 +1259,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         DayContent(
           id: '115',
           title: 'Jalan Kecil-Kecil',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Berjalan-jalan kecil dapat melepaskan endorfin, hormon peningkat suasana hati yang meredakan stres dan merangsang sistem saraf parasimpatik untuk mengurangi stres.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1267,8 +1268,8 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         ),
         DayContent(
           id: '116',
-          title: 'Meminum Segelas\nAir Mineral',
-          description: 'Deskripsi latihan 2 untuk level low',
+          title: 'Peregangan Leher',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1278,7 +1279,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         DayContent(
           id: '117',
           title: 'Mendengarkan Musik\nRelaksasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1288,7 +1289,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         DayContent(
           id: '118',
           title: 'Meditasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Meditasi merangsang respons relaksasi, mengembangkan kesadaran diri, dan meningkatkan kemampuan konsentrasi serta fokus.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1308,7 +1309,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         DayContent(
           id: '120',
           title: 'Berbicara Di Depan\nCermin',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Gunakan cermin sebagai cara untuk berinteraksi dengan diri sendiri. Ini dapat meningkatkan rasa percaya diri saat Anda harus berbicara di depan orang lain.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1328,7 +1329,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         DayContent(
           id: '121',
           title: 'Perbaiki Kualitas\nPenapasan',
-          description: 'Deskripsi latihan 1 untuk level low',
+          description: 'Pastikan perut mengembang dan mengempis saat Anda bernapas. Lakukan dengan ritme napas yang teratur.',
           duration: '00:30',
           durasi: Duration(seconds: 30), // 30 detik
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1338,7 +1339,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         DayContent(
           id: '122',
           title: 'Peregangan Tangan',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan dapat membantu meredakan ketegangan fisik yang terkait dengan stres',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1348,7 +1349,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         DayContent(
           id: '123',
           title: 'Peregangan Kaki',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan kaki yang dilakukan dengan pernapasan yang teratur dapat membantu menciptakan perasaan ketenangan dan kedamaian.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1358,7 +1359,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         DayContent(
           id: '124',
           title: 'Peregangan Leher',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1368,7 +1369,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         DayContent(
           id: '125',
           title: 'Jalan Kecil-Kecil',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Berjalan-jalan kecil dapat melepaskan endorfin, hormon peningkat suasana hati yang meredakan stres dan merangsang sistem saraf parasimpatik untuk mengurangi stres.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1377,8 +1378,8 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         ),
         DayContent(
           id: '126',
-          title: 'Meminum Segelas\nAir Mineral',
-          description: 'Deskripsi latihan 2 untuk level low',
+          title: 'Peregangan Leher',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1391,7 +1392,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         DayContent(
           id: '127',
           title: 'Perbaiki Kualitas\nPenapasan',
-          description: 'Deskripsi latihan 1 untuk level low',
+          description: 'Pastikan perut mengembang dan mengempis saat Anda bernapas. Lakukan dengan ritme napas yang teratur.',
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1401,7 +1402,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         DayContent(
           id: '128',
           title: 'Peregangan Tangan',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan dapat membantu meredakan ketegangan fisik yang terkait dengan stres',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1411,7 +1412,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         DayContent(
           id: '129',
           title: 'Peregangan Kaki',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan kaki yang dilakukan dengan pernapasan yang teratur dapat membantu menciptakan perasaan ketenangan dan kedamaian.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1421,7 +1422,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         DayContent(
           id: '130',
           title: 'Peregangan Leher',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1431,7 +1432,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         DayContent(
           id: '131',
           title: 'Jalan Kecil-Kecil',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Berjalan-jalan kecil dapat melepaskan endorfin, hormon peningkat suasana hati yang meredakan stres dan merangsang sistem saraf parasimpatik untuk mengurangi stres.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1440,8 +1441,8 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         ),
         DayContent(
           id: '132',
-          title: 'Meminum Segelas\nAir Mineral',
-          description: 'Deskripsi latihan 2 untuk level low',
+          title: 'Peregangan Leher',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1451,7 +1452,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         DayContent(
           id: '133',
           title: 'Mendengarkan Musik\nRelaksasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1461,7 +1462,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         DayContent(
           id: '135',
           title: 'Meditasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Meditasi merangsang respons relaksasi, mengembangkan kesadaran diri, dan meningkatkan kemampuan konsentrasi serta fokus.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1474,7 +1475,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         DayContent(
           id: '135',
           title: 'Perbaiki Kualitas\nPenapasan',
-          description: 'Deskripsi latihan 1 untuk level low',
+          description: 'Pastikan perut mengembang dan mengempis saat Anda bernapas. Lakukan dengan ritme napas yang teratur.',
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1484,7 +1485,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         DayContent(
           id: '136',
           title: 'Peregangan Tangan',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan dapat membantu meredakan ketegangan fisik yang terkait dengan stres',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1494,7 +1495,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         DayContent(
           id: '137',
           title: 'Peregangan Kaki',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan kaki yang dilakukan dengan pernapasan yang teratur dapat membantu menciptakan perasaan ketenangan dan kedamaian.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1504,7 +1505,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         DayContent(
           id: '138',
           title: 'Peregangan Leher',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1514,7 +1515,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         DayContent(
           id: '139',
           title: 'Jalan Kecil-Kecil',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Berjalan-jalan kecil dapat melepaskan endorfin, hormon peningkat suasana hati yang meredakan stres dan merangsang sistem saraf parasimpatik untuk mengurangi stres.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1523,8 +1524,8 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         ),
         DayContent(
           id: '140',
-          title: 'Meminum Segelas\nAir Mineral',
-          description: 'Deskripsi latihan 2 untuk level low',
+          title: 'Peregangan Leher',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1534,7 +1535,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         DayContent(
           id: '141',
           title: 'Mendengarkan Musik\nRelaksasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1544,7 +1545,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         DayContent(
           id: '142',
           title: 'Meditasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Meditasi merangsang respons relaksasi, mengembangkan kesadaran diri, dan meningkatkan kemampuan konsentrasi serta fokus.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1564,7 +1565,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         DayContent(
           id: '144',
           title: 'Berbicara Di Depan\nCermin',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Gunakan cermin sebagai cara untuk berinteraksi dengan diri sendiri. Ini dapat meningkatkan rasa percaya diri saat Anda harus berbicara di depan orang lain.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1584,7 +1585,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         DayContent(
           id: '145',
           title: 'Perbaiki Kualitas\nPenapasan',
-          description: 'Deskripsi latihan 1 untuk level low',
+          description: 'Pastikan perut mengembang dan mengempis saat Anda bernapas. Lakukan dengan ritme napas yang teratur.',
           duration: '00:30',
           durasi: Duration(seconds: 30), // 30 detik
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1594,7 +1595,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         DayContent(
           id: '146',
           title: 'Peregangan Tangan',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan dapat membantu meredakan ketegangan fisik yang terkait dengan stres',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1604,7 +1605,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         DayContent(
           id: '147',
           title: 'Peregangan Kaki',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan kaki yang dilakukan dengan pernapasan yang teratur dapat membantu menciptakan perasaan ketenangan dan kedamaian.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1614,7 +1615,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         DayContent(
           id: '148',
           title: 'Peregangan Leher',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1624,7 +1625,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         DayContent(
           id: '149',
           title: 'Jalan Kecil-Kecil',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Berjalan-jalan kecil dapat melepaskan endorfin, hormon peningkat suasana hati yang meredakan stres dan merangsang sistem saraf parasimpatik untuk mengurangi stres.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1633,8 +1634,8 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         ),
         DayContent(
           id: '150',
-          title: 'Meminum Segelas\nAir Mineral',
-          description: 'Deskripsi latihan 2 untuk level low',
+          title: 'Peregangan Leher',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1647,7 +1648,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         DayContent(
           id: '151',
           title: 'Perbaiki Kualitas\nPenapasan',
-          description: 'Deskripsi latihan 1 untuk level low',
+          description: 'Pastikan perut mengembang dan mengempis saat Anda bernapas. Lakukan dengan ritme napas yang teratur.',
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1657,7 +1658,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         DayContent(
           id: '152',
           title: 'Peregangan Tangan',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan dapat membantu meredakan ketegangan fisik yang terkait dengan stres',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1667,7 +1668,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         DayContent(
           id: '153',
           title: 'Peregangan Kaki',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan kaki yang dilakukan dengan pernapasan yang teratur dapat membantu menciptakan perasaan ketenangan dan kedamaian.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1677,7 +1678,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         DayContent(
           id: '154',
           title: 'Peregangan Leher',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1687,7 +1688,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         DayContent(
           id: '155',
           title: 'Jalan Kecil-Kecil',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Berjalan-jalan kecil dapat melepaskan endorfin, hormon peningkat suasana hati yang meredakan stres dan merangsang sistem saraf parasimpatik untuk mengurangi stres.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1696,8 +1697,8 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         ),
         DayContent(
           id: '156',
-          title: 'Meminum Segelas\nAir Mineral',
-          description: 'Deskripsi latihan 2 untuk level low',
+          title: 'Peregangan Leher',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1707,7 +1708,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         DayContent(
           id: '157',
           title: 'Mendengarkan Musik\nRelaksasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1717,7 +1718,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         DayContent(
           id: '158',
           title: 'Meditasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Meditasi merangsang respons relaksasi, mengembangkan kesadaran diri, dan meningkatkan kemampuan konsentrasi serta fokus.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1730,7 +1731,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         DayContent(
           id: '159',
           title: 'Perbaiki Kualitas\nPenapasan',
-          description: 'Deskripsi latihan 1 untuk level low',
+          description: 'Pastikan perut mengembang dan mengempis saat Anda bernapas. Lakukan dengan ritme napas yang teratur.',
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1740,7 +1741,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         DayContent(
           id: '160',
           title: 'Peregangan Tangan',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan dapat membantu meredakan ketegangan fisik yang terkait dengan stres',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1750,7 +1751,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         DayContent(
           id: '161',
           title: 'Peregangan Kaki',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Peregangan kaki yang dilakukan dengan pernapasan yang teratur dapat membantu menciptakan perasaan ketenangan dan kedamaian.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1760,7 +1761,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         DayContent(
           id: '162',
           title: 'Peregangan Leher',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1770,7 +1771,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         DayContent(
           id: '63',
           title: 'Jalan Kecil-Kecil',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Berjalan-jalan kecil dapat melepaskan endorfin, hormon peningkat suasana hati yang meredakan stres dan merangsang sistem saraf parasimpatik untuk mengurangi stres.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1779,8 +1780,8 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         ),
         DayContent(
           id: '164',
-          title: 'Meminum Segelas\nAir Mineral',
-          description: 'Deskripsi latihan 2 untuk level low',
+          title: 'Peregangan Leher',
+          description: 'kegiatan ini bisa memberikan efek relaksasi yang dapat mengurangi tingkat stres secara keseluruhan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1790,7 +1791,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         DayContent(
           id: '165',
           title: 'Mendengarkan Musik\nRelaksasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1800,7 +1801,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         DayContent(
           id: '166',
           title: 'Meditasi',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Meditasi merangsang respons relaksasi, mengembangkan kesadaran diri, dan meningkatkan kemampuan konsentrasi serta fokus.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',
@@ -1820,7 +1821,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         DayContent(
           id: '168',
           title: 'Berbicara Di Depan\nCermin',
-          description: 'Deskripsi latihan 2 untuk level low',
+          description: 'Gunakan cermin sebagai cara untuk berinteraksi dengan diri sendiri. Ini dapat meningkatkan rasa percaya diri saat Anda harus berbicara di depan orang lain.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-amico.png',

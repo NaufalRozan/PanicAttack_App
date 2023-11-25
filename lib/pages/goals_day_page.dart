@@ -158,8 +158,8 @@ class _GoalsDayPageState extends State<GoalsDayPage> {
                                                 0.03,
                                         fontWeight: bold,
                                         color: content.completed
-                                  ? whiteColor
-                                  : textColor,
+                                            ? whiteColor
+                                            : textColor,
                                       ),
                                     ),
                                     SizedBox(
@@ -172,10 +172,13 @@ class _GoalsDayPageState extends State<GoalsDayPage> {
                                             MediaQuery.of(context).size.height *
                                                 0.03,
                                         fontWeight: bold,
+                                        color: content.completed
+                                            ? whiteColor
+                                            : greyColor,
                                       ),
                                     ),
                                   ],
-                                ),                               
+                                ),
                               ],
                             ),
                           ),
