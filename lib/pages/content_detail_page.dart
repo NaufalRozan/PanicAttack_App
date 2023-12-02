@@ -54,7 +54,7 @@ class _ContentDetailPageState extends State<ContentDetailPage> {
                     widget.content.description,
                     style: textStyle.copyWith(
                         fontSize: MediaQuery.of(context).size.width * 0.05),
-                        textAlign: TextAlign.center,
+                    textAlign: TextAlign.center,
                   )
                 ],
               ),
@@ -97,40 +97,6 @@ class _ContentDetailPageState extends State<ContentDetailPage> {
                     },
                     child: Text('Start'),
                   ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                Row(
-                  children: [
-                    Icon(
-                      Icons.skip_previous_outlined,
-                      color: secondaryTextColor,
-                      size: MediaQuery.of(context).size.width * 0.06,
-                    ),
-                    Text(
-                      ' Sebelumnya',
-                      style: secondaryTextStyle.copyWith(
-                          fontSize: MediaQuery.of(context).size.width * 0.04),
-                    ),
-                  ],
-                ),
-                Row(
-                  children: [
-                    
-                    Text(
-                      'Selanjutnya',
-                      style: secondaryTextStyle.copyWith(
-                          fontSize: MediaQuery.of(context).size.width * 0.04),
-                    ),
-                    Icon(
-                      Icons.skip_next_outlined,
-                      color: secondaryTextColor,
-                      size: MediaQuery.of(context).size.width * 0.06,
-                    ),
-                  ],
-                ),
-              ],
-            )
           ],
         ),
       ),
