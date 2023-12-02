@@ -16,26 +16,76 @@ class RegisterPage extends StatefulWidget {
 
 class _RegisterPageState extends State<RegisterPage> {
   //Text Controller
-  final _emailContoller = TextEditingController();
+  final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   final _userNameController = TextEditingController();
   final _phoneController = TextEditingController();
 
   @override
   void dispose() {
-    _emailContoller.dispose();
+    _emailController.dispose();
     _passwordController.dispose();
     _userNameController.dispose();
     _phoneController.dispose();
     super.dispose();
   }
 
+  bool isPasswordValid = true;
+
+  // Fungsi validasi untuk format email
+  bool isEmailValid(String email) {
+    // Sesuaikan pola regex ini berdasarkan kebutuhan spesifik Anda
+    RegExp emailRegex = RegExp(r'^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$');
+    return emailRegex.hasMatch(email);
+  }
+
   // auth
+  // Fungsi untuk pendaftaran akun
   void signUp() async {
+    if (!isEmailValid(_emailController.text.trim())) {
+      showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            content: Text(
+              'Format email tidak valid. Silakan masukkan email yang valid.',
+            ),
+          );
+        },
+      );
+      return;
+    }
+
+    if (_passwordController.text.trim().length < 8 ||
+        !_passwordController.text.trim().contains(RegExp(r'[a-zA-Z]')) ||
+        !_passwordController.text.trim().contains(RegExp(r'[0-9]'))) {
+      setState(() {
+        isPasswordValid = false;
+      });
+
+      showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            content: Text(
+              'Kata sandi harus minimal 8 karakter dan harus memiliki huruf dan angka.',
+            ),
+          );
+        },
+      );
+      return;
+    }
+
     try {
       await FirebaseAuth.instance.createUserWithEmailAndPassword(
-        email: _emailContoller.text.trim(),
+        email: _emailController.text.trim(),
         password: _passwordController.text.trim(),
+      );
+
+      addUserDetails(
+        _userNameController.text.trim(),
+        _phoneController.text.trim(),
+        _emailController.text.trim(),
       );
     } on FirebaseAuthException {
       showDialog(
@@ -47,12 +97,6 @@ class _RegisterPageState extends State<RegisterPage> {
         },
       );
     }
-
-    addUserDetails(
-      _userNameController.text.trim(),
-      _phoneController.text.trim(),
-      _emailContoller.text.trim(),
-    );
   }
 
   Future addUserDetails(String userName, String phone, String email) async {
@@ -132,7 +176,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
               //Email
               TextFormField(
-                controller: _emailContoller,
+                controller: _emailController,
                 decoration: InputDecoration(
                   labelText: "Email", // Label untuk input
                   labelStyle: textStyle.copyWith(fontSize: 20),
@@ -148,7 +192,7 @@ class _RegisterPageState extends State<RegisterPage> {
               // Tambahkan jarak vertikal sebelum input password
               TextFormField(
                 controller: _passwordController,
-                obscureText: true, // Untuk menyembunyikan teks password
+                obscureText: true,
                 decoration: InputDecoration(
                   labelText: "Kata Sandi",
                   labelStyle: textStyle.copyWith(fontSize: 20),
@@ -159,9 +203,19 @@ class _RegisterPageState extends State<RegisterPage> {
                   ),
                 ),
               ),
+              if (!isPasswordValid) // Tampilkan pesan error hanya jika kata sandi tidak valid
+                Wrap(
+                  runSpacing: 10,
+                  spacing: 10,
+                  children: [
+                    Text(
+                      'Kata sandi harus minimal 8 karakter dan harus memiliki huruf dan angka.',
+                      style: TextStyle(color: Colors.red),
+                    )
+                  ],
+                ),
 
               SizedBox(height: 30.0),
-
               GestureDetector(
                 onTap: signUp,
                 child: Container(

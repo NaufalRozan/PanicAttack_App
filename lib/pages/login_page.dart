@@ -16,18 +16,40 @@ class _LoginPageState extends State<LoginPage> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
 
+  // Fungsi validasi untuk format email
+  bool isEmailValid(String email) {
+    // Sesuaikan pola regex ini berdasarkan kebutuhan spesifik Anda
+    RegExp emailRegex = RegExp(r'^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$');
+    return emailRegex.hasMatch(email);
+  }
+
   Future signIn() async {
     try {
+      // Periksa apakah format email valid
+      if (!isEmailValid(_emailController.text.trim())) {
+        showDialog(
+          context: context,
+          builder: (context) {
+            return AlertDialog(
+              content: Text(
+                  'Format email tidak valid. Silakan masukkan email yang valid.'),
+            );
+          },
+        );
+        return;
+      }
+
       await FirebaseAuth.instance.signInWithEmailAndPassword(
-          email: _emailController.text.trim(),
-          password: _passwordController.text.trim());
+        email: _emailController.text.trim(),
+        password: _passwordController.text.trim(),
+      );
     } on FirebaseAuthException {
       showDialog(
         context: context,
         builder: (context) {
           return AlertDialog(
             content:
-                Text('Silakan masukkan email dan kata sandi Anda dengan benar'),
+                Text('Email atau kata sandi tidak benar. Silakan coba lagi.'),
           );
         },
       );
