@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_countdown_timer/current_remaining_time.dart';
 import 'package:flutter_countdown_timer/flutter_countdown_timer.dart';
 import 'package:panicattack_app/constans.dart';
+import 'package:panicattack_app/pages/history_test_page.dart';
 import 'package:panicattack_app/utils/goal_util.dart';
 
 class ContentDetailPage extends StatefulWidget {
@@ -112,6 +113,7 @@ class _ContentDetailPageState extends State<ContentDetailPage> {
       // Ubah penyimpanan status konten yang selesai menggunakan ID konten
       await userDoc.collection('completedContents').doc(content.id).set({
         'completed': true,
+        'title' : content.title,
         'timestamp': FieldValue.serverTimestamp(),
       });
 
@@ -152,7 +154,38 @@ class _ContentDetailPageState extends State<ContentDetailPage> {
     } else {
       // Sudah mencapai konten terakhir di hari yang sama
       print('Sudah mencapai konten terakhir di hari yang sama');
-      // Bisa tambahkan logika lain jika diperlukan
+
+      // Pindah ke HistoryTestPage jika waktu sudah habis
+      if (widget.content.completed) {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) => HistoryTestPage(),
+          ),
+        );
+      } else {
+        // Waktu di konten terakhir habis
+        if (timerStarted) {
+          // Mark konten terakhir sebagai selesai
+          bool markedCompleted = await markContentAsCompleted(widget.content);
+
+          // Perbarui status konten pada _dayContent jika berhasil
+          if (markedCompleted) {
+            setState(() {
+              widget.content.completed = true;
+            });
+          }
+
+          // Pindah ke HistoryPage
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(
+              builder: (context) => HistoryTestPage(),
+            ),
+          );
+        }
+        // Bisa tambahkan logika lain jika diperlukan
+      }
     }
   }
 }

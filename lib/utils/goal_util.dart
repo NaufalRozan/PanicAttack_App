@@ -41,6 +41,7 @@ class DayContent {
   });
 }
 
+
 List<DayContent> getDay1Content(String anxietyLevel) {
   switch (anxietyLevel) {
     case 'Anxiety Level Low':
