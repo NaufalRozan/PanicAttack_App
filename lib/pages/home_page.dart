@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:panicattack_app/auth/main_page.dart';
 import 'package:panicattack_app/constans.dart';
 import 'package:panicattack_app/pages/anxiety_test_page.dart';
 import 'package:panicattack_app/pages/goals_page.dart';
@@ -261,6 +262,13 @@ class _HomePageState extends State<HomePage> {
                 ),
                 onTap: () {
                   FirebaseAuth.instance.signOut();
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>
+                          MainPage(), // Replace YourLoginPage with the actual login page widget
+                    ),
+                  );
                 },
               ),
             ],
