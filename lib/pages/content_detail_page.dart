@@ -18,12 +18,30 @@ class ContentDetailPage extends StatefulWidget {
 }
 
 class _ContentDetailPageState extends State<ContentDetailPage> {
+  String _anxietyLevel = ''; // Add this line to define the variable
   bool timerStarted = false;
   @override
   void dispose() {
-    // Batalkan timer atau hentikan listener animasi di sini
-    // Contoh: timer.cancel();
     super.dispose();
+  }
+
+  void initState() {
+    super.initState();
+    _getUserNameAndAnxietyLevelFromFirestore();
+  }
+
+  Future<void> _getUserNameAndAnxietyLevelFromFirestore() async {
+    final currentUser = FirebaseAuth.instance.currentUser;
+    final userDoc = await FirebaseFirestore.instance
+        .collection('users')
+        .where('email', isEqualTo: currentUser?.email)
+        .get();
+    if (userDoc.docs.isNotEmpty) {
+      setState(() {
+        _anxietyLevel = userDoc.docs[0].data()['anxietyLevel'] ??
+            ''; // Inisialisasi dengan nilai default
+      });
+    }
   }
 
   @override
@@ -41,7 +59,7 @@ class _ContentDetailPageState extends State<ContentDetailPage> {
             Text(
               widget.content.title,
               style: textStyle.copyWith(
-                  fontSize: MediaQuery.of(context).size.width * 0.09,
+                  fontSize: MediaQuery.of(context).size.width * 0.07,
                   fontWeight: bold),
               textAlign: TextAlign.center,
             ),
@@ -69,7 +87,7 @@ class _ContentDetailPageState extends State<ContentDetailPage> {
                         return Text(
                           'Waktu Habis',
                           style: textStyle.copyWith(
-                            fontSize: MediaQuery.of(context).size.width * 0.09,
+                            fontSize: MediaQuery.of(context).size.width * 0.08,
                             fontWeight: bold,
                           ),
                         );
@@ -77,7 +95,7 @@ class _ContentDetailPageState extends State<ContentDetailPage> {
                       return Text(
                         '${time.min ?? 0}:${time.sec ?? 0}',
                         style: textStyle.copyWith(
-                          fontSize: MediaQuery.of(context).size.width * 0.09,
+                          fontSize: MediaQuery.of(context).size.width * 0.08,
                           fontWeight: bold,
                         ),
                       );
@@ -110,17 +128,117 @@ class _ContentDetailPageState extends State<ContentDetailPage> {
       final userDoc =
           FirebaseFirestore.instance.collection('users').doc(currentUser!.uid);
 
-      // Ubah penyimpanan status konten yang selesai menggunakan ID konten
-      await userDoc.collection('completedContents').doc(content.id).set({
-        'completed': true,
-        'title' : content.title,
-        'timestamp': FieldValue.serverTimestamp(),
-      });
+      // Periksa apakah sudah ada dokumen selesai dengan ID konten yang bersangkutan
+      final completedContentDoc =
+          userDoc.collection('completedContents').doc(content.id);
+      final completedContent = await completedContentDoc.get();
+
+      if (!completedContent.exists) {
+        // Jika belum ada, tambahkan dokumen baru
+        await completedContentDoc.set({
+          'completed': true,
+          'title': content.title,
+          'duration' : content.duration,
+          'image' : content.imagePath,
+          'timestamp': FieldValue.serverTimestamp(),
+        });
+      } else {
+        // Jika sudah ada, cukup perbarui timestamp (tidak membuat dokumen baru)
+        await completedContentDoc.update({
+          'timestamp': FieldValue.serverTimestamp(),
+        });
+      }
+
+      // Perbarui kemajuan
+      await this.updateProgress(anxietyLevel: this._anxietyLevel);
 
       return true; // Berhasil menandai konten sebagai selesai
     } catch (e) {
       print('Error marking content as completed: $e');
       return false; // Gagal menandai konten sebagai selesai
+    }
+  }
+
+  Future<void> updateProgress({required String anxietyLevel}) async {
+    try {
+      print('anxietyLevel parameter: $anxietyLevel');
+      final currentUser = FirebaseAuth.instance.currentUser;
+      final userDoc =
+          FirebaseFirestore.instance.collection('users').doc(currentUser!.uid);
+
+      // Mendapatkan total konten yang harus diselesaikan oleh pengguna
+      final totalContents = getDayContentTotal(anxietyLevel);
+
+      print('Total Contents: $totalContents');
+
+      // Mendapatkan total konten yang telah selesai oleh pengguna
+      final completedContentsQuery = await userDoc
+          .collection('completedContents')
+          .where('completed', isEqualTo: true)
+          .get();
+
+      print('Completed Contents: ${completedContentsQuery.docs.length}');
+
+      print('Dokumen yang Ditemukan: ${completedContentsQuery.docs.length}');
+
+      for (var doc in completedContentsQuery.docs) {
+        print('Dokumen: ${doc.data()}');
+      }
+
+      double progress;
+      if (totalContents > 0) {
+        progress = completedContentsQuery.size / totalContents.toDouble();
+        print('Progress Terhitung: $progress');
+      } else {
+        progress = 0.0;
+        print('Total Contents adalah 0, progress diatur menjadi 0.0');
+      }
+
+      // Mengatur nilai kemajuan
+      await userDoc.update({'progress': progress});
+
+      print(
+          'Updating progress for anxiety level: $anxietyLevel, progress: $progress');
+    } catch (e) {
+      print('Error updating progress: $e');
+    }
+  }
+
+  int getDayContentTotal(String anxietyLevel) {
+    try {
+      int total = 0;
+
+      switch (anxietyLevel) {
+        case 'Anxiety Level Low':
+          total += getDay1Content(anxietyLevel).length;
+          total += getDay2Content(anxietyLevel).length;
+          total += getDay3Content(anxietyLevel).length;
+          break;
+        case 'Anxiety Level Mid':
+          total += getDay1Content(anxietyLevel).length;
+          total += getDay2Content(anxietyLevel).length;
+          total += getDay3Content(anxietyLevel).length;
+          total += getDay4Content(anxietyLevel).length;
+          total += getDay5Content(anxietyLevel).length;
+          break;
+        case 'Anxiety Level High':
+          total += getDay1Content(anxietyLevel).length;
+          total += getDay2Content(anxietyLevel).length;
+          total += getDay3Content(anxietyLevel).length;
+          total += getDay4Content(anxietyLevel).length;
+          total += getDay5Content(anxietyLevel).length;
+          total += getDay6Content(anxietyLevel).length;
+          total += getDay7Content(anxietyLevel).length;
+          break;
+        default:
+          break;
+      }
+
+      print('Total Contents (anxietyLevel: $anxietyLevel): $total');
+      return total;
+    } catch (e) {
+      print('Error in getDayContentTotal: $e');
+      return 0;
     }
   }
 

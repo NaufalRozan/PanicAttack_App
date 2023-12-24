@@ -34,8 +34,10 @@ class _GoalsPageState extends State<GoalsPage> {
                       Container(
                         decoration: BoxDecoration(
                           border: Border(
-                            top: BorderSide(width: 2.0, color: primaryButtonColor),
-                            bottom: BorderSide(width: 2.0, color: primaryButtonColor),
+                            top: BorderSide(
+                                width: 2.0, color: primaryButtonColor),
+                            bottom: BorderSide(
+                                width: 2.0, color: primaryButtonColor),
                           ),
                         ),
                         child: Image.asset(
@@ -102,7 +104,7 @@ class _GoalsPageState extends State<GoalsPage> {
                           child: Text(
                             'Day ${_days[index]}',
                             style: whiteTextStyle.copyWith(
-                              fontWeight: bold,
+                              fontWeight: FontWeight.bold,
                               fontSize: MediaQuery.of(context).size.width * 0.1,
                             ),
                           ),
@@ -120,4 +122,3 @@ class _GoalsPageState extends State<GoalsPage> {
     );
   }
 }
-

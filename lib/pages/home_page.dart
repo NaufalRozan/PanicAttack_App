@@ -4,8 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:panicattack_app/constans.dart';
 import 'package:panicattack_app/pages/anxiety_test_page.dart';
 import 'package:panicattack_app/pages/goals_page.dart';
-// import 'package:panicattack_app/pages/edit_profile_page.dart';
+import 'package:panicattack_app/pages/history_test_page.dart';
 import 'package:panicattack_app/pages/profile_page.dart';
+import 'package:panicattack_app/utils/goal_util.dart';
+import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -20,6 +22,7 @@ class _HomePageState extends State<HomePage> {
   String _registeredUserName = ''; // Menyimpan nama pengguna dari Firestore
   String _registeredEmail = ''; // Menyimpan email dari Firestore
   String _anxietyLevel = ''; // Menyimpan level kecemasan dari Firestore
+  double _progress = 0.0;
 
   void initState() {
     super.initState();
@@ -36,9 +39,93 @@ class _HomePageState extends State<HomePage> {
       setState(() {
         _registeredUserName = userDoc.docs[0].data()['username'];
         _registeredEmail = userDoc.docs[0].data()['email'];
-        _anxietyLevel =
-            userDoc.docs[0].data()['anxietyLevel']; // Ambil level kecemasan
+        _anxietyLevel = userDoc.docs[0].data()['anxietyLevel'] ??
+            ''; // Inisialisasi dengan nilai default
+        _progress = (userDoc.docs[0].data()['progress'] ?? 0).toDouble();
       });
+    }
+  }
+
+  Future<void> updateProgress({required String anxietyLevel}) async {
+    try {
+      print('anxietyLevel parameter: $anxietyLevel');
+      final currentUser = FirebaseAuth.instance.currentUser;
+      final userDoc =
+          FirebaseFirestore.instance.collection('users').doc(currentUser!.uid);
+
+      // Mendapatkan total konten yang harus diselesaikan oleh pengguna
+      final totalContents = getDayContentTotal(anxietyLevel);
+
+      print('Total Contents: $totalContents');
+
+      // Mendapatkan total konten yang telah selesai oleh pengguna
+      final completedContentsQuery = await userDoc
+          .collection('completedContents')
+          .where('completed', isEqualTo: true)
+          .get();
+
+      print('Completed Contents: ${completedContentsQuery.docs.length}');
+
+      print('Dokumen yang Ditemukan: ${completedContentsQuery.docs.length}');
+
+      for (var doc in completedContentsQuery.docs) {
+        print('Dokumen: ${doc.data()}');
+      }
+
+      double progress;
+      if (totalContents > 0) {
+        progress = completedContentsQuery.size / totalContents.toDouble();
+        print('Progress Terhitung: $progress');
+      } else {
+        progress = 0.0;
+        print('Total Contents adalah 0, progress diatur menjadi 0.0');
+      }
+
+      // Mengatur nilai kemajuan
+      await userDoc.update({'progress': progress});
+
+      print(
+          'Updating progress for anxiety level: $anxietyLevel, progress: $progress');
+    } catch (e) {
+      print('Error updating progress: $e');
+    }
+  }
+
+  int getDayContentTotal(String anxietyLevel) {
+    try {
+      int total = 0;
+
+      switch (anxietyLevel) {
+        case 'Anxiety Level Low':
+          total += getDay1Content(anxietyLevel).length;
+          total += getDay2Content(anxietyLevel).length;
+          total += getDay3Content(anxietyLevel).length;
+          break;
+        case 'Anxiety Level Mid':
+          total += getDay1Content(anxietyLevel).length;
+          total += getDay2Content(anxietyLevel).length;
+          total += getDay3Content(anxietyLevel).length;
+          total += getDay4Content(anxietyLevel).length;
+          total += getDay5Content(anxietyLevel).length;
+          break;
+        case 'Anxiety Level High':
+          total += getDay1Content(anxietyLevel).length;
+          total += getDay2Content(anxietyLevel).length;
+          total += getDay3Content(anxietyLevel).length;
+          total += getDay4Content(anxietyLevel).length;
+          total += getDay5Content(anxietyLevel).length;
+          total += getDay6Content(anxietyLevel).length;
+          total += getDay7Content(anxietyLevel).length;
+          break;
+        default:
+          break;
+      }
+
+      print('Total Contents (anxietyLevel: $anxietyLevel): $total');
+      return total;
+    } catch (e) {
+      print('Error in getDayContentTotal: $e');
+      return 0;
     }
   }
 
@@ -131,6 +218,28 @@ class _HomePageState extends State<HomePage> {
                           MaterialPageRoute(
                             builder: (context) {
                               return ProfilePage();
+                            },
+                          ),
+                        );
+                      },
+                    ),
+                    ListTile(
+                      leading: Icon(
+                        Icons.history,
+                        color: primaryButtonColor,
+                        size: 28,
+                      ),
+                      title: Text(
+                        'History',
+                        style: secondaryTextStyle.copyWith(
+                            fontSize: 18, fontWeight: bold),
+                      ),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return HistoryTestPage();
                             },
                           ),
                         );
@@ -277,28 +386,69 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
 
-                    SizedBox(height: 20.0),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    LinearPercentIndicator(
+                      animation: true,
+                      animationDuration: 1000,
+                      lineHeight: MediaQuery.of(context).size.height * 0.025,
+                      percent: _progress,
+                      progressColor: cardColor,
+                      center: Text(
+                        "${(_progress * 100).toStringAsFixed(2)}%", // Menampilkan persentase dengan dua desimal
+                        style: TextStyle(
+                            fontSize:
+                                MediaQuery.of(context).size.height * 0.019,
+                            color: textColors),
+                      ),
+                    ),
+                    SizedBox(height: 15),
+
                     //card2
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         GestureDetector(
                           onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
+                            if (_progress >= 1.0) {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) {
+                                    return AnxietyTestPage();
+                                  },
+                                ),
+                              );
+                            } else {
+                              showDialog(
+                                context: context,
                                 builder: (context) {
-                                  return AnxietyTestPage();
+                                  return AlertDialog(
+                                    title: Text('Peringatan'),
+                                    content: Text(
+                                        'Anda harus menyelesaikan lebih banyak tugas untuk membuka uji tingkat gejala.'),
+                                    actions: [
+                                      ElevatedButton(
+                                        onPressed: () {
+                                          Navigator.pop(context);
+                                        },
+                                        child: Text('OK'),
+                                      ),
+                                    ],
+                                  );
                                 },
-                              ),
-                            );
+                              );
+                            }
                           },
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(12.0),
                             child: Container(
                               height: MediaQuery.of(context).size.height * 0.3,
                               width: MediaQuery.of(context).size.width * 0.42,
-                              color: primaryButtonColor,
+                              color: _progress >= 1.0
+                                  ? primaryButtonColor
+                                  : primaryButtonColor, // Ganti warna sesuai kebutuhan
                               child: FittedBox(
                                 child: Center(
                                   child: Padding(
@@ -313,9 +463,8 @@ class _HomePageState extends State<HomePage> {
                                           ),
                                           child: Center(
                                             child: Image.asset(
-                                              'lib/assets/images/Checklist-bro (1).png', // Ganti dengan path gambar Anda
-                                              width:
-                                                  100, // Sesuaikan ukuran gambar sesuai kebutuhan
+                                              'lib/assets/images/Checklist-bro (1).png',
+                                              width: 100,
                                               height: 100,
                                             ),
                                           ),
@@ -332,8 +481,7 @@ class _HomePageState extends State<HomePage> {
                                                 0.038,
                                             fontWeight: FontWeight.bold,
                                           ),
-                                          textAlign: TextAlign
-                                              .center, // Menyelaraskan teks ke tengah
+                                          textAlign: TextAlign.center,
                                         ),
                                       ],
                                     ),
@@ -407,7 +555,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                         )
                       ],
-                    )
+                    ),
                   ],
                 )
               ],

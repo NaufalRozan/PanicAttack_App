@@ -133,8 +133,7 @@ class _AnxietyTestPageState extends State<AnxietyTestPage> {
                 borderRadius: BorderRadius.circular(12),
               ),
               child: RadioListTile(
-                title:
-                    Text('Sering', style: textStyle.copyWith(fontSize: 20)),
+                title: Text('Sering', style: textStyle.copyWith(fontSize: 20)),
                 value: 3,
                 groupValue: selectedValues[currentQuestion],
                 onChanged: (value) {
@@ -154,8 +153,7 @@ class _AnxietyTestPageState extends State<AnxietyTestPage> {
                 borderRadius: BorderRadius.circular(12),
               ),
               child: RadioListTile(
-                title: Text('Selalu',
-                    style: textStyle.copyWith(fontSize: 20)),
+                title: Text('Selalu', style: textStyle.copyWith(fontSize: 20)),
                 value: 4,
                 groupValue: selectedValues[currentQuestion],
                 onChanged: (value) {
@@ -180,6 +178,8 @@ class _AnxietyTestPageState extends State<AnxietyTestPage> {
                           setState(() {
                             currentQuestion--;
                           });
+                          // Panggil fungsi untuk menghapus konten saat kembali
+                          onTestCompleted();
                         }
                       : null, // Set null jika di soal nomor 1
                   style: ElevatedButton.styleFrom(
@@ -192,7 +192,7 @@ class _AnxietyTestPageState extends State<AnxietyTestPage> {
                   ),
                 ),
 
-// Tombol Lanjut atau Hitung Skor
+                // Tombol Lanjut atau Hitung Skor
                 ElevatedButton(
                   onPressed: () {
                     if (currentQuestion < 12) {
@@ -208,11 +208,14 @@ class _AnxietyTestPageState extends State<AnxietyTestPage> {
                       String anxietyLevel = determineAnxietyLevel(totalScore);
                       saveScoreToFirestore(totalScore, anxietyLevel);
                       moveToResultPage(anxietyLevel);
+                      // Panggil fungsi untuk menghapus konten setelah tes selesai
+                      onTestCompleted();
+                      // Panggil fungsi untuk mengupdate progress menjadi 0%
+                      updateProgress(anxietyLevel: anxietyLevel);
                     }
                   },
                   style: ElevatedButton.styleFrom(
-                    primary:
-                        Colors.white, // Sesuaikan dengan warna yang diinginkan
+                    primary: Colors.white,
                   ),
                   child: Text(
                     currentQuestion < 12 ? 'Lanjut' : 'Hitung Skor',
@@ -280,6 +283,53 @@ class _AnxietyTestPageState extends State<AnxietyTestPage> {
       default:
       // Handle error or default case
     }
+  }
+}
+
+void onTestCompleted() async {
+  await deleteAllCompletedContents();
+}
+
+Future<void> deleteAllCompletedContents() async {
+  try {
+    final currentUser = FirebaseAuth.instance.currentUser;
+    if (currentUser != null) {
+      final userDoc =
+          FirebaseFirestore.instance.collection('users').doc(currentUser.uid);
+
+      // Hapus seluruh dokumen dalam koleksi 'completedContents'
+      final completedContentsCollection =
+          userDoc.collection('completedContents');
+      final completedContents = await completedContentsCollection.get();
+      for (var doc in completedContents.docs) {
+        await completedContentsCollection.doc(doc.id).delete();
+      }
+
+      print('Seluruh konten selesai dihapus.');
+    } else {
+      print('Tidak ada pengguna saat ini. Gagal menghapus konten.');
+    }
+  } catch (e) {
+    print('Error deleting completed contents: $e');
+  }
+}
+
+void updateProgress({required String anxietyLevel}) async {
+  try {
+    final currentUser = FirebaseAuth.instance.currentUser;
+    if (currentUser != null) {
+      final userDoc =
+          FirebaseFirestore.instance.collection('users').doc(currentUser.uid);
+
+      // Set progress ke 0
+      await userDoc.update({'progress': 0.0});
+
+      print('Progress diatur menjadi 0% untuk anxiety level: $anxietyLevel');
+    } else {
+      print('Tidak ada pengguna saat ini. Gagal mengupdate progress.');
+    }
+  } catch (e) {
+    print('Error updating progress: $e');
   }
 }
 
