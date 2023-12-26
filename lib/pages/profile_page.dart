@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:panicattack_app/constans.dart';
+import 'package:panicattack_app/pages/home_page.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -69,17 +70,17 @@ class _ProfilePageState extends State<ProfilePage> {
     await showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: Colors.grey[900],
+        backgroundColor: Colors.grey[200],
         title: Text(
           "Edit $field",
-          style: TextStyle(color: Colors.white),
+          style: textStyle,
         ),
         content: TextField(
           autofocus: true,
-          style: TextStyle(color: Colors.white),
+          style: textStyle,
           decoration: InputDecoration(
-            hintText: "please enter $field",
-            hintStyle: TextStyle(color: Colors.grey),
+            hintText: "Masukkan $field Baru",
+            hintStyle: textStyle,
           ),
           onChanged: (value) {
             newValue = value;
@@ -90,7 +91,7 @@ class _ProfilePageState extends State<ProfilePage> {
             onPressed: () => Navigator.pop(context),
             child: Text(
               'Cancel',
-              style: TextStyle(color: Colors.white),
+              style: textStyle,
             ),
           ),
           TextButton(
@@ -111,7 +112,7 @@ class _ProfilePageState extends State<ProfilePage> {
             },
             child: Text(
               'Save',
-              style: TextStyle(color: Colors.white),
+              style: textStyle,
             ),
           ),
         ],
@@ -309,6 +310,37 @@ class _ProfilePageState extends State<ProfilePage> {
                     ),
                   ),
                 ),
+              ),
+              Positioned(
+                bottom: 16,
+                left: 16,
+                right: 16,
+                child: Container(
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HomePage()),
+                );
+              },
+              child: Container(
+                padding: EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                  color: primaryButtonColor,
+                  borderRadius: BorderRadius.circular(15.0),
+                ),
+                child: Center(
+                  child: Text(
+                    'Kembali ke halaman utama',
+                    style: whiteTextStyle.copyWith(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
               ),
             ],
           ),

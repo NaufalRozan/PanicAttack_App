@@ -275,298 +275,302 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         resizeToAvoidBottomInset: false,
-        body: Container(
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage(
-                'lib/assets/images/corner2.png',
-              ), // Replace with your image path
-              alignment: Alignment.topRight,
-            ),
-          ),
-          child: Padding(
-            padding: EdgeInsets.only(
-                left: 20.0, right: 20.0, bottom: 30.0, top: 30.0),
-            child: Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(top: 40),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment
-                        .spaceBetween, // Untuk meletakkan ikon hamburger di sebelah kiri dan teks & lingkaran di sebelah kanan
-                    children: [
-                      Stack(
+        body: Center(
+          child: SingleChildScrollView(
+            child: Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(
+                    'lib/assets/images/corner2.png',
+                  ), // Replace with your image path
+                  alignment: Alignment.topRight,
+                ),
+              ),
+              child: Padding(
+                padding: EdgeInsets.only(
+                    left: 20.0, right: 20.0, bottom: 30.0, top: 30.0),
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 40),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment
+                            .spaceBetween, // Untuk meletakkan ikon hamburger di sebelah kiri dan teks & lingkaran di sebelah kanan
                         children: [
-                          IconButton(
-                            onPressed: () =>
-                                _scaffoldKey.currentState?.openDrawer(),
-                            icon: Icon(
-                              Icons.menu,
-                              color: primaryButtonColor,
-                            ),
+                          Stack(
+                            children: [
+                              IconButton(
+                                onPressed: () =>
+                                    _scaffoldKey.currentState?.openDrawer(),
+                                icon: Icon(
+                                  Icons.menu,
+                                  color: primaryButtonColor,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Text(
+                                "$_registeredUserName ",
+                                style: secondaryTextStyle.copyWith(
+                                  fontSize: 22.5,
+                                ),
+                              ),
+                              CircleAvatar(
+                                backgroundColor: Color.fromARGB(221, 219, 216, 216),
+                                radius: 22,
+                                backgroundImage: AssetImage(
+                                    'lib/assets/images/Oh no-amico (1).png'), // Ganti warna latar belakang lingkaran sesuai kebutuhan
+                                // Lainnya seperti backgroundImage, radius, dsb.
+                              ),
+                            ],
                           ),
                         ],
                       ),
-                      Row(
-                        children: [
-                          Text(
-                            "$_registeredUserName ",
-                            style: secondaryTextStyle.copyWith(
-                              fontSize: 22.5,
-                            ),
-                          ),
-                          CircleAvatar(
-                            backgroundColor: Color.fromARGB(221, 219, 216, 216),
-                            radius: 22,
-                            backgroundImage: AssetImage(
-                                'lib/assets/images/Oh no-amico (1).png'), // Ganti warna latar belakang lingkaran sesuai kebutuhan
-                            // Lainnya seperti backgroundImage, radius, dsb.
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-                SizedBox(height: 20.0),
-                Column(
-                  children: [
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: Text(
-                        "Halo $_registeredUserName,",
-                        style: secondaryTextStyle.copyWith(
-                            fontSize: 35, fontWeight: FontWeight.bold),
-                      ),
                     ),
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: Text(
-                        "Selamat Datang Kembali!",
-                        style: textStyle.copyWith(
-                          fontSize: 20,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                SizedBox(height: 20.0),
-                //card 1
-                Column(
-                  children: [
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(12.0),
-                      child: Container(
-                        width: double.infinity,
-                        height: MediaQuery.of(context).size.height * 0.28,
-                        color: cardColor,
-                        child: Center(
-                          child: Padding(
-                            padding: const EdgeInsets.all(18.0),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Expanded(
-                                  child: FittedBox(
-                                    child: Padding(
-                                      padding: EdgeInsets.all(2.0),
-                                      child: CircleAvatar(
-                                        backgroundColor:
-                                            whiteColor.withOpacity(0.6),
-                                        backgroundImage: AssetImage(imageCard),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Text(
-                                  cardText,
-                                  style: whiteTextStyle.copyWith(
-                                      fontSize:
-                                          MediaQuery.of(context).size.width *
-                                              0.064,
-                                      fontWeight: bold,
-                                      color: textColors),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-
-                    SizedBox(
-                      height: 15,
-                    ),
-                    LinearPercentIndicator(
-                      animation: true,
-                      animationDuration: 1000,
-                      lineHeight: MediaQuery.of(context).size.height * 0.025,
-                      percent: _progress,
-                      progressColor: cardColor,
-                      center: Text(
-                        "${(_progress * 100).toStringAsFixed(2)}%", // Menampilkan persentase dengan dua desimal
-                        style: TextStyle(
-                            fontSize:
-                                MediaQuery.of(context).size.height * 0.019,
-                            color: textColors),
-                      ),
-                    ),
-                    SizedBox(height: 15),
-
-                    //card2
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    SizedBox(height: 20.0),
+                    Column(
                       children: [
-                        GestureDetector(
-                          onTap: () {
-                            if (_progress >= 1.0) {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) {
-                                    return AnxietyTestPage();
-                                  },
-                                ),
-                              );
-                            } else {
-                              showDialog(
-                                context: context,
-                                builder: (context) {
-                                  return AlertDialog(
-                                    title: Text('Peringatan'),
-                                    content: Text(
-                                        'Anda harus menyelesaikan lebih banyak tugas untuk membuka uji tingkat gejala.'),
-                                    actions: [
-                                      ElevatedButton(
-                                        onPressed: () {
-                                          Navigator.pop(context);
-                                        },
-                                        child: Text('OK'),
-                                      ),
-                                    ],
-                                  );
-                                },
-                              );
-                            }
-                          },
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(12.0),
-                            child: Container(
-                              height: MediaQuery.of(context).size.height * 0.3,
-                              width: MediaQuery.of(context).size.width * 0.42,
-                              color: _progress >= 1.0
-                                  ? primaryButtonColor
-                                  : primaryButtonColor, // Ganti warna sesuai kebutuhan
-                              child: FittedBox(
-                                child: Center(
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(18.0),
-                                    child: Column(
-                                      children: [
-                                        Container(
-                                          decoration: BoxDecoration(
-                                            color: whiteColor.withOpacity(0.2),
-                                            borderRadius:
-                                                BorderRadius.circular(12),
-                                          ),
-                                          child: Center(
-                                            child: Image.asset(
-                                              'lib/assets/images/Checklist-bro (1).png',
-                                              width: 100,
-                                              height: 100,
-                                            ),
-                                          ),
-                                        ),
-                                        SizedBox(
-                                          height: 10.0,
-                                        ),
-                                        Text(
-                                          "Test Tingkat\nGejala Kamu",
-                                          style: whiteTextStyle.copyWith(
-                                            fontSize: MediaQuery.of(context)
-                                                    .size
-                                                    .width *
-                                                0.038,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                          textAlign: TextAlign.center,
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
+                        Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            "Halo $_registeredUserName,",
+                            style: secondaryTextStyle.copyWith(
+                                fontSize: 35, fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                        Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            "Selamat Datang Kembali!",
+                            style: textStyle.copyWith(
+                              fontSize: 20,
                             ),
                           ),
                         ),
-
-                        // SizedBox(width: 20.0),
-                        //card3
-                        GestureDetector(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) {
-                                  return GoalsPage(anxietyLevel: _anxietyLevel);
-                                },
-                              ),
-                            );
-                          },
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(12.0),
-                            child: Container(
-                              height: MediaQuery.of(context).size.height * 0.3,
-                              width: MediaQuery.of(context).size.width * 0.42,
-                              color: primaryButtonColor,
-                              child: FittedBox(
-                                child: Center(
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(18.0),
-                                    child: Column(
-                                      children: [
-                                        Container(
-                                          decoration: BoxDecoration(
-                                            color: whiteColor.withOpacity(0.2),
-                                            borderRadius:
-                                                BorderRadius.circular(12),
-                                          ),
-                                          child: Center(
-                                            child: Image.asset(
-                                              'lib/assets/images/Checklist-pana.png', // Ganti dengan path gambar Anda
-                                              width:
-                                                  100, // Sesuaikan ukuran gambar sesuai kebutuhan
-                                              height: 100,
-                                            ),
-                                          ),
-                                        ),
-                                        SizedBox(
-                                          height: 10.0,
-                                        ),
-                                        Text(
-                                          "Lakukan\nKebiasaan ini",
-                                          style: whiteTextStyle.copyWith(
-                                            fontSize: MediaQuery.of(context)
-                                                    .size
-                                                    .width *
-                                                0.038,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                          textAlign: TextAlign.center,
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        )
                       ],
                     ),
+                    SizedBox(height: 20.0),
+                    //card 1
+                    Column(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(12.0),
+                          child: Container(
+                            width: double.infinity,
+                            height: MediaQuery.of(context).size.height * 0.28,
+                            color: cardColor,
+                            child: Center(
+                              child: Padding(
+                                padding: const EdgeInsets.all(18.0),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Expanded(
+                                      child: FittedBox(
+                                        child: Padding(
+                                          padding: EdgeInsets.all(2.0),
+                                          child: CircleAvatar(
+                                            backgroundColor:
+                                                whiteColor.withOpacity(0.6),
+                                            backgroundImage: AssetImage(imageCard),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Text(
+                                      cardText,
+                                      style: whiteTextStyle.copyWith(
+                                          fontSize:
+                                              MediaQuery.of(context).size.width *
+                                                  0.064,
+                                          fontWeight: bold,
+                                          color: textColors),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+            
+                        SizedBox(
+                          height: 15,
+                        ),
+                        LinearPercentIndicator(
+                          animation: true,
+                          animationDuration: 1000,
+                          lineHeight: MediaQuery.of(context).size.height * 0.025,
+                          percent: _progress,
+                          progressColor: cardColor,
+                          center: Text(
+                            "${(_progress * 100).toStringAsFixed(2)}%", // Menampilkan persentase dengan dua desimal
+                            style: TextStyle(
+                                fontSize:
+                                    MediaQuery.of(context).size.height * 0.019,
+                                color: textColors),
+                          ),
+                        ),
+                        SizedBox(height: 15),
+            
+                        //card2
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            GestureDetector(
+                              onTap: () {
+                                if (_progress >= 1.0) {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) {
+                                        return AnxietyTestPage();
+                                      },
+                                    ),
+                                  );
+                                } else {
+                                  showDialog(
+                                    context: context,
+                                    builder: (context) {
+                                      return AlertDialog(
+                                        title: Text('Peringatan'),
+                                        content: Text(
+                                            'Anda harus menyelesaikan lebih banyak tugas untuk membuka uji tingkat gejala.'),
+                                        actions: [
+                                          ElevatedButton(
+                                            onPressed: () {
+                                              Navigator.pop(context);
+                                            },
+                                            child: Text('OK'),
+                                          ),
+                                        ],
+                                      );
+                                    },
+                                  );
+                                }
+                              },
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(12.0),
+                                child: Container(
+                                  height: MediaQuery.of(context).size.height * 0.3,
+                                  width: MediaQuery.of(context).size.width * 0.42,
+                                  color: _progress >= 1.0
+                                      ? primaryButtonColor
+                                      : primaryButtonColor, // Ganti warna sesuai kebutuhan
+                                  child: FittedBox(
+                                    child: Center(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(18.0),
+                                        child: Column(
+                                          children: [
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                color: whiteColor.withOpacity(0.2),
+                                                borderRadius:
+                                                    BorderRadius.circular(12),
+                                              ),
+                                              child: Center(
+                                                child: Image.asset(
+                                                  'lib/assets/images/Checklist-bro (1).png',
+                                                  width: 100,
+                                                  height: 100,
+                                                ),
+                                              ),
+                                            ),
+                                            SizedBox(
+                                              height: 10.0,
+                                            ),
+                                            Text(
+                                              "Test Tingkat\nGejala Kamu",
+                                              style: whiteTextStyle.copyWith(
+                                                fontSize: MediaQuery.of(context)
+                                                        .size
+                                                        .width *
+                                                    0.038,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                              textAlign: TextAlign.center,
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+            
+                            // SizedBox(width: 20.0),
+                            //card3
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) {
+                                      return GoalsPage(anxietyLevel: _anxietyLevel);
+                                    },
+                                  ),
+                                );
+                              },
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(12.0),
+                                child: Container(
+                                  height: MediaQuery.of(context).size.height * 0.3,
+                                  width: MediaQuery.of(context).size.width * 0.42,
+                                  color: primaryButtonColor,
+                                  child: FittedBox(
+                                    child: Center(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(18.0),
+                                        child: Column(
+                                          children: [
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                color: whiteColor.withOpacity(0.2),
+                                                borderRadius:
+                                                    BorderRadius.circular(12),
+                                              ),
+                                              child: Center(
+                                                child: Image.asset(
+                                                  'lib/assets/images/Checklist-pana.png', // Ganti dengan path gambar Anda
+                                                  width:
+                                                      100, // Sesuaikan ukuran gambar sesuai kebutuhan
+                                                  height: 100,
+                                                ),
+                                              ),
+                                            ),
+                                            SizedBox(
+                                              height: 10.0,
+                                            ),
+                                            Text(
+                                              "Lakukan\nKebiasaan ini",
+                                              style: whiteTextStyle.copyWith(
+                                                fontSize: MediaQuery.of(context)
+                                                        .size
+                                                        .width *
+                                                    0.038,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                              textAlign: TextAlign.center,
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      ],
+                    )
                   ],
-                )
-              ],
+                ),
+              ),
             ),
           ),
         ),

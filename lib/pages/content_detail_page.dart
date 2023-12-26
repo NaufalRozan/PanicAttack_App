@@ -59,7 +59,7 @@ class _ContentDetailPageState extends State<ContentDetailPage> {
             Text(
               widget.content.title,
               style: textStyle.copyWith(
-                  fontSize: MediaQuery.of(context).size.width * 0.07,
+                  fontSize: MediaQuery.of(context).size.width * 0.065,
                   fontWeight: bold),
               textAlign: TextAlign.center,
             ),
@@ -72,7 +72,7 @@ class _ContentDetailPageState extends State<ContentDetailPage> {
                   Text(
                     widget.content.description,
                     style: textStyle.copyWith(
-                        fontSize: MediaQuery.of(context).size.width * 0.05),
+                        fontSize: MediaQuery.of(context).size.width * 0.04),
                     textAlign: TextAlign.center,
                   )
                 ],
