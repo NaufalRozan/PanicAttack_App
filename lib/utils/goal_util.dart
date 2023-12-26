@@ -53,7 +53,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30), // 30 detik
           imagePath: 'lib/assets/images/Breathing exercise-rafiki.png',
-          gifPath: 'lib/assets/gifs/nafas.gif',
+          gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
         ),
         DayContent(
@@ -64,7 +64,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 60),
           imagePath: 'lib/assets/images/Stretching exercises-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9773.GIF',
+          gifPath: 'lib/assets/gifs/Stretching exercises.gif',
           completed: false,
         ),
         DayContent(
@@ -75,7 +75,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 60),
           imagePath: 'lib/assets/images/Stretch-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9775.GIF',
+          gifPath: 'lib/assets/gifs/Stretch.gif',
           completed: false,
         ),
         DayContent(
@@ -86,7 +86,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 60),
           imagePath: 'lib/assets/images/Stretch-rafiki (1).png',
-          gifPath: 'lib/assets/gifs/IMG_9779.GIF',
+          gifPath: 'lib/assets/gifs/Stretch (1).gif',
           completed: false,
         ),
         DayContent(
@@ -97,7 +97,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Walking around-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9793.GIF',
+          gifPath: 'lib/assets/gifs/Walking around.gif',
           completed: false,
         ),
         DayContent(
@@ -108,7 +108,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/drinking water-rafiki.png',
-          gifPath: 'lib/assets/gifs/IMG_9792.GIF',
+          gifPath: 'lib/assets/gifs/drinking water.gif',
           completed: false,
         ),
       ];
@@ -122,7 +122,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 60),
           imagePath: 'lib/assets/images/Breathing exercise-rafiki.png',
-          gifPath: 'lib/assets/gifs/nafas.gif',
+          gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
         ),
         DayContent(
@@ -133,7 +133,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '01:30',
           durasi: Duration(seconds: 90),
           imagePath: 'lib/assets/images/Stretching exercises-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9773.GIF',
+          gifPath: 'lib/assets/gifs/Stretching exercises.gif',
           completed: false,
         ),
         DayContent(
@@ -144,7 +144,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '01:30',
           durasi: Duration(seconds: 90),
           imagePath: 'lib/assets/images/Stretch-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9775.GIF',
+          gifPath: 'lib/assets/gifs/Stretch.gif',
           completed: false,
         ),
         DayContent(
@@ -155,7 +155,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '01:30',
           durasi: Duration(seconds: 90),
           imagePath: 'lib/assets/images/Stretch-rafiki (1).png',
-          gifPath: 'lib/assets/gifs/IMG_9779.GIF',
+          gifPath: 'lib/assets/gifs/Stretch (1).gif',
           completed: false,
         ),
         DayContent(
@@ -166,7 +166,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Walking around-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9793.GIF',
+          gifPath: 'lib/assets/gifs/Walking around.gif',
           completed: false,
         ),
         DayContent(
@@ -177,7 +177,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '03:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/drinking water-rafiki.png',
-          gifPath: 'lib/assets/gifs/IMG_9792.GIF',
+          gifPath: 'lib/assets/gifs/drinking water.gif',
           completed: false,
         ),
         DayContent(
@@ -188,7 +188,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 60),
           imagePath: 'lib/assets/images/Music-pana.png',
-          gifPath: 'lib/assets/gifs/IMG_0027.GIF',
+          gifPath: 'lib/assets/gifs/Music.gif',
           completed: false,
         ),
         DayContent(
@@ -199,7 +199,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '03:00',
           durasi: Duration(seconds: 180),
           imagePath: 'lib/assets/images/Mindfulness-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9791.GIF',
+          gifPath: 'lib/assets/gifs/Mindfulness.gif',
           completed: false,
         ),
       ];
@@ -213,7 +213,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '01:30',
           durasi: Duration(seconds: 90),
           imagePath: 'lib/assets/images/Breathing exercise-rafiki.png',
-          gifPath: 'lib/assets/gifs/nafas.gif',
+          gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
         ),
         DayContent(
@@ -224,7 +224,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '02:00',
           durasi: Duration(seconds: 120),
           imagePath: 'lib/assets/images/Stretching exercises-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9773.GIF',
+          gifPath: 'lib/assets/gifs/Stretching exercises.gif',
           completed: false,
         ),
         DayContent(
@@ -235,7 +235,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '02:00',
           durasi: Duration(seconds: 120),
           imagePath: 'lib/assets/images/Stretch-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9775.GIF',
+          gifPath: 'lib/assets/gifs/Stretch.gif',
           completed: false,
         ),
         DayContent(
@@ -246,7 +246,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '02:00',
           durasi: Duration(seconds: 120),
           imagePath: 'lib/assets/images/Stretch-rafiki (1).png',
-          gifPath: 'lib/assets/gifs/IMG_9779.GIF',
+          gifPath: 'lib/assets/gifs/Stretch (1).gif',
           completed: false,
         ),
         DayContent(
@@ -257,7 +257,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Walking around-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9793.GIF',
+          gifPath: 'lib/assets/gifs/Walking around.gif',
           completed: false,
         ),
         DayContent(
@@ -268,7 +268,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/drinking water-rafiki.png',
-          gifPath: 'lib/assets/gifs/IMG_9792.GIF',
+          gifPath: 'lib/assets/gifs/drinking water.gif',
           completed: false,
         ),
         DayContent(
@@ -279,7 +279,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '02:00',
           durasi: Duration(seconds: 120),
           imagePath: 'lib/assets/images/Music-pana.png',
-          gifPath: 'lib/assets/gifs/IMG_0027.GIF',
+          gifPath: 'lib/assets/gifs/Music.gif',
           completed: false,
         ),
         DayContent(
@@ -290,7 +290,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '05:00',
           durasi: Duration(seconds: 300),
           imagePath: 'lib/assets/images/Mindfulness-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9791.GIF',
+          gifPath: 'lib/assets/gifs/Mindfulness.gif',
           completed: false,
         ),
         DayContent(
@@ -301,7 +301,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 60),
           imagePath: 'lib/assets/images/Specs-rafiki.png',
-          gifPath: 'lib/assets/gifs/IMG_9784.GIF',
+          gifPath: 'lib/assets/gifs/Specs.gif',
           completed: false,
         ),
       ];
@@ -322,7 +322,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30), // 30 detik
           imagePath: 'lib/assets/images/Breathing exercise-rafiki.png',
-          gifPath: 'lib/assets/gifs/nafas.gif',
+          gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
         ),
         DayContent(
@@ -333,7 +333,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretching exercises-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9773.GIF',
+          gifPath: 'lib/assets/gifs/Stretching exercises.gif',
           completed: false,
         ),
         DayContent(
@@ -344,7 +344,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9775.GIF',
+          gifPath: 'lib/assets/gifs/Stretch.gif',
           completed: false,
         ),
         DayContent(
@@ -355,7 +355,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-rafiki (1).png',
-          gifPath: 'lib/assets/gifs/IMG_9779.GIF',
+          gifPath: 'lib/assets/gifs/Stretch (1).gif',
           completed: false,
         ),
         DayContent(
@@ -366,7 +366,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Walking around-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9793.GIF',
+          gifPath: 'lib/assets/gifs/Walking around.gif',
           completed: false,
         ),
         DayContent(
@@ -377,7 +377,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/drinking water-rafiki.png',
-          gifPath: 'lib/assets/gifs/IMG_9792.GIF',
+          gifPath: 'lib/assets/gifs/drinking water.gif',
           completed: false,
         ),
       ];
@@ -391,7 +391,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-rafiki.png',
-          gifPath: 'lib/assets/gifs/nafas.gif',
+          gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
         ),
         DayContent(
@@ -402,7 +402,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretching exercises-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9773.GIF',
+          gifPath: 'lib/assets/gifs/Stretching exercises.gif',
           completed: false,
         ),
         DayContent(
@@ -413,7 +413,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9775.GIF',
+          gifPath: 'lib/assets/gifs/Stretch.gif',
           completed: false,
         ),
         DayContent(
@@ -424,7 +424,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-rafiki (1).png',
-          gifPath: 'lib/assets/gifs/IMG_9779.GIF',
+          gifPath: 'lib/assets/gifs/Stretch (1).gif',
           completed: false,
         ),
         DayContent(
@@ -435,7 +435,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Walking around-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9793.GIF',
+          gifPath: 'lib/assets/gifs/Walking around.gif',
           completed: false,
         ),
         DayContent(
@@ -446,7 +446,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/drinking water-rafiki.png',
-          gifPath: 'lib/assets/gifs/IMG_9792.GIF',
+          gifPath: 'lib/assets/gifs/drinking water.gif',
           completed: false,
         ),
         DayContent(
@@ -457,7 +457,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Music-pana.png',
-          gifPath: 'lib/assets/gifs/IMG_0027.GIF',
+          gifPath: 'lib/assets/gifs/Music.gif',
           completed: false,
         ),
         DayContent(
@@ -468,7 +468,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Mindfulness-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9791.GIF',
+          gifPath: 'lib/assets/gifs/Mindfulness.gif',
           completed: false,
         ),
       ];
@@ -482,7 +482,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-rafiki.png',
-          gifPath: 'lib/assets/gifs/nafas.gif',
+          gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
         ),
         DayContent(
@@ -493,7 +493,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretching exercises-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9773.GIF',
+          gifPath: 'lib/assets/gifs/Stretching exercises.gif',
           completed: false,
         ),
         DayContent(
@@ -504,7 +504,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9775.GIF',
+          gifPath: 'lib/assets/gifs/Stretch.gif',
           completed: false,
         ),
         DayContent(
@@ -515,7 +515,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-rafiki (1).png',
-          gifPath: 'lib/assets/gifs/IMG_9779.GIF',
+          gifPath: 'lib/assets/gifs/Stretch (1).gif',
           completed: false,
         ),
         DayContent(
@@ -526,7 +526,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Walking around-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9793.GIF',
+          gifPath: 'lib/assets/gifs/Walking around.gif',
           completed: false,
         ),
         DayContent(
@@ -537,7 +537,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/drinking water-rafiki.png',
-          gifPath: 'lib/assets/gifs/IMG_9792.GIF',
+          gifPath: 'lib/assets/gifs/drinking water.gif',
           completed: false,
         ),
         DayContent(
@@ -548,7 +548,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Music-pana.png',
-          gifPath: 'lib/assets/gifs/IMG_0027.GIF',
+          gifPath: 'lib/assets/gifs/Music.gif',
           completed: false,
         ),
         DayContent(
@@ -559,7 +559,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Mindfulness-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9791.GIF',
+          gifPath: 'lib/assets/gifs/Mindfulness.gif',
           completed: false,
         ),
         DayContent(
@@ -569,8 +569,8 @@ List<DayContent> getDay2Content(String anxietyLevel) {
               'Gunakan cermin sebagai cara untuk berinteraksi dengan diri sendiri. Ini dapat meningkatkan rasa percaya diri saat Anda harus berbicara di depan orang lain.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
-          imagePath: 'lib/assets/images/icons8-meditation-48.png',
-          gifPath: 'lib/assets/gifs/IMG_9791.GIF',
+          imagePath: 'lib/assets/images/Specs-rafiki.png',
+          gifPath: 'lib/assets/gifs/Specs.gif',
           completed: false,
         ),
       ];
@@ -591,7 +591,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30), // 30 detik
           imagePath: 'lib/assets/images/Breathing exercise-rafiki.png',
-          gifPath: 'lib/assets/gifs/nafas.gif',
+          gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
         ),
         DayContent(
@@ -602,7 +602,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretching exercises-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9773.GIF',
+          gifPath: 'lib/assets/gifs/Stretching exercises.gif',
           completed: false,
         ),
         DayContent(
@@ -613,7 +613,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9775.GIF',
+          gifPath: 'lib/assets/gifs/Stretch.gif',
           completed: false,
         ),
         DayContent(
@@ -624,7 +624,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-rafiki (1).png',
-          gifPath: 'lib/assets/gifs/IMG_9779.GIF',
+          gifPath: 'lib/assets/gifs/Stretch (1).gif',
           completed: false,
         ),
         DayContent(
@@ -635,7 +635,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Walking around-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9793.GIF',
+          gifPath: 'lib/assets/gifs/Walking around.gif',
           completed: false,
         ),
         DayContent(
@@ -646,7 +646,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/drinking water-rafiki.png',
-          gifPath: 'lib/assets/gifs/IMG_9792.GIF',
+          gifPath: 'lib/assets/gifs/drinking water.gif',
           completed: false,
         ),
       ];
@@ -660,7 +660,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-rafiki.png',
-          gifPath: 'lib/assets/gifs/nafas.gif',
+          gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
         ),
         DayContent(
@@ -671,7 +671,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretching exercises-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9773.GIF',
+          gifPath: 'lib/assets/gifs/Stretching exercises.gif',
           completed: false,
         ),
         DayContent(
@@ -682,7 +682,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9775.GIF',
+          gifPath: 'lib/assets/gifs/Stretch.gif',
           completed: false,
         ),
         DayContent(
@@ -693,7 +693,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-rafiki (1).png',
-          gifPath: 'lib/assets/gifs/IMG_9779.GIF',
+          gifPath: 'lib/assets/gifs/Stretch (1).gif',
           completed: false,
         ),
         DayContent(
@@ -704,7 +704,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Walking around-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9793.GIF',
+          gifPath: 'lib/assets/gifs/Walking around.gif',
           completed: false,
         ),
         DayContent(
@@ -715,7 +715,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/drinking water-rafiki.png',
-          gifPath: 'lib/assets/gifs/IMG_9792.GIF',
+          gifPath: 'lib/assets/gifs/drinking water.gif',
           completed: false,
         ),
         DayContent(
@@ -726,7 +726,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Music-pana.png',
-          gifPath: 'lib/assets/gifs/IMG_0027.GIF',
+          gifPath: 'lib/assets/gifs/Music.gif',
           completed: false,
         ),
         DayContent(
@@ -737,7 +737,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Mindfulness-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9791.GIF',
+          gifPath: 'lib/assets/gifs/Mindfulness.gif',
           completed: false,
         ),
       ];
@@ -751,7 +751,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-rafiki.png',
-          gifPath: 'lib/assets/gifs/nafas.gif',
+          gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
         ),
         DayContent(
@@ -762,7 +762,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretching exercises-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9773.GIF',
+          gifPath: 'lib/assets/gifs/Stretching exercises.gif',
           completed: false,
         ),
         DayContent(
@@ -773,7 +773,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9775.GIF',
+          gifPath: 'lib/assets/gifs/Stretch.gif',
           completed: false,
         ),
         DayContent(
@@ -784,7 +784,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-rafiki (1).png',
-          gifPath: 'lib/assets/gifs/IMG_9779.GIF',
+          gifPath: 'lib/assets/gifs/Stretch (1).gif',
           completed: false,
         ),
         DayContent(
@@ -795,7 +795,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Walking around-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9793.GIF',
+          gifPath: 'lib/assets/gifs/Walking around.gif',
           completed: false,
         ),
         DayContent(
@@ -806,7 +806,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/drinking water-rafiki.png',
-          gifPath: 'lib/assets/gifs/IMG_9792.GIF',
+          gifPath: 'lib/assets/gifs/drinking water.gif',
           completed: false,
         ),
         DayContent(
@@ -817,7 +817,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Music-pana.png',
-          gifPath: 'lib/assets/gifs/IMG_0027.GIF',
+          gifPath: 'lib/assets/gifs/Music.gif',
           completed: false,
         ),
         DayContent(
@@ -828,7 +828,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Mindfulness-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9791.GIF',
+          gifPath: 'lib/assets/gifs/Mindfulness.gif',
           completed: false,
         ),
         DayContent(
@@ -838,8 +838,8 @@ List<DayContent> getDay3Content(String anxietyLevel) {
               'Gunakan cermin sebagai cara untuk berinteraksi dengan diri sendiri. Ini dapat meningkatkan rasa percaya diri saat Anda harus berbicara di depan orang lain.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
-          imagePath: 'lib/assets/images/icons8-meditation-48.png',
-          gifPath: 'lib/assets/gifs/IMG_9791.GIF',
+          imagePath: 'lib/assets/images/Specs-rafiki.png',
+          gifPath: 'lib/assets/gifs/Specs.gif',
           completed: false,
         ),
       ];
@@ -860,7 +860,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30), // 30 detik
           imagePath: 'lib/assets/images/Breathing exercise-rafiki.png',
-          gifPath: 'lib/assets/gifs/nafas.gif',
+          gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
         ),
         DayContent(
@@ -871,7 +871,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretching exercises-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9773.GIF',
+          gifPath: 'lib/assets/gifs/Stretching exercises.gif',
           completed: false,
         ),
         DayContent(
@@ -882,7 +882,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9775.GIF',
+          gifPath: 'lib/assets/gifs/Stretch.gif',
           completed: false,
         ),
         DayContent(
@@ -893,7 +893,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-rafiki (1).png',
-          gifPath: 'lib/assets/gifs/IMG_9779.GIF',
+          gifPath: 'lib/assets/gifs/Stretch (1).gif',
           completed: false,
         ),
         DayContent(
@@ -904,7 +904,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Walking around-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9793.GIF',
+          gifPath: 'lib/assets/gifs/Walking around.gif',
           completed: false,
         ),
         DayContent(
@@ -915,7 +915,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/drinking water-rafiki.png',
-          gifPath: 'lib/assets/gifs/IMG_9792.GIF',
+          gifPath: 'lib/assets/gifs/drinking water.gif',
           completed: false,
         ),
       ];
@@ -929,7 +929,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-rafiki.png',
-          gifPath: 'lib/assets/gifs/nafas.gif',
+          gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
         ),
         DayContent(
@@ -940,7 +940,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretching exercises-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9773.GIF',
+          gifPath: 'lib/assets/gifs/Stretching exercises.gif',
           completed: false,
         ),
         DayContent(
@@ -951,7 +951,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9775.GIF',
+          gifPath: 'lib/assets/gifs/Stretch.gif',
           completed: false,
         ),
         DayContent(
@@ -962,7 +962,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-rafiki (1).png',
-          gifPath: 'lib/assets/gifs/IMG_9779.GIF',
+          gifPath: 'lib/assets/gifs/Stretch (1).gif',
           completed: false,
         ),
         DayContent(
@@ -973,7 +973,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Walking around-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9793.GIF',
+          gifPath: 'lib/assets/gifs/Walking around.gif',
           completed: false,
         ),
         DayContent(
@@ -984,7 +984,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/drinking water-rafiki.png',
-          gifPath: 'lib/assets/gifs/IMG_9792.GIF',
+          gifPath: 'lib/assets/gifs/drinking water.gif',
           completed: false,
         ),
         DayContent(
@@ -995,7 +995,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Music-pana.png',
-          gifPath: 'lib/assets/gifs/IMG_0027.GIF',
+          gifPath: 'lib/assets/gifs/Music.gif',
           completed: false,
         ),
         DayContent(
@@ -1006,7 +1006,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Mindfulness-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9791.GIF',
+          gifPath: 'lib/assets/gifs/Mindfulness.gif',
           completed: false,
         ),
       ];
@@ -1020,7 +1020,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-rafiki.png',
-          gifPath: 'lib/assets/gifs/nafas.gif',
+          gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
         ),
         DayContent(
@@ -1031,7 +1031,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretching exercises-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9773.GIF',
+          gifPath: 'lib/assets/gifs/Stretching exercises.gif',
           completed: false,
         ),
         DayContent(
@@ -1042,7 +1042,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9775.GIF',
+          gifPath: 'lib/assets/gifs/Stretch.gif',
           completed: false,
         ),
         DayContent(
@@ -1053,7 +1053,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-rafiki (1).png',
-          gifPath: 'lib/assets/gifs/IMG_9779.GIF',
+          gifPath: 'lib/assets/gifs/Stretch (1).gif',
           completed: false,
         ),
         DayContent(
@@ -1064,7 +1064,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Walking around-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9793.GIF',
+          gifPath: 'lib/assets/gifs/Walking around.gif',
           completed: false,
         ),
         DayContent(
@@ -1075,7 +1075,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/drinking water-rafiki.png',
-          gifPath: 'lib/assets/gifs/IMG_9792.GIF',
+          gifPath: 'lib/assets/gifs/drinking water.gif',
           completed: false,
         ),
         DayContent(
@@ -1086,7 +1086,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Music-pana.png',
-          gifPath: 'lib/assets/gifs/IMG_0027.GIF',
+          gifPath: 'lib/assets/gifs/Music.gif',
           completed: false,
         ),
         DayContent(
@@ -1097,7 +1097,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Mindfulness-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9791.GIF',
+          gifPath: 'lib/assets/gifs/Mindfulness.gif',
           completed: false,
         ),
         DayContent(
@@ -1107,8 +1107,8 @@ List<DayContent> getDay4Content(String anxietyLevel) {
               'Gunakan cermin sebagai cara untuk berinteraksi dengan diri sendiri. Ini dapat meningkatkan rasa percaya diri saat Anda harus berbicara di depan orang lain.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
-          imagePath: 'lib/assets/images/icons8-meditation-48.png',
-          gifPath: 'lib/assets/gifs/IMG_9791.GIF',
+          imagePath: 'lib/assets/images/Specs-rafiki.png',
+          gifPath: 'lib/assets/gifs/Specs.gif',
           completed: false,
         ),
       ];
@@ -1129,7 +1129,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30), // 30 detik
           imagePath: 'lib/assets/images/Breathing exercise-rafiki.png',
-          gifPath: 'lib/assets/gifs/nafas.gif',
+          gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
         ),
         DayContent(
@@ -1140,7 +1140,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretching exercises-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9773.GIF',
+          gifPath: 'lib/assets/gifs/Stretching exercises.gif',
           completed: false,
         ),
         DayContent(
@@ -1151,7 +1151,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9775.GIF',
+          gifPath: 'lib/assets/gifs/Stretch.gif',
           completed: false,
         ),
         DayContent(
@@ -1162,7 +1162,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-rafiki (1).png',
-          gifPath: 'lib/assets/gifs/IMG_9779.GIF',
+          gifPath: 'lib/assets/gifs/Stretch (1).gif',
           completed: false,
         ),
         DayContent(
@@ -1173,7 +1173,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Walking around-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9793.GIF',
+          gifPath: 'lib/assets/gifs/Walking around.gif',
           completed: false,
         ),
         DayContent(
@@ -1184,7 +1184,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/drinking water-rafiki.png',
-          gifPath: 'lib/assets/gifs/IMG_9792.GIF',
+          gifPath: 'lib/assets/gifs/drinking water.gif',
           completed: false,
         ),
       ];
@@ -1198,7 +1198,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-rafiki.png',
-          gifPath: 'lib/assets/gifs/nafas.gif',
+          gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
         ),
         DayContent(
@@ -1209,7 +1209,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretching exercises-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9773.GIF',
+          gifPath: 'lib/assets/gifs/Stretching exercises.gif',
           completed: false,
         ),
         DayContent(
@@ -1220,7 +1220,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9775.GIF',
+          gifPath: 'lib/assets/gifs/Stretch.gif',
           completed: false,
         ),
         DayContent(
@@ -1231,7 +1231,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-rafiki (1).png',
-          gifPath: 'lib/assets/gifs/IMG_9779.GIF',
+          gifPath: 'lib/assets/gifs/Stretch (1).gif',
           completed: false,
         ),
         DayContent(
@@ -1242,7 +1242,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Walking around-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9793.GIF',
+          gifPath: 'lib/assets/gifs/Walking around.gif',
           completed: false,
         ),
         DayContent(
@@ -1253,7 +1253,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/drinking water-rafiki.png',
-          gifPath: 'lib/assets/gifs/IMG_9792.GIF',
+          gifPath: 'lib/assets/gifs/drinking water.gif',
           completed: false,
         ),
         DayContent(
@@ -1264,7 +1264,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Music-pana.png',
-          gifPath: 'lib/assets/gifs/IMG_0027.GIF',
+          gifPath: 'lib/assets/gifs/Music.gif',
           completed: false,
         ),
         DayContent(
@@ -1275,7 +1275,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Mindfulness-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9791.GIF',
+          gifPath: 'lib/assets/gifs/Mindfulness.gif',
           completed: false,
         ),
       ];
@@ -1289,7 +1289,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-rafiki.png',
-          gifPath: 'lib/assets/gifs/nafas.gif',
+          gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
         ),
         DayContent(
@@ -1300,7 +1300,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretching exercises-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9773.GIF',
+          gifPath: 'lib/assets/gifs/Stretching exercises.gif',
           completed: false,
         ),
         DayContent(
@@ -1311,7 +1311,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9775.GIF',
+          gifPath: 'lib/assets/gifs/Stretch.gif',
           completed: false,
         ),
         DayContent(
@@ -1322,7 +1322,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-rafiki (1).png',
-          gifPath: 'lib/assets/gifs/IMG_9779.GIF',
+          gifPath: 'lib/assets/gifs/Stretch (1).gif',
           completed: false,
         ),
         DayContent(
@@ -1333,7 +1333,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Walking around-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9793.GIF',
+          gifPath: 'lib/assets/gifs/Walking around.gif',
           completed: false,
         ),
         DayContent(
@@ -1344,7 +1344,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/drinking water-rafiki.png',
-          gifPath: 'lib/assets/gifs/IMG_9792.GIF',
+          gifPath: 'lib/assets/gifs/drinking water.gif',
           completed: false,
         ),
         DayContent(
@@ -1355,7 +1355,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Music-pana.png',
-          gifPath: 'lib/assets/gifs/IMG_0027.GIF',
+          gifPath: 'lib/assets/gifs/Music.gif',
           completed: false,
         ),
         DayContent(
@@ -1366,7 +1366,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Mindfulness-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9791.GIF',
+          gifPath: 'lib/assets/gifs/Mindfulness.gif',
           completed: false,
         ),
         DayContent(
@@ -1376,8 +1376,8 @@ List<DayContent> getDay5Content(String anxietyLevel) {
               'Gunakan cermin sebagai cara untuk berinteraksi dengan diri sendiri. Ini dapat meningkatkan rasa percaya diri saat Anda harus berbicara di depan orang lain.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
-          imagePath: 'lib/assets/images/icons8-meditation-48.png',
-          gifPath: 'lib/assets/gifs/IMG_9791.GIF',
+          imagePath: 'lib/assets/images/Specs-rafiki.png',
+          gifPath: 'lib/assets/gifs/Specs.gif',
           completed: false,
         ),
       ];
@@ -1398,7 +1398,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30), // 30 detik
           imagePath: 'lib/assets/images/Breathing exercise-rafiki.png',
-          gifPath: 'lib/assets/gifs/nafas.gif',
+          gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
         ),
         DayContent(
@@ -1409,7 +1409,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretching exercises-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9773.GIF',
+          gifPath: 'lib/assets/gifs/Stretching exercises.gif',
           completed: false,
         ),
         DayContent(
@@ -1420,7 +1420,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9775.GIF',
+          gifPath: 'lib/assets/gifs/Stretch.gif',
           completed: false,
         ),
         DayContent(
@@ -1431,7 +1431,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-rafiki (1).png',
-          gifPath: 'lib/assets/gifs/IMG_9779.GIF',
+          gifPath: 'lib/assets/gifs/Stretch (1).gif',
           completed: false,
         ),
         DayContent(
@@ -1442,7 +1442,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Walking around-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9793.GIF',
+          gifPath: 'lib/assets/gifs/Walking around.gif',
           completed: false,
         ),
         DayContent(
@@ -1453,7 +1453,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/drinking water-rafiki.png',
-          gifPath: 'lib/assets/gifs/IMG_9792.GIF',
+          gifPath: 'lib/assets/gifs/drinking water.gif',
           completed: false,
         ),
       ];
@@ -1467,7 +1467,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-rafiki.png',
-          gifPath: 'lib/assets/gifs/nafas.gif',
+          gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
         ),
         DayContent(
@@ -1478,7 +1478,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretching exercises-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9773.GIF',
+          gifPath: 'lib/assets/gifs/Stretching exercises.gif',
           completed: false,
         ),
         DayContent(
@@ -1489,7 +1489,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9775.GIF',
+          gifPath: 'lib/assets/gifs/Stretch.gif',
           completed: false,
         ),
         DayContent(
@@ -1500,7 +1500,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-rafiki (1).png',
-          gifPath: 'lib/assets/gifs/IMG_9779.GIF',
+          gifPath: 'lib/assets/gifs/Stretch (1).gif',
           completed: false,
         ),
         DayContent(
@@ -1511,7 +1511,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Walking around-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9793.GIF',
+          gifPath: 'lib/assets/gifs/Walking around.gif',
           completed: false,
         ),
         DayContent(
@@ -1522,7 +1522,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/drinking water-rafiki.png',
-          gifPath: 'lib/assets/gifs/IMG_9792.GIF',
+          gifPath: 'lib/assets/gifs/drinking water.gif',
           completed: false,
         ),
         DayContent(
@@ -1533,7 +1533,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Music-pana.png',
-          gifPath: 'lib/assets/gifs/IMG_0027.GIF',
+          gifPath: 'lib/assets/gifs/Music.gif',
           completed: false,
         ),
         DayContent(
@@ -1544,7 +1544,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Mindfulness-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9791.GIF',
+          gifPath: 'lib/assets/gifs/Mindfulness.gif',
           completed: false,
         ),
       ];
@@ -1558,7 +1558,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-rafiki.png',
-          gifPath: 'lib/assets/gifs/nafas.gif',
+          gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
         ),
         DayContent(
@@ -1569,7 +1569,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretching exercises-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9773.GIF',
+          gifPath: 'lib/assets/gifs/Stretching exercises.gif',
           completed: false,
         ),
         DayContent(
@@ -1580,7 +1580,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9775.GIF',
+          gifPath: 'lib/assets/gifs/Stretch.gif',
           completed: false,
         ),
         DayContent(
@@ -1591,7 +1591,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-rafiki (1).png',
-          gifPath: 'lib/assets/gifs/IMG_9779.GIF',
+          gifPath: 'lib/assets/gifs/Stretch (1).gif',
           completed: false,
         ),
         DayContent(
@@ -1602,7 +1602,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Walking around-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9793.GIF',
+          gifPath: 'lib/assets/gifs/Walking around.gif',
           completed: false,
         ),
         DayContent(
@@ -1613,7 +1613,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/drinking water-rafiki.png',
-          gifPath: 'lib/assets/gifs/IMG_9792.GIF',
+          gifPath: 'lib/assets/gifs/drinking water.gif',
           completed: false,
         ),
         DayContent(
@@ -1624,7 +1624,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Music-pana.png',
-          gifPath: 'lib/assets/gifs/IMG_0027.GIF',
+          gifPath: 'lib/assets/gifs/Music.gif',
           completed: false,
         ),
         DayContent(
@@ -1635,7 +1635,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Mindfulness-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9791.GIF',
+          gifPath: 'lib/assets/gifs/Mindfulness.gif',
           completed: false,
         ),
         DayContent(
@@ -1645,8 +1645,8 @@ List<DayContent> getDay6Content(String anxietyLevel) {
               'Gunakan cermin sebagai cara untuk berinteraksi dengan diri sendiri. Ini dapat meningkatkan rasa percaya diri saat Anda harus berbicara di depan orang lain.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
-          imagePath: 'lib/assets/images/icons8-meditation-48.png',
-          gifPath: 'lib/assets/gifs/IMG_9791.GIF',
+          imagePath: 'lib/assets/images/Specs-rafiki.png',
+          gifPath: 'lib/assets/gifs/Specs.gif',
           completed: false,
         ),
       ];
@@ -1667,7 +1667,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30), // 30 detik
           imagePath: 'lib/assets/images/Breathing exercise-rafiki.png',
-          gifPath: 'lib/assets/gifs/nafas.gif',
+          gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
         ),
         DayContent(
@@ -1678,7 +1678,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretching exercises-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9773.GIF',
+          gifPath: 'lib/assets/gifs/Stretching exercises.gif',
           completed: false,
         ),
         DayContent(
@@ -1689,7 +1689,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9775.GIF',
+          gifPath: 'lib/assets/gifs/Stretch.gif',
           completed: false,
         ),
         DayContent(
@@ -1700,7 +1700,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-rafiki (1).png',
-          gifPath: 'lib/assets/gifs/IMG_9779.GIF',
+          gifPath: 'lib/assets/gifs/Stretch (1).gif',
           completed: false,
         ),
         DayContent(
@@ -1711,7 +1711,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Walking around-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9793.GIF',
+          gifPath: 'lib/assets/gifs/Walking around.gif',
           completed: false,
         ),
         DayContent(
@@ -1722,7 +1722,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/drinking water-rafiki.png',
-          gifPath: 'lib/assets/gifs/IMG_9792.GIF',
+          gifPath: 'lib/assets/gifs/drinking water.gif',
           completed: false,
         ),
       ];
@@ -1736,7 +1736,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-rafiki.png',
-          gifPath: 'lib/assets/gifs/nafas.gif',
+          gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
         ),
         DayContent(
@@ -1747,7 +1747,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretching exercises-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9773.GIF',
+          gifPath: 'lib/assets/gifs/Stretching exercises.gif',
           completed: false,
         ),
         DayContent(
@@ -1758,7 +1758,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9775.GIF',
+          gifPath: 'lib/assets/gifs/Stretch.gif',
           completed: false,
         ),
         DayContent(
@@ -1769,7 +1769,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-rafiki (1).png',
-          gifPath: 'lib/assets/gifs/IMG_9779.GIF',
+          gifPath: 'lib/assets/gifs/Stretch (1).gif',
           completed: false,
         ),
         DayContent(
@@ -1780,7 +1780,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Walking around-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9793.GIF',
+          gifPath: 'lib/assets/gifs/Walking around.gif',
           completed: false,
         ),
         DayContent(
@@ -1791,7 +1791,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/drinking water-rafiki.png',
-          gifPath: 'lib/assets/gifs/IMG_9792.GIF',
+          gifPath: 'lib/assets/gifs/drinking water.gif',
           completed: false,
         ),
         DayContent(
@@ -1802,7 +1802,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Music-pana.png',
-          gifPath: 'lib/assets/gifs/IMG_0027.GIF',
+          gifPath: 'lib/assets/gifs/Music.gif',
           completed: false,
         ),
         DayContent(
@@ -1813,7 +1813,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Mindfulness-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9791.GIF',
+          gifPath: 'lib/assets/gifs/Mindfulness.gif',
           completed: false,
         ),
       ];
@@ -1827,7 +1827,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
           duration: '00:30',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Breathing exercise-rafiki.png',
-          gifPath: 'lib/assets/gifs/nafas.gif',
+          gifPath: 'lib/assets/gifs/Breathing exercise.gif',
           completed: false,
         ),
         DayContent(
@@ -1838,7 +1838,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretching exercises-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9773.GIF',
+          gifPath: 'lib/assets/gifs/Stretching exercises.gif',
           completed: false,
         ),
         DayContent(
@@ -1849,7 +1849,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9775.GIF',
+          gifPath: 'lib/assets/gifs/Stretch.gif',
           completed: false,
         ),
         DayContent(
@@ -1860,7 +1860,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Stretch-rafiki (1).png',
-          gifPath: 'lib/assets/gifs/IMG_9779.GIF',
+          gifPath: 'lib/assets/gifs/Stretch (1).gif',
           completed: false,
         ),
         DayContent(
@@ -1871,7 +1871,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Walking around-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9793.GIF',
+          gifPath: 'lib/assets/gifs/Walking around.gif',
           completed: false,
         ),
         DayContent(
@@ -1882,7 +1882,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/drinking water-rafiki.png',
-          gifPath: 'lib/assets/gifs/IMG_9792.GIF',
+          gifPath: 'lib/assets/gifs/drinking water.gif',
           completed: false,
         ),
         DayContent(
@@ -1893,7 +1893,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Music-pana.png',
-          gifPath: 'lib/assets/gifs/IMG_0027.GIF',
+          gifPath: 'lib/assets/gifs/Music.gif',
           completed: false,
         ),
         DayContent(
@@ -1904,7 +1904,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
           duration: '01:00',
           durasi: Duration(seconds: 30),
           imagePath: 'lib/assets/images/Mindfulness-amico.png',
-          gifPath: 'lib/assets/gifs/IMG_9791.GIF',
+          gifPath: 'lib/assets/gifs/Mindfulness.gif',
           completed: false,
         ),
         DayContent(
@@ -1914,8 +1914,8 @@ List<DayContent> getDay7Content(String anxietyLevel) {
               'Gunakan cermin sebagai cara untuk berinteraksi dengan diri sendiri. Ini dapat meningkatkan rasa percaya diri saat Anda harus berbicara di depan orang lain.',
           duration: '01:00',
           durasi: Duration(seconds: 30),
-          imagePath: 'lib/assets/images/Breathing exercise-amico.png',
-          gifPath: 'lib/assets/gifs/Breathing exercise.gif',
+          imagePath: 'lib/assets/images/Specs-rafiki.png',
+          gifPath: 'lib/assets/gifs/Specs.gif',
           completed: false,
         ),
       ];

@@ -279,7 +279,7 @@ class _HomePageState extends State<HomePage> {
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage(
-                'lib/assets/images/corner.png',
+                'lib/assets/images/corner2.png',
               ), // Replace with your image path
               alignment: Alignment.topRight,
             ),
