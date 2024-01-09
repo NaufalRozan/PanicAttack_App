@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_countdown_timer/current_remaining_time.dart';
 import 'package:flutter_countdown_timer/flutter_countdown_timer.dart';
 import 'package:panicattack_app/constans.dart';
-import 'package:panicattack_app/pages/history_test_page.dart';
+import 'package:panicattack_app/pages/finish_test_page.dart';
+import 'package:panicattack_app/pages/home_page.dart';
 import 'package:panicattack_app/utils/goal_util.dart';
 
 class ContentDetailPage extends StatefulWidget {
@@ -114,8 +115,35 @@ class _ContentDetailPageState extends State<ContentDetailPage> {
                         timerStarted = true;
                       });
                     },
-                    child: Text('Start'),
+                    child: Text('Mulai'),
                   ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 30),
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomePage()),
+                  );
+                },
+                child: Container(
+                  padding: EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                    color: primaryButtonColor,
+                    borderRadius: BorderRadius.circular(15.0),
+                  ),
+                  child: Center(
+                    child: Text(
+                      'Kembali ke halaman utama',
+                      style: whiteTextStyle.copyWith(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
@@ -138,8 +166,8 @@ class _ContentDetailPageState extends State<ContentDetailPage> {
         await completedContentDoc.set({
           'completed': true,
           'title': content.title,
-          'duration' : content.duration,
-          'image' : content.imagePath,
+          'duration': content.duration,
+          'image': content.imagePath,
           'timestamp': FieldValue.serverTimestamp(),
         });
       } else {
@@ -278,7 +306,7 @@ class _ContentDetailPageState extends State<ContentDetailPage> {
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-            builder: (context) => HistoryTestPage(),
+            builder: (context) => FinishTestPage(),
           ),
         );
       } else {
@@ -298,7 +326,7 @@ class _ContentDetailPageState extends State<ContentDetailPage> {
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-              builder: (context) => HistoryTestPage(),
+              builder: (context) => FinishTestPage(),
             ),
           );
         }

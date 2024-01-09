@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 Color whiteColor = Color(0xffffffff);
 
-Color greyColor = Color(0xff8D8D8D);
+Color greyColor = Color(0xffCBCBCB);
 Color textColor = Color(0xff06442F);
 Color secondaryTextColor = Color(0xff117755);
 Color primaryButtonColor = Color(0xff117755);

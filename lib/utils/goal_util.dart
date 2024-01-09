@@ -182,7 +182,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         ),
         DayContent(
           id: '13',
-          title: 'Mendengarkan Musik\nRelaksasi',
+          title: 'Mendengarkan\nMusik Relaksasi',
           description:
               'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
@@ -197,7 +197,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
           description:
               'Meditasi merangsang respons relaksasi, mengembangkan kesadaran diri, dan meningkatkan kemampuan konsentrasi serta fokus.',
           duration: '03:00',
-          durasi: Duration(seconds: 180),
+          durasi: Duration(seconds: 2),
           imagePath: 'lib/assets/images/Mindfulness-amico.png',
           gifPath: 'lib/assets/gifs/Mindfulness.gif',
           completed: false,
@@ -273,7 +273,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         ),
         DayContent(
           id: '21',
-          title: 'Mendengarkan Musik\nRelaksasi',
+          title: 'Mendengarkan\nMusik Relaksasi',
           description:
               'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '02:00',
@@ -295,7 +295,7 @@ List<DayContent> getDay1Content(String anxietyLevel) {
         ),
         DayContent(
           id: '24',
-          title: 'Berbicara Di Depan\nCermin',
+          title: 'Berbicara Di\nDepan Cermin',
           description:
               'Gunakan cermin sebagai cara untuk berinteraksi dengan diri sendiri. Ini dapat meningkatkan rasa percaya diri saat Anda harus berbicara di depan orang lain.',
           duration: '01:00',
@@ -451,7 +451,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         ),
         DayContent(
           id: '38',
-          title: 'Mendengarkan Musik\nRelaksasi',
+          title: 'Mendengarkan\nMusik Relaksasi',
           description:
               'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
@@ -542,7 +542,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         ),
         DayContent(
           id: '46',
-          title: 'Mendengarkan Musik\nRelaksasi',
+          title: 'Mendengarkan\nMusik Relaksasi',
           description:
               'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
@@ -564,7 +564,7 @@ List<DayContent> getDay2Content(String anxietyLevel) {
         ),
         DayContent(
           id: '49',
-          title: 'Berbicara Di Depan\nCermin',
+          title: 'Berbicara Di\nDepan Cermin',
           description:
               'Gunakan cermin sebagai cara untuk berinteraksi dengan diri sendiri. Ini dapat meningkatkan rasa percaya diri saat Anda harus berbicara di depan orang lain.',
           duration: '01:00',
@@ -720,7 +720,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         ),
         DayContent(
           id: '61',
-          title: 'Mendengarkan Musik\nRelaksasi',
+          title: 'Mendengarkan\nMusik Relaksasi',
           description:
               'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
@@ -811,7 +811,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         ),
         DayContent(
           id: '69',
-          title: 'Mendengarkan Musik\nRelaksasi',
+          title: 'Mendengarkan\nMusik Relaksasi',
           description:
               'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
@@ -833,7 +833,7 @@ List<DayContent> getDay3Content(String anxietyLevel) {
         ),
         DayContent(
           id: '72',
-          title: 'Berbicara Di Depan\nCermin',
+          title: 'Berbicara Di\nDepan Cermin',
           description:
               'Gunakan cermin sebagai cara untuk berinteraksi dengan diri sendiri. Ini dapat meningkatkan rasa percaya diri saat Anda harus berbicara di depan orang lain.',
           duration: '01:00',
@@ -989,7 +989,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         ),
         DayContent(
           id: '85',
-          title: 'Mendengarkan Musik\nRelaksasi',
+          title: 'Mendengarkan\nMusik Relaksasi',
           description:
               'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
@@ -1080,7 +1080,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         ),
         DayContent(
           id: '93',
-          title: 'Mendengarkan Musik\nRelaksasi',
+          title: 'Mendengarkan\nMusik Relaksasi',
           description:
               'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
@@ -1102,7 +1102,7 @@ List<DayContent> getDay4Content(String anxietyLevel) {
         ),
         DayContent(
           id: '96',
-          title: 'Berbicara Di Depan\nCermin',
+          title: 'Berbicara Di\nDepan Cermin',
           description:
               'Gunakan cermin sebagai cara untuk berinteraksi dengan diri sendiri. Ini dapat meningkatkan rasa percaya diri saat Anda harus berbicara di depan orang lain.',
           duration: '01:00',
@@ -1258,7 +1258,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         ),
         DayContent(
           id: '109',
-          title: 'Mendengarkan Musik\nRelaksasi',
+          title: 'Mendengarkan\nMusik Relaksasi',
           description:
               'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
@@ -1349,7 +1349,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         ),
         DayContent(
           id: '117',
-          title: 'Mendengarkan Musik\nRelaksasi',
+          title: 'Mendengarkan\nMusik Relaksasi',
           description:
               'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
@@ -1371,7 +1371,7 @@ List<DayContent> getDay5Content(String anxietyLevel) {
         ),
         DayContent(
           id: '120',
-          title: 'Berbicara Di Depan\nCermin',
+          title: 'Berbicara Di\nDepan Cermin',
           description:
               'Gunakan cermin sebagai cara untuk berinteraksi dengan diri sendiri. Ini dapat meningkatkan rasa percaya diri saat Anda harus berbicara di depan orang lain.',
           duration: '01:00',
@@ -1527,7 +1527,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         ),
         DayContent(
           id: '133',
-          title: 'Mendengarkan Musik\nRelaksasi',
+          title: 'Mendengarkan\nMusik Relaksasi',
           description:
               'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
@@ -1618,7 +1618,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         ),
         DayContent(
           id: '141',
-          title: 'Mendengarkan Musik\nRelaksasi',
+          title: 'Mendengarkan\nMusik Relaksasi',
           description:
               'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
@@ -1640,7 +1640,7 @@ List<DayContent> getDay6Content(String anxietyLevel) {
         ),
         DayContent(
           id: '144',
-          title: 'Berbicara Di Depan\nCermin',
+          title: 'Berbicara Di\nDepan Cermin',
           description:
               'Gunakan cermin sebagai cara untuk berinteraksi dengan diri sendiri. Ini dapat meningkatkan rasa percaya diri saat Anda harus berbicara di depan orang lain.',
           duration: '01:00',
@@ -1796,7 +1796,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         ),
         DayContent(
           id: '157',
-          title: 'Mendengarkan Musik\nRelaksasi',
+          title: 'Mendengarkan\nMusik Relaksasi',
           description:
               'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
@@ -1887,7 +1887,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         ),
         DayContent(
           id: '165',
-          title: 'Mendengarkan Musik\nRelaksasi',
+          title: 'Mendengarkan\nMusik Relaksasi',
           description:
               'Musik dapat memengaruhi suasana hati dan emosi, menciptakan atmosfer mendukung keseimbangan emosional, serta mengurangi tingkat stres dan tegangan.',
           duration: '01:00',
@@ -1909,7 +1909,7 @@ List<DayContent> getDay7Content(String anxietyLevel) {
         ),
         DayContent(
           id: '168',
-          title: 'Berbicara Di Depan\nCermin',
+          title: 'Berbicara Di\nDepan Cermin',
           description:
               'Gunakan cermin sebagai cara untuk berinteraksi dengan diri sendiri. Ini dapat meningkatkan rasa percaya diri saat Anda harus berbicara di depan orang lain.',
           duration: '01:00',

@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:panicattack_app/auth/main_page.dart';
 import 'package:panicattack_app/constans.dart';
+import 'package:panicattack_app/pages/about_page.dart';
 import 'package:panicattack_app/pages/anxiety_test_page.dart';
 import 'package:panicattack_app/pages/goals_page.dart';
 import 'package:panicattack_app/pages/history_test_page.dart';
@@ -133,29 +134,44 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     Color cardColor;
+    Color borderColor;
     Color textColors;
+    Color textColors2;
     String cardText;
+    String progressText;
     String imageCard;
 
     if (_anxietyLevel == 'Anxiety Level Low') {
-      cardColor = primaryButtonColor; // Atur warna sesuai level low
+      cardColor = primaryButtonColor; 
+      borderColor = greyColor;
       cardText = 'Tingkat Kecemasan Rendah';
+      progressText = 'Ayo Tes Tingkat Kecemasan Kembali!';
       textColors = Color(0xffffffff);
+      textColors2 = Color(0xffffffff);
       imageCard = 'lib/assets/images/Ellipse 3.png';
     } else if (_anxietyLevel == 'Anxiety Level Mid') {
-      cardColor = cardYellow; // Atur warna sesuai level mid
+      cardColor = cardYellow;
+      borderColor = greyColor;
       cardText = 'Tingkat Kecemasan Sedang';
-      textColors = Color(0xff06442F);
+      progressText = 'Ayo Tes Tingkat Kecemasan Kembali!';
+      textColors = Color(0xff117755F);
+      textColors2 = Color(0xff117755F);
       imageCard = 'lib/assets/images/Worried-amico.png';
     } else if (_anxietyLevel == 'Anxiety Level High') {
-      cardColor = cardRed; // Atur warna sesuai level high
+      cardColor = cardRed;
+      borderColor = greyColor;
       cardText = 'Tingkat Kecemasan Tinggi';
+      progressText = 'Ayo Tes Tingkat Kecemasan Kembali!';
       textColors = Color(0xffffffff);
+      textColors2 = Color(0xffffffff);
       imageCard = 'lib/assets/images/Student stress-amico.png';
     } else {
-      cardColor = greyColor; // Atur warna sesuai level high
-      cardText = 'Lakukan test\nterlebih dahulu';
-      textColors = Color(0xffffffff);
+      cardColor = greyColor;
+      borderColor = Color(0xff117755F); 
+      cardText = 'Lakukan "Tes Tingkat Kecemasan" terlebih dahulu';
+      progressText = 'Lakukan "Tes Tingkat Kecemasan"';
+      textColors = Color(0xff117755F);
+      textColors2 = Color(0xff117755F);
       imageCard = 'lib/assets/images/Customer Survey-amico.png';
     }
 
@@ -168,7 +184,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               Container(
                 width: double.infinity,
-                height: 200,
+                height: MediaQuery.of(context).size.height * 0.3,
                 color: primaryButtonColor,
                 child: DrawerHeader(
                   padding:
@@ -181,7 +197,7 @@ class _HomePageState extends State<HomePage> {
                         padding: const EdgeInsets.only(top: 20),
                         child: CircleAvatar(
                           backgroundColor: Color.fromARGB(221, 219, 216, 216),
-                          radius: 30,
+                          radius: MediaQuery.of(context).size.height * 0.05,
                           backgroundImage: AssetImage(
                               'lib/assets/images/Oh no-amico (2).png'),
                         ),
@@ -189,11 +205,13 @@ class _HomePageState extends State<HomePage> {
                       SizedBox(height: 20.0),
                       Text(
                         "$_registeredUserName",
-                        style: whiteTextStyle.copyWith(fontSize: 25),
+                        style: whiteTextStyle.copyWith(
+                            fontSize: MediaQuery.of(context).size.width * 0.06),
                       ),
                       Text(
                         "$_registeredEmail",
-                        style: whiteTextStyle.copyWith(fontSize: 18),
+                        style: whiteTextStyle.copyWith(
+                            fontSize: MediaQuery.of(context).size.width * 0.04),
                       ),
                     ],
                   ),
@@ -231,7 +249,7 @@ class _HomePageState extends State<HomePage> {
                         size: 28,
                       ),
                       title: Text(
-                        'History',
+                        'Riwayat',
                         style: secondaryTextStyle.copyWith(
                             fontSize: 18, fontWeight: bold),
                       ),
@@ -248,6 +266,28 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ],
                 ),
+              ),
+              Divider(), // Tambahkan Divider di antara ListTile
+              ListTile(
+                leading: Icon(
+                  Icons.info_outline,
+                  color: primaryButtonColor,
+                  size: 28,
+                ),
+                title: Text(
+                  'Tentang Kami',
+                  style: secondaryTextStyle.copyWith(
+                      fontSize: 18, fontWeight: bold),
+                ),
+                onTap: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>
+                          AboutPage(), // Replace YourLoginPage with the actual login page widget
+                    ),
+                  );
+                },
               ),
               ListTile(
                 leading: Icon(
@@ -318,7 +358,8 @@ class _HomePageState extends State<HomePage> {
                                 ),
                               ),
                               CircleAvatar(
-                                backgroundColor: Color.fromARGB(221, 219, 216, 216),
+                                backgroundColor:
+                                    Color.fromARGB(221, 219, 216, 216),
                                 radius: 22,
                                 backgroundImage: AssetImage(
                                     'lib/assets/images/Oh no-amico (1).png'), // Ganti warna latar belakang lingkaran sesuai kebutuhan
@@ -329,15 +370,19 @@ class _HomePageState extends State<HomePage> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 20.0),
+                    SizedBox(
+                      height: 10,
+                    ),
                     Column(
                       children: [
                         Align(
                           alignment: Alignment.centerLeft,
                           child: Text(
-                            "Halo $_registeredUserName,",
+                            "Halo ${_registeredUserName.split(' ')[0]},",
                             style: secondaryTextStyle.copyWith(
-                                fontSize: 35, fontWeight: FontWeight.bold),
+                                fontSize:
+                                    MediaQuery.of(context).size.height * 0.044,
+                                fontWeight: FontWeight.bold),
                           ),
                         ),
                         Align(
@@ -345,13 +390,15 @@ class _HomePageState extends State<HomePage> {
                           child: Text(
                             "Selamat Datang Kembali!",
                             style: textStyle.copyWith(
-                              fontSize: 20,
+                              fontSize:
+                                  MediaQuery.of(context).size.height * 0.028,
                             ),
                           ),
                         ),
                       ],
                     ),
                     SizedBox(height: 20.0),
+
                     //card 1
                     Column(
                       children: [
@@ -359,7 +406,7 @@ class _HomePageState extends State<HomePage> {
                           borderRadius: BorderRadius.circular(12.0),
                           child: Container(
                             width: double.infinity,
-                            height: MediaQuery.of(context).size.height * 0.28,
+                            height: MediaQuery.of(context).size.height * 0.38,
                             color: cardColor,
                             child: Center(
                               child: Padding(
@@ -367,6 +414,67 @@ class _HomePageState extends State<HomePage> {
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
+                                    Text(
+                                      "Progres Aktivitas",
+                                      style: secondaryTextStyle.copyWith(
+                                        fontSize:
+                                            MediaQuery.of(context).size.width *
+                                                0.05,
+                                        fontWeight: FontWeight.bold,
+                                        color: textColors,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                    SizedBox(height: 5),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: borderColor,
+                                        borderRadius:
+                                            BorderRadius.circular(10.0),
+                                        border: Border.all(
+                                          color:
+                                              borderColor, // Warna garis pinggir
+                                          width: 5.0, // Lebar garis pinggir
+                                        ),
+                                      ),
+                                      child: LinearPercentIndicator(
+                                        animation: true,
+                                        animationDuration: 1000,
+                                        lineHeight:
+                                            MediaQuery.of(context).size.height *
+                                                0.025,
+                                        percent: _progress,
+                                        progressColor: cardColor,
+                                        backgroundColor: greyColor,
+                                        center: _progress ==
+                                                1.0 // Periksa apakah progress sudah mencapai 100%
+                                            ? Text(
+                                                progressText,
+                                                style: TextStyle(
+                                                    fontSize:
+                                                        MediaQuery.of(context)
+                                                                .size
+                                                                .height *
+                                                            0.019,
+                                                    color: textColors),
+                                              )
+                                            : Text(
+                                                "${(_progress * 100).toStringAsFixed(2)}%", // Menampilkan persentase dengan dua desimal
+                                                style: TextStyle(
+                                                  fontSize:
+                                                      MediaQuery.of(context)
+                                                              .size
+                                                              .height *
+                                                          0.019,
+                                                  color: textColors,
+                                                ),
+                                              ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 5,
+                                    ),
+                                    Divider(thickness: 2),
                                     Expanded(
                                       child: FittedBox(
                                         child: Padding(
@@ -374,7 +482,8 @@ class _HomePageState extends State<HomePage> {
                                           child: CircleAvatar(
                                             backgroundColor:
                                                 whiteColor.withOpacity(0.6),
-                                            backgroundImage: AssetImage(imageCard),
+                                            backgroundImage:
+                                                AssetImage(imageCard),
                                           ),
                                         ),
                                       ),
@@ -382,11 +491,12 @@ class _HomePageState extends State<HomePage> {
                                     Text(
                                       cardText,
                                       style: whiteTextStyle.copyWith(
-                                          fontSize:
-                                              MediaQuery.of(context).size.width *
-                                                  0.064,
+                                          fontSize: MediaQuery.of(context)
+                                                  .size
+                                                  .width *
+                                              0.062,
                                           fontWeight: bold,
-                                          color: textColors),
+                                          color: textColors2),
                                       textAlign: TextAlign.center,
                                     ),
                                   ],
@@ -395,26 +505,11 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ),
                         ),
-            
+
                         SizedBox(
                           height: 15,
                         ),
-                        LinearPercentIndicator(
-                          animation: true,
-                          animationDuration: 1000,
-                          lineHeight: MediaQuery.of(context).size.height * 0.025,
-                          percent: _progress,
-                          progressColor: cardColor,
-                          center: Text(
-                            "${(_progress * 100).toStringAsFixed(2)}%", // Menampilkan persentase dengan dua desimal
-                            style: TextStyle(
-                                fontSize:
-                                    MediaQuery.of(context).size.height * 0.019,
-                                color: textColors),
-                          ),
-                        ),
-                        SizedBox(height: 15),
-            
+
                         //card2
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -454,8 +549,10 @@ class _HomePageState extends State<HomePage> {
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(12.0),
                                 child: Container(
-                                  height: MediaQuery.of(context).size.height * 0.3,
-                                  width: MediaQuery.of(context).size.width * 0.42,
+                                  height:
+                                      MediaQuery.of(context).size.height * 0.3,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.42,
                                   color: _progress >= 1.0
                                       ? primaryButtonColor
                                       : primaryButtonColor, // Ganti warna sesuai kebutuhan
@@ -467,7 +564,8 @@ class _HomePageState extends State<HomePage> {
                                           children: [
                                             Container(
                                               decoration: BoxDecoration(
-                                                color: whiteColor.withOpacity(0.2),
+                                                color:
+                                                    whiteColor.withOpacity(0.2),
                                                 borderRadius:
                                                     BorderRadius.circular(12),
                                               ),
@@ -483,7 +581,7 @@ class _HomePageState extends State<HomePage> {
                                               height: 10.0,
                                             ),
                                             Text(
-                                              "Test Tingkat\nGejala Kamu",
+                                              "Tes Tingkat\nKecemasan",
                                               style: whiteTextStyle.copyWith(
                                                 fontSize: MediaQuery.of(context)
                                                         .size
@@ -501,7 +599,7 @@ class _HomePageState extends State<HomePage> {
                                 ),
                               ),
                             ),
-            
+
                             // SizedBox(width: 20.0),
                             //card3
                             GestureDetector(
@@ -510,7 +608,8 @@ class _HomePageState extends State<HomePage> {
                                   context,
                                   MaterialPageRoute(
                                     builder: (context) {
-                                      return GoalsPage(anxietyLevel: _anxietyLevel);
+                                      return GoalsPage(
+                                          anxietyLevel: _anxietyLevel);
                                     },
                                   ),
                                 );
@@ -518,8 +617,10 @@ class _HomePageState extends State<HomePage> {
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(12.0),
                                 child: Container(
-                                  height: MediaQuery.of(context).size.height * 0.3,
-                                  width: MediaQuery.of(context).size.width * 0.42,
+                                  height:
+                                      MediaQuery.of(context).size.height * 0.3,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.42,
                                   color: primaryButtonColor,
                                   child: FittedBox(
                                     child: Center(
@@ -529,7 +630,8 @@ class _HomePageState extends State<HomePage> {
                                           children: [
                                             Container(
                                               decoration: BoxDecoration(
-                                                color: whiteColor.withOpacity(0.2),
+                                                color:
+                                                    whiteColor.withOpacity(0.2),
                                                 borderRadius:
                                                     BorderRadius.circular(12),
                                               ),
@@ -546,7 +648,7 @@ class _HomePageState extends State<HomePage> {
                                               height: 10.0,
                                             ),
                                             Text(
-                                              "Lakukan\nKebiasaan ini",
+                                              "Lakukan\nAktivitas ini",
                                               style: whiteTextStyle.copyWith(
                                                 fontSize: MediaQuery.of(context)
                                                         .size

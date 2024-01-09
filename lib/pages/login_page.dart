@@ -16,6 +16,8 @@ class _LoginPageState extends State<LoginPage> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
 
+   bool _isPasswordVisible = false;
+
   // Fungsi validasi untuk format email
   bool isEmailValid(String email) {
     // Sesuaikan pola regex ini berdasarkan kebutuhan spesifik Anda
@@ -112,9 +114,9 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(height: 20.0),
 
               // Tambahkan jarak vertikal sebelum input password
-              TextFormField(
+               TextField(
                 controller: _passwordController,
-                obscureText: true, // Untuk menyembunyikan teks password
+                obscureText: !_isPasswordVisible,
                 decoration: InputDecoration(
                   labelText: "Kata Sandi",
                   labelStyle: textStyle.copyWith(fontSize: 20),
@@ -122,6 +124,18 @@ class _LoginPageState extends State<LoginPage> {
                   hintStyle: greyTextStyle.copyWith(fontSize: 15),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
+                  ),
+                  suffixIcon: GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        _isPasswordVisible = !_isPasswordVisible;
+                      });
+                    },
+                    child: Icon(
+                      _isPasswordVisible
+                          ? Icons.visibility
+                          : Icons.visibility_off,
+                    ),
                   ),
                 ),
               ),

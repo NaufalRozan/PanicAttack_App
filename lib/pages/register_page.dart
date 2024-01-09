@@ -23,6 +23,7 @@ class _RegisterPageState extends State<RegisterPage> {
   final _phoneController = TextEditingController();
   final _confirmPasswordController = TextEditingController();
   bool isConfirmPasswordValid = true;
+  bool isPasswordVisible = false;
 
   @override
   void dispose() {
@@ -243,9 +244,9 @@ class _RegisterPageState extends State<RegisterPage> {
               SizedBox(height: 20.0),
 
               // Tambahkan jarak vertikal sebelum input password
-              TextFormField(
+               TextFormField(
                 controller: _passwordController,
-                obscureText: true,
+                obscureText: !isPasswordVisible,
                 decoration: InputDecoration(
                   labelText: "Kata Sandi",
                   labelStyle: textStyle.copyWith(fontSize: 20),
@@ -253,6 +254,18 @@ class _RegisterPageState extends State<RegisterPage> {
                   hintStyle: greyTextStyle.copyWith(fontSize: 15),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
+                  ),
+                  suffixIcon: GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        isPasswordVisible = !isPasswordVisible;
+                      });
+                    },
+                    child: Icon(
+                      isPasswordVisible
+                          ? Icons.visibility
+                          : Icons.visibility_off,
+                    ),
                   ),
                 ),
               ),
@@ -271,16 +284,28 @@ class _RegisterPageState extends State<RegisterPage> {
               SizedBox(height: 20.0),
 
               // Tambahkan jarak vertikal sebelum input konfirmasi kata sandi
-              TextFormField(
+               TextFormField(
                 controller: _confirmPasswordController,
-                obscureText: true,
+                obscureText: !isPasswordVisible,
                 decoration: InputDecoration(
                   labelText: "Konfirmasi Kata Sandi",
                   labelStyle: textStyle.copyWith(fontSize: 20),
-                  hintText: "Masukkan kata sandi Anda sekali lagi",
+                  hintText: "Masukkan konfirmasi kata sandi Anda",
                   hintStyle: greyTextStyle.copyWith(fontSize: 15),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15.0),
+                  ),
+                  suffixIcon: GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        isPasswordVisible = !isPasswordVisible;
+                      });
+                    },
+                    child: Icon(
+                      isPasswordVisible
+                          ? Icons.visibility
+                          : Icons.visibility_off,
+                    ),
                   ),
                 ),
               ),

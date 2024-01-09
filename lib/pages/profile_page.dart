@@ -151,12 +151,11 @@ class _ProfilePageState extends State<ProfilePage> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage(
-              'lib/assets/images/Frame 1.png',
-            ), // Replace with your image path
-            alignment: Alignment.topCenter,
-            fit: BoxFit.contain
-          ),
+              image: AssetImage(
+                'lib/assets/images/Frame 1.png',
+              ), // Replace with your image path
+              alignment: Alignment.topCenter,
+              fit: BoxFit.contain),
         ),
         child: Padding(
           padding: const EdgeInsets.only(left: 20, right: 20),
@@ -168,7 +167,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 right: 0,
                 child: Container(
                   width: double.infinity,
-                  height: MediaQuery.of(context).size.height * 0.3,
+                  height: MediaQuery.of(context).size.height * 0.35,
                   decoration: BoxDecoration(
                     color: primaryButtonColor,
                     borderRadius: BorderRadius.circular(20),
@@ -223,7 +222,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                 width: 10,
                               ),
                               Text(
-                                "Email",
+                                "Email :",
                                 style: whiteTextStyle.copyWith(
                                   fontSize:
                                       MediaQuery.of(context).size.width * 0.047,
@@ -232,14 +231,17 @@ class _ProfilePageState extends State<ProfilePage> {
                               SizedBox(
                                 width: 10,
                               ),
-                              Text(
-                                "$_registeredEmail",
-                                style: whiteTextStyle.copyWith(
-                                  fontSize:
-                                      MediaQuery.of(context).size.width * 0.047,
-                                ),
-                              ),
                             ],
+                          ),
+                          SizedBox(
+                                height: 5,
+                              ),
+                          Text(
+                            "$_registeredEmail",
+                            style: whiteTextStyle.copyWith(
+                              fontSize:
+                                  MediaQuery.of(context).size.width * 0.047,
+                            ),
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -256,7 +258,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                     width: 10,
                                   ),
                                   Text(
-                                    "Phone",
+                                    "Nomor Telepon :",
                                     style: whiteTextStyle.copyWith(
                                       fontSize:
                                           MediaQuery.of(context).size.width *
@@ -266,14 +268,6 @@ class _ProfilePageState extends State<ProfilePage> {
                                   SizedBox(
                                     width: 10,
                                   ),
-                                  Text(
-                                    "$_registeredPhone",
-                                    style: whiteTextStyle.copyWith(
-                                      fontSize:
-                                          MediaQuery.of(context).size.width *
-                                              0.047,
-                                    ),
-                                  ),
                                 ],
                               ),
                               IconButton(
@@ -282,6 +276,13 @@ class _ProfilePageState extends State<ProfilePage> {
                                 color: whiteColor,
                               ),
                             ],
+                          ),
+                          Text(
+                            "$_registeredPhone",
+                            style: whiteTextStyle.copyWith(
+                              fontSize:
+                                  MediaQuery.of(context).size.width * 0.047,
+                            ),
                           ),
                         ],
                       ),
@@ -316,31 +317,31 @@ class _ProfilePageState extends State<ProfilePage> {
                 left: 16,
                 right: 16,
                 child: Container(
-            child: GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => HomePage()),
-                );
-              },
-              child: Container(
-                padding: EdgeInsets.all(20),
-                decoration: BoxDecoration(
-                  color: primaryButtonColor,
-                  borderRadius: BorderRadius.circular(15.0),
-                ),
-                child: Center(
-                  child: Text(
-                    'Kembali ke halaman utama',
-                    style: whiteTextStyle.copyWith(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => HomePage()),
+                      );
+                    },
+                    child: Container(
+                      padding: EdgeInsets.all(20),
+                      decoration: BoxDecoration(
+                        color: primaryButtonColor,
+                        borderRadius: BorderRadius.circular(15.0),
+                      ),
+                      child: Center(
+                        child: Text(
+                          'Kembali ke halaman utama',
+                          style: whiteTextStyle.copyWith(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                 ),
-              ),
-            ),
-          ),
               ),
             ],
           ),
