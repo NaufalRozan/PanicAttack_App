@@ -142,7 +142,7 @@ class _HomePageState extends State<HomePage> {
     String imageCard;
 
     if (_anxietyLevel == 'Anxiety Level Low') {
-      cardColor = primaryButtonColor; 
+      cardColor = primaryButtonColor;
       borderColor = greyColor;
       cardText = 'Tingkat Kecemasan Rendah';
       progressText = 'Ayo Tes Tingkat Kecemasan Kembali!';
@@ -167,7 +167,7 @@ class _HomePageState extends State<HomePage> {
       imageCard = 'lib/assets/images/Student stress-amico.png';
     } else {
       cardColor = greyColor;
-      borderColor = Color(0xff117755F); 
+      borderColor = Color(0xff117755F);
       cardText = 'Lakukan "Tes Tingkat Kecemasan" terlebih dahulu';
       progressText = 'Lakukan "Tes Tingkat Kecemasan"';
       textColors = Color(0xff117755F);
@@ -532,7 +532,7 @@ class _HomePageState extends State<HomePage> {
                                       return AlertDialog(
                                         title: Text('Peringatan'),
                                         content: Text(
-                                            'Anda harus menyelesaikan lebih banyak tugas untuk membuka uji tingkat gejala.'),
+                                            'Anda harus menyelesaikan lebih banyak aktivitas untuk membuka uji tingkat gejala.'),
                                         actions: [
                                           ElevatedButton(
                                             onPressed: () {
